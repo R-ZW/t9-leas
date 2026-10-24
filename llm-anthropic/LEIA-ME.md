@@ -8,7 +8,7 @@ Responsável: Eduardo Prates Tiadoro. Coleta em 24/10/2026, 15:31–16:07 UTC (1
 |---|---|
 | Interface | Claude Code (app desktop, Windows 11), agente `general-purpose` lançado pela sessão orquestradora com a ferramenta Agent (A) e continuado com SendMessage (B1, E, B2), na mesma conversa |
 | Modelo | `claude-opus-5-5` em todas as respostas das três cadeias (campo `modelos` de `medicoes.json`) |
-| Nível de raciocínio | herdado da sessão orquestradora; a transcrição não registra o valor |
+| Nível de raciocínio | **High**, herdado da sessão orquestradora: todas as requisições à API das três cadeias levam `"output_config":{"effort":"high"}` (cadeia 1: 154; cadeia 2: 220; cadeia 3: 197). Na T8, o Claude rodou em `Médio` |
 | Ambiente de execução | imagem `t9/foremost-ng-exec:1` (`sha256:31c85217c98a…`), um contêiner por cadeia (`t9-claude-c1` a `c3`) |
 | Registro factual congelado antes do B2 | `cadeia-N/registro-factual.sha256` |
 
