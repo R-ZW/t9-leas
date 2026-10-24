@@ -7,6 +7,11 @@ AMBIENTE
 - A pasta /home/revisor/evidencias do contêiner é a pasta {EXEC_HOST} deste computador. Salve ali as evidências (saídas dos comandos, hashes e arquivos pequenos).
 - Continue restrito: não leia arquivos do computador fora de {PACOTE} e {EXEC_HOST}, e não use busca na web. A internet do contêiner serve para instalar dependências e para a consulta ao VirusTotal feita pelo próprio artefato.
 
+AUTORIZAÇÕES (valem para toda esta etapa; não há coordenador nem operador humano para consultar)
+- Já estão autorizados, só dentro do contêiner: pacotes do apt e do pip, clone do repositório dos autores e download de dados públicos de teste (por exemplo DFTT, amostras EVTX, binários de exemplo, arquivo de teste EICAR). Registre a URL, o tamanho e o SHA-256 de cada download.
+- Conferências que o seu roteiro atribui a um operador humano, você mesmo faz. Para o VirusTotal, pode consultar a API pelo SHA-256 com a mesma chave (sem imprimi-la). Não envie arquivos ao VirusTotal: só consultas por hash.
+- A imagem evidence2.dd não está disponível: não está no artefato, não foi encontrada publicamente e os autores não responderam ao pedido. Não há outro material dos autores além de /home/revisor/artefato.zip.
+
 REGRAS
 1. Siga o seu roteiro na ordem. Se um passo falhar, registre a falha e decida, como faria um revisor, se ajusta o ambiente e repete (registre as duas tentativas) ou interrompe, conforme os critérios de interrupção do roteiro.
 2. Se precisar de um passo que não está no roteiro, marque-o como [FORA DO ROTEIRO] e justifique.

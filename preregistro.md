@@ -52,6 +52,10 @@ Os campos `{PACOTE}`, `{EXEC_HOST}` e `{CONTEINER}` são trocados pelos caminhos
 - **Tempo:** do envio do prompt até a última mensagem do agente em cada etapa (carimbos da transcrição), e tempo total da cadeia.
 - Também se registram o número de chamadas de ferramenta e de comandos `docker exec` por etapa.
 
+## Adendo antes da etapa E (24/10/2026)
+
+Os três roteiros B1 pediram aprovação de um "coordenador" para downloads de amostras públicas e previram um operador humano para exportar a chave e conferir o VirusTotal. Como a execução não tem interação humana, o aluno decidiu (24/10/2026), antes de qualquer E, autorizar de uma vez, igual nas três cadeias: pacotes apt/pip, clone do repositório dos autores e downloads de dados públicos de teste, **só dentro do contêiner**, com URL, tamanho e SHA-256 registrados. As conferências atribuídas a um humano ficam com a própria LLM; no VirusTotal, só consultas por hash, sem envio de arquivos. O prompt E ganhou o bloco "AUTORIZAÇÕES", que também informa que `evidence2.dd` não está disponível. Os hashes congelados foram refeitos depois desta mudança.
+
 ## Ameaças já conhecidas
 
 - O executor e o avaliador são o mesmo modelo: o registro factual é escrito pela própria LLM que decide o B2, e pode ser enviesado. A verificação cega confere as evidências citadas contra os arquivos de evidência.
