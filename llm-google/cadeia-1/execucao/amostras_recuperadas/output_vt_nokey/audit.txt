@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:02:45 2026
+Invocation: foremost-ng -x -t elf -i elf_sample.raw -o output_vt_nokey 
+Output directory: /home/revisor/testes/output_vt_nokey
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: elf_sample.raw
+Start: Sat Oct 24 17:02:45 2026
+Length: 31 KB (32160 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000016.elf              12 KB         8192                            Clean (0)      
+Finish: Sat Oct 24 17:02:45 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:02:45 2026

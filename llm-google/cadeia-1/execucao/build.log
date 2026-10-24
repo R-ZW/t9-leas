@@ -1,0 +1,25 @@
+rm -f -- *~
+rm -f -- *.o
+rm -f -- foremost-ng.exe foremost-ng
+rm -f -- foremost-ng-1.5.7.tar.gz foremost-ng-1.5.7.zip foremost-ng-1.5.7.zip.gpg
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c main.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c state.c
+state.c: In function ‘set_config_file’:
+state.c:95:5: warning: ignoring return value of ‘realpath’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |     realpath(fn, temp);
+      |     ^~~~~~~~~~~~~~~~~~
+state.c: In function ‘set_output_directory’:
+state.c:121:5: warning: ignoring return value of ‘realpath’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  121 |     realpath(fn, temp);
+      |     ^~~~~~~~~~~~~~~~~~
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c helpers.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c config.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c cli.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c engine.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c dir.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c extract.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c api.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c vt_query.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 main.o state.o helpers.o config.o cli.o engine.o dir.o extract.o api.o vt_query.o -o foremost-ng -lssl -lcrypto -lcurl
+-rwxr-xr-x 1 revisor revisor 86K Oct 24 16:57 foremost-ng
+foremost-ng: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=a548ea1fd409bfb47f80c90fac8ed580e06ab13a, for GNU/Linux 3.2.0, not stripped

@@ -1,0 +1,79 @@
+2623-
+2624-/**
+2625- * Dispatcher that calls the appropriate extract_*
+2626- * function based on needle->type (JPEG, PNG, AVI, ZIP, OLE, etc.).
+2627- */
+2628:unsigned char *extract_file(f_state *s, uint64_t c_offset, unsigned char *foundat, uint64_t buflen,
+2629-                            s_spec *needle, uint64_t f_offset) {
+2630-    if (needle->type == JPEG) {
+2631-        return extract_jpeg(s, c_offset, foundat, buflen, needle, f_offset);
+2632-    } else if (needle->type == GIF) {
+2633-        return extract_gif(s, c_offset, foundat, buflen, needle, f_offset);
+unsigned char *extract_file(f_state *s, uint64_t c_offset, unsigned char *foundat, uint64_t buflen,
+                            s_spec *needle, uint64_t f_offset) {
+    if (needle->type == JPEG) {
+        return extract_jpeg(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == GIF) {
+        return extract_gif(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == PNG) {
+        return extract_png(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == BMP) {
+        return extract_bmp(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == RIFF) {
+        needle->suffix = "rif";
+        return extract_riff(s, c_offset, foundat, buflen, needle, f_offset, "all");
+    } else if (needle->type == AVI) {
+        return extract_riff(s, c_offset, foundat, buflen, needle, f_offset, "avi");
+    } else if (needle->type == WAV) {
+        needle->suffix = "rif";
+        return extract_riff(s, c_offset, foundat, buflen, needle, f_offset, "wav");
+    } else if (needle->type == WMV) {
+        return extract_wmv(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == OLE) {
+        needle->suffix = "ole";
+        return extract_ole(s, c_offset, foundat, buflen, needle, f_offset, "all");
+    } else if (needle->type == DOC) {
+        return extract_ole(s, c_offset, foundat, buflen, needle, f_offset, "doc");
+    } else if (needle->type == PPT) {
+        return extract_ole(s, c_offset, foundat, buflen, needle, f_offset, "ppt");
+    } else if (needle->type == XLS) {
+        needle->suffix = "ole";
+        return extract_ole(s, c_offset, foundat, buflen, needle, f_offset, "xls");
+    } else if (needle->type == PDF) {
+        return extract_pdf(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == CPP) {
+        return extract_cpp(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == HTM) {
+        return extract_htm(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MPG) {
+        return extract_mpg(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MP4) {
+        return extract_mp4(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == ZIP) {
+        return extract_zip(s, c_offset, foundat, buflen, needle, f_offset, "all");
+    } else if (needle->type == RAR) {
+        return extract_rar(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == SXW) {
+        return extract_zip(s, c_offset, foundat, buflen, needle, f_offset, "sxw");
+    } else if (needle->type == SXC) {
+        return extract_zip(s, c_offset, foundat, buflen, needle, f_offset, "sxc");
+    } else if (needle->type == SXI) {
+        return extract_zip(s, c_offset, foundat, buflen, needle, f_offset, "sxi");
+    } else if (needle->type == EXE) {
+        return extract_exe(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == ELF) {
+        return extract_elf(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MACHO) {
+        return extract_macho(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == EVTX) {
+        return extract_evtx(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == SCRIPT) {
+        return extract_script(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MOV || needle->type == VJPEG) {
+        return extract_mov(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == CONF) {
+        return extract_generic(s, c_offset, foundat, buflen, needle, f_offset);
+    } else {
+        return NULL;
+    }
+

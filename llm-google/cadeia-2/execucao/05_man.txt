@@ -1,0 +1,40 @@
+FOREMOST-NG(8)              System Manager's Manual             FOREMOST-NG(8)
+
+NAME
+       foremost-ng - recover files by header, footer, and data structures.
+
+SYNOPSIS
+       foremost-ng  [  -h ] [ -V ] [ -d ] [ -v ] [ -q ] [ -Q ] [ -w ] [ -a ] [
+       -T ] [ -x ] [ -b blocksize ] [ -k chunksize ] [ -o  directory  ]  [  -c
+       config_file ] [ -s number ] [ -t types ] [ -i input_file ]
+
+BUILT-IN FORMATS
+       Recover  files  from  a disk or image based on file types specified via
+       the -t switch.
+
+       jpg    Support for JFIF and Exif formats used by  modern  digital  cam‐
+              eras.
+
+       gif    Support for GIF images.
+
+       png    Support for PNG images.
+
+       bmp    Support for Windows BMP format.
+
+       avi    Support for AVI files (uses the RIFF container format).
+
+       exe    Support  for  Windows  PE  binaries;  extracts DLL and EXE files
+              along with their compile timestamps.
+
+       mpg    Support for MPEG files (must begin with 0x000001BA).
+
+       mp4    Support for MP4 files.
+
+       wav    Support for WAV files.
+
+       riff   Support for RIFF files; extracts both AVI and  RIFF  since  they
+              share the same format (faster than running each separately).
+
+       wmv    Support for WMV files; may also extract WMA files due to similar
+              format.
+

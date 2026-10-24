@@ -1,0 +1,68 @@
+foremost-ng:
+total 12
+drwxr-xr-x 3 revisor revisor 4096 Oct 24 16:57 .
+drwxr-x--- 1 revisor revisor 4096 Oct 24 16:57 ..
+drwxr-xr-x 5 revisor revisor 4096 Jul  8  2025 foremost-ng-bb812a22
+
+foremost-ng/foremost-ng-bb812a22:
+total 36
+drwxr-xr-x 5 revisor revisor 4096 Jul  8  2025 .
+drwxr-xr-x 3 revisor revisor 4096 Oct 24 16:57 ..
+-rw-r--r-- 1 revisor revisor  520 Jul  8  2025 .gitignore
+-rw-r--r-- 1 revisor revisor  338 Jul  8  2025 Dockerfile
+-rw-r--r-- 1 revisor revisor 1092 Jul  8  2025 LICENSE
+-rw-r--r-- 1 revisor revisor 2795 Jul  8  2025 README.md
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 screenshots
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 src
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 windows_dlls
+
+foremost-ng/foremost-ng-bb812a22/screenshots:
+total 1248
+drwxr-xr-x 2 revisor revisor   4096 Jul  8  2025 .
+drwxr-xr-x 5 revisor revisor   4096 Jul  8  2025 ..
+-rw-r--r-- 1 revisor revisor 762049 Jul  8  2025 foremost-ng-01.png
+-rw-r--r-- 1 revisor revisor 503151 Jul  8  2025 foremost-ng-02.png
+
+foremost-ng/foremost-ng-bb812a22/src:
+total 268
+drwxr-xr-x 2 revisor revisor  4096 Jul  8  2025 .
+drwxr-xr-x 5 revisor revisor  4096 Jul  8  2025 ..
+-rwxr-xr-x 1 revisor revisor  4530 Jul  8  2025 Makefile
+-rw-r--r-- 1 revisor revisor   525 Jul  8  2025 ansi_colors.h
+-rwxr-xr-x 1 revisor revisor 17303 Jul  8  2025 api.c
+-rwxr-xr-x 1 revisor revisor   959 Jul  8  2025 cli.c
+-rwxr-xr-x 1 revisor revisor  7792 Jul  8  2025 config.c
+-rwxr-xr-x 1 revisor revisor  8846 Jul  8  2025 dir.c
+-rwxr-xr-x 1 revisor revisor 14563 Jul  8  2025 engine.c
+-rwxr-xr-x 1 revisor revisor 88580 Jul  8  2025 extract.c
+-rwxr-xr-x 1 revisor revisor  5105 Jul  8  2025 extract.h
+-rw-r--r-- 1 revisor revisor  2914 Jul  8  2025 foremost-ng.8.gz
+-rwxr-xr-x 1 revisor revisor  9380 Jul  8  2025 foremost.conf
+-rwxr-xr-x 1 revisor revisor  9099 Jul  8  2025 helpers.c
+-rwxr-xr-x 1 revisor revisor  9226 Jul  8  2025 main.c
+-rwxr-xr-x 1 revisor revisor 10732 Jul  8  2025 main.h
+-rwxr-xr-x 1 revisor revisor  3506 Jul  8  2025 ole.h
+-rwxr-xr-x 1 revisor revisor 24328 Jul  8  2025 state.c
+-rw-r--r-- 1 revisor revisor  6377 Jul  8  2025 vt_query.c
+-rw-r--r-- 1 revisor revisor   874 Jul  8  2025 vt_query.h
+
+foremost-ng/foremost-ng-bb812a22/windows_dlls:
+total 13808
+drwxr-xr-x 2 revisor revisor    4096 Jul  8  2025 .
+drwxr-xr-x 5 revisor revisor    4096 Jul  8  2025 ..
+-rw-r--r-- 1 revisor revisor  148992 Jul  8  2025 libbrotlicommon.dll
+-rw-r--r-- 1 revisor revisor   69008 Jul  8  2025 libbrotlidec.dll
+-rw-r--r-- 1 revisor revisor 5377536 Jul  8  2025 libcrypto-3-x64.dll
+-rw-r--r-- 1 revisor revisor 1178112 Jul  8  2025 libcurl-4.dll
+-rw-r--r-- 1 revisor revisor 1136529 Jul  8  2025 libiconv-2.dll
+-rw-r--r-- 1 revisor revisor  238592 Jul  8  2025 libidn2-0.dll
+-rw-r--r-- 1 revisor revisor  304128 Jul  8  2025 libintl-8.dll
+-rw-r--r-- 1 revisor revisor  216576 Jul  8  2025 libnghttp2-14.dll
+-rw-r--r-- 1 revisor revisor  185344 Jul  8  2025 libnghttp3-9.dll
+-rw-r--r-- 1 revisor revisor  100864 Jul  8  2025 libpsl-5.dll
+-rw-r--r-- 1 revisor revisor  308224 Jul  8  2025 libssh2-1.dll
+-rw-r--r-- 1 revisor revisor 1022464 Jul  8  2025 libssl-3-x64.dll
+-rw-r--r-- 1 revisor revisor 2226871 Jul  8  2025 libunistring-5.dll
+-rw-r--r-- 1 revisor revisor  666384 Jul  8  2025 libzstd.dll
+-rw-r--r-- 1 revisor revisor  829448 Jul  8  2025 msvcr100.dll
+-rw-r--r-- 1 revisor revisor   91432 Jul  8  2025 zlib1.dll

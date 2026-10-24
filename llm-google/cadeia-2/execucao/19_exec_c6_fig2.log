@@ -1,0 +1,4 @@
+=== P19: Tentativa de execucao do experimento da Figura 2 (foremost-ng -v -x evidence2.dd) ===
+[31m[!] File not found or is a directory: evidence2.dd
+[0m[31m[!] No valid input files to process.
+[0mSTATUS: BLOQUEADO / FALHA - O arquivo evidence2.dd nao existe no diretorio ou sistema.

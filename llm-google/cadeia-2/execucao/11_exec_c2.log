@@ -1,0 +1,18 @@
+[1m[34m[INFO] Processing: c2_script.img
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0moutput_c2:
+total 16
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 17:04 .
+drwxr-xr-x 3 revisor revisor 4096 Oct 24 17:04 ..
+-rw-r--r-- 1 revisor revisor 1057 Oct 24 17:04 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 17:04 script
+
+output_c2/script:
+total 24
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 17:04 .
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 17:04 ..
+-rw-r--r-- 1 revisor revisor  100 Oct 24 17:04 00000001.script
+-rw-r--r-- 1 revisor revisor  100 Oct 24 17:04 00000003.script
+-rw-r--r-- 1 revisor revisor   84 Oct 24 17:04 00000005.script
+-rw-r--r-- 1 revisor revisor   44 Oct 24 17:04 00000007.script

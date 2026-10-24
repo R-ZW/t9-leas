@@ -1,0 +1,37 @@
+[1m[34m[INFO] Processing: elf_sample.raw
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0moutput_vt_key:
+total 16
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 17:03 .
+drwxr-xr-x 9 revisor revisor 4096 Oct 24 17:03 ..
+-rw-r--r-- 1 revisor revisor  791 Oct 24 17:03 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 17:03 elf
+
+output_vt_key/elf:
+total 24
+drwxr-xr-- 2 revisor revisor  4096 Oct 24 17:03 .
+drwxr-xr-- 3 revisor revisor  4096 Oct 24 17:03 ..
+-rw-r--r-- 1 revisor revisor 12304 Oct 24 17:03 00000016.elf
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:03:14 2026
+Invocation: foremost-ng -x -t elf -i elf_sample.raw -o output_vt_key 
+Output directory: /home/revisor/testes/output_vt_key
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: elf_sample.raw
+Start: Sat Oct 24 17:03:14 2026
+Length: 31 KB (32160 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000016.elf              12 KB         8192                            Clean (0)      
+Finish: Sat Oct 24 17:03:14 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:03:14 2026

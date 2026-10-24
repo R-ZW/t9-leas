@@ -1,0 +1,30 @@
+[1m[34m[INFO] Processing: min_test.img
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mforemost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 16:59:40 2026
+Invocation: foremost-ng -i min_test.img -o out_min 
+Output directory: /home/revisor/work/out_min
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: min_test.img
+Start: Sat Oct 24 16:59:40 2026
+Length: 3 KB (3186 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000004.script            41 B         2121                            N/A            
+Finish: Sat Oct 24 16:59:40 2026
+
+1 FILES EXTRACTED
+	
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 16:59:40 2026
+total 16
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 16:59 .
+drwxr-xr-x 3 revisor revisor 4096 Oct 24 16:59 ..
+-rw-r--r-- 1 revisor revisor  764 Oct 24 16:59 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 16:59 script

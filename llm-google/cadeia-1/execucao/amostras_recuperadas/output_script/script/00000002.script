@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script de teste forense
+echo "Executando rotina forense Bash"
+exit 0

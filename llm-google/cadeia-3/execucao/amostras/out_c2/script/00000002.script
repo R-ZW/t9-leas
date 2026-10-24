@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script de teste SBSeg
+echo Foremost-NG Script Carving Test
+exit 0
