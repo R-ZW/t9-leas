@@ -4,3 +4,6 @@ prompts/** -text
 preregistro.md -text
 CONGELAMENTO.sha256 -text
 llm-*/** -text
+
+# Ambiente congelado: mesmos bytes em qualquer SO.
+ambiente/** -text
