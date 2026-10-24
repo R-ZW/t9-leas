@@ -71,7 +71,8 @@ Detalhes em [`analise/resumo-gemini.md`](analise/resumo-gemini.md).
   - o artefato compila via `make` em `src/` e instala via `sudo make install` no sistema;
   - o teste mínimo de carving extrai arquivos válidos e gera `audit.txt`;
   - EVTX (C1), Scripts (C2) e ELF (C4) foram recuperados com sucesso em testes complementares (D2);
-  - Mach-O universal FAT (C3) é extraído, mas a comparação de magic de Mach-O thin de 64 bits contém falha de endianness no código;
+  - Mach-O universal FAT (C3) é extraído nas três cadeias; Mach-O thin de 64 bits falha por bug de endianness em `src/extract.c:2408` (C3 marcado como `não rep` na cadeia 2 e como `rep` nas cadeias 1 e 3, com ressalva textual na 1);
   - a integração com o VirusTotal (C5) funciona via HTTP REST populando a coluna `VT` quando `VT_API_KEY` está presente, emitindo aviso sem abortar quando ausente;
-  - `evidence2.dd` (Fig. 2, C6) continua indisponível no artefato e no ambiente, inviabilizando a reprodução da tabela e offsets publicados.
+  - `evidence2.dd` (Fig. 2, C6) continua indisponível no artefato e no ambiente, inviabilizando a reprodução da tabela e offsets publicados;
+  - a cadeia 1 inverteu a polaridade da confiança de R no B2 (registrou 95 de certeza no próprio Não atribuir, em vez de confiança na atribuição pelo comitê).
 - **Custo médio por cadeia:** cerca de 24,5 min e 117 mil tokens de saída (14,4 milhões no total, quase todos leitura de cache). A execução (E) leva a maior parte do tempo (~15 min) e dos tokens.

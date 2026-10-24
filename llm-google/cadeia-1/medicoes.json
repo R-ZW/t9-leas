@@ -19,7 +19,7 @@
       },
       "comandos_docker_exec": 0,
       "modelos": [
-        "Gemini (Antigravity)"
+        "Gemini 3.8 Flash (High)"
       ]
     },
     "B1": {
@@ -39,7 +39,7 @@
       },
       "comandos_docker_exec": 0,
       "modelos": [
-        "Gemini (Antigravity)"
+        "Gemini 3.8 Flash (High)"
       ]
     },
     "E": {
@@ -61,7 +61,7 @@
       },
       "comandos_docker_exec": 48,
       "modelos": [
-        "Gemini (Antigravity)"
+        "Gemini 3.8 Flash (High)"
       ]
     },
     "B2": {
@@ -82,7 +82,7 @@
       },
       "comandos_docker_exec": 0,
       "modelos": [
-        "Gemini (Antigravity)"
+        "Gemini 3.8 Flash (High)"
       ]
     }
   },

@@ -8,8 +8,8 @@ Escrita em 24/10/2026, depois de publicadas as nove cadeias (3 por LLM). Fontes:
 |---|---|---|---|
 | Responsável | Eduardo | Reinaldo | Miguel |
 | Interface | Claude Code (agente por cadeia) | Codex (agente por cadeia) | Antigravity (subagente por cadeia) |
-| Modelo registrado | `claude-opus-5-5` | `gpt-6-sol` | "Gemini (Antigravity)", sem nome exato |
-| Nível de raciocínio | High | xhigh | não registrado |
+| Modelo registrado | `claude-opus-5-5` | `gpt-6-sol` | `Gemini 3.8 Flash` (`gemini-3.8-flash`) |
+| Nível de raciocínio | High | xhigh | High |
 | Coleta (UTC, 24/10) | 15:31–16:07 | a partir de 17:08, com pausa por limite de uso na etapa E | 16:44–17:13 |
 | Pasta de trabalho da LLM | fora do repositório | **dentro** do repositório (`t9-leas\llm-openai\cadeia-N`) | fora do repositório |
 
@@ -114,15 +114,15 @@ O GPT foi o mais econômico em saída (cerca de 30% menos que os outros), princi
 
 Nenhum arquivo dos colegas foi alterado; os itens abaixo ficam registrados para correção ou declaração no relatório.
 
-1. **Modelo e nível do Gemini sem identificação.** `medicoes.json` e o LEIA-ME só dizem "Gemini (Antigravity)", sem o nome exato do modelo e sem o nível de raciocínio. Na T8 estava registrado `Gemini Pro (High)`. Falta Miguel confirmar.
+1. **Modelo e nível do Gemini confirmados.** Miguel confirmou em `llm-google/LEIA-ME.md` e `medicoes.json` o uso de `Gemini 3.8 Flash` (`gemini-3.8-flash`) com nível de raciocínio `High` (`thinking` ativo em todas as respostas de todas as etapas).
 2. **Confiança de R na cadeia 1 do Gemini.** Em B2, a cadeia 1 decide Não atribuir com confiança 95. Pela definição do prompt, isso seria "95% de chance de o comitê ter atribuído R". O próprio texto da resposta mostra que ela usou o número como confiança na própria decisão. Em A, o valor era 15, e as cadeias 2 e 3 deram 10 e 5. Esse valor não deve entrar em médias de confiança.
-3. **C3 da cadeia 1 do Gemini contradiz o próprio registro.** A cadeia 1 registra que o thin não foi extraído, mas marca C3 como reproduzível. O LEIA-ME do Gemini também diz que as cadeias 1 e 2 rotularam C3 como não reproduzível, mas só a cadeia 2 fez isso.
+3. **C3 da cadeia 1 do Gemini contradiz o próprio registro.** A cadeia 1 registra que o thin não foi extraído, mas marca C3 como reproduzível (pelo sucesso no Mach-O FAT universal `0xCAFEBABE`). O LEIA-ME do Gemini foi corrigido: apenas a cadeia 2 rotulou C3 formalmente como `nao_reproduzivel`.
 4. **Testes diferentes na cadeia 3 do Gemini.** Ela não testou Mach-O thin. O controle de comentários usou só `#`, sem letras. O ELF foi checado só com `readelf -h`. Por isso ela não viu três defeitos que as outras oito cadeias viram. O LEIA-ME generaliza ("todas comprovaram … integridade estrutural").
 5. **Regra de F no Gemini.** Em A, as três cadeias do Gemini classificaram versões e exemplo mínimo como "não atendido" no README. Mesmo assim decidiram Indeterminado, e a regra do prompt manda Não atribuir quando um critério obrigatório falha na documentação. Em B2, dizem que o artefato "atende plenamente", sem voltar a essas lacunas.
 6. **Isolamento do GPT.** As pastas de trabalho dos agentes do GPT ficaram dentro do repositório (`…\t9-leas\llm-openai\cadeia-N`). A cópia local partiu do commit `723be8f`, que já tinha os resultados do Claude em `llm-anthropic/`. A auditoria do Reinaldo não encontrou referências a `llm-anthropic`, `t8-leas` nem às outras cadeias. Ainda assim, o isolamento é mais fraco que o do Claude e o do Gemini, que trabalharam fora do repositório. Deve constar como desvio.
 7. **Prompts do GPT com texto a mais.** As mensagens A e B1 também identificaram a cadeia e pediram a entrega da resposta no chat. A etapa E foi interrompida pelo limite de uso e retomada com uma mensagem extra. Além disso, as mensagens do orquestrador vêm cifradas no log do Codex, então a transcrição do GPT reconstrói os prompts a partir dos arquivos congelados e não é literal. Tudo isso está declarado no LEIA-ME do GPT.
 8. **Moldura nos prompts do Claude.** O Claude Code entregou B1, E e B2 com o prefixo "The coordinator sent a message while you were working:", e por isso os roteiros B1 do Claude falam em coordenador. Isso está declarado em `llm-anthropic/LEIA-ME.md`.
-9. **Níveis de raciocínio diferentes:** Claude High, GPT xhigh e Gemini não registrado. Como na T8, a comparação é de "produto + modelo + nível".
+9. **Níveis de raciocínio diferentes:** Claude High, GPT xhigh e Gemini High. Como na T8, a comparação é de "produto + modelo + nível".
 10. **Formatos de medição diferentes.** O GPT soma o cache dentro da entrada. O Gemini não informa cache criado. O tempo do GPT exclui a pausa. A seção 4 normaliza os totais, mas os campos de `medicoes.json` não têm o mesmo significado entre provedores.
 11. **Imagem Docker reconstruída por provedor.** O ID do Gemini é `sha256:97726f4c…` e o do Claude é `sha256:31c85217…`. O GPT não registrou o ID. Todas vêm do mesmo Dockerfile, com o apt fixado no mesmo dia, então a diferença de ID deve vir só da data de construção. O conteúdo não foi comparado.
 

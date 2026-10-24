@@ -154,7 +154,7 @@ def medir_etapa(prompt_info, steps):
         "tokens": tokens,
         "chamadas_ferramenta": ferramentas,
         "comandos_docker_exec": docker_exec_count,
-        "modelos": ["Gemini (Antigravity)"]
+        "modelos": ["Gemini 3.8 Flash (High)"]
     }
 
 
