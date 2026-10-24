@@ -1,0 +1,81 @@
+# Roteiro de execução para F e R
+
+**Estado:** roteiro preparado; nenhum comando foi executado. Usarei a versão `bb812a22cb06ef87b5a2d877dfb6f40eb12d460d`, indicada em [artefato.txt:linha 3]. Os comandos de uso vêm do README e do artigo; cada adaptação ou verificação adicional está marcada **[NÃO DOCUMENTADO]**. Se uma entrada necessária não estiver disponível, registrarei a ausência e interromperei **a reivindicação afetada**, sem interpretar a falta de saída como falha do parser.
+
+## Ambiente e limites prévios
+
+- **Sistema:** contêiner Ubuntu 24.04, usuário comum com `sudo`, `unzip` e `man`, conforme definido para a próxima etapa. O README descreve a ferramenta como baseada em Linux [README.md:3].
+- **Software a instalar:** `gcc`, `make`, `git`, `libssl-dev` e `libcurl4-openssl-dev`, lista usada pelos autores no Dockerfile [Dockerfile:3-5]. O README não fixa versões para esse conjunto; registrarei as versões efetivamente instaladas como **[NÃO DOCUMENTADO]**, pois são necessárias para interpretar uma falha de compilação.
+- **Hardware:** CPU, RAM e mínimo de disco não são especificados pelos autores. **[NÃO DOCUMENTADO]** Para C6, será preciso espaço para `evidence2.dd` (a figura informa 2.845.109.643 bytes), além dos arquivos recuperados [artigo.pdf:p.8, Fig. 2].
+- **Entradas:** `disk.img`, `memory.dump` e `evidence2.dd` aparecem nos comandos do artigo, mas não constam do índice do artefato [artigo.pdf:p.7, §4.1; p.8, Fig. 2; artefato.txt:índice, linhas 9-49]. O artigo sugere um site de amostras, sem indicar arquivo específico [artigo.pdf:p.7, §4]. Não substituirei uma imagem desconhecida por outra fingindo reproduzir a Figura 2.
+- **VirusTotal:** os ensaios com consulta exigem uma chave válida em `VT_API_KEY` [README.md:89-107; artigo.pdf:p.7, §4.1]. Sem chave, executarei apenas o ramo documentado de aviso e carving sem consulta, se houver entrada.
+
+**Diretório de trabalho planejado:** `~/foremost-ng/src`. Os comandos do artigo usam nomes de entrada nesse diretório. Colocar os arquivos ali não foi explicado pelos autores; as verificações de presença abaixo assinalam essa lacuna.
+
+## Preparação e teste mínimo de F
+
+**P1 — F/R, ambiente.** Diretório: `~`. Comando: `sudo apt-get update`. Resultado esperado: índices de pacotes atualizados, conforme a etapa `apt-get update` do Dockerfile [Dockerfile:3]. **[NÃO DOCUMENTADO]** O prefixo `sudo` adapta o comando ao usuário comum previsto para o contêiner. Evidência: saída e código de retorno. Sucesso: retorno zero. Falha: erro do gerenciador. Interrupção: falta de rede ou permissão para prosseguir.
+
+**P2 — F/R, dependências.** Diretório: `~`. Comando: `sudo apt-get install -y gcc make git libssl-dev libcurl4-openssl-dev`. Resultado esperado: dependências da lista dos autores instaladas [Dockerfile:4-5]. **[NÃO DOCUMENTADO]** Uso de `sudo` pelo mesmo motivo de P1. Evidência: saída, versões dos pacotes e código de retorno. Sucesso: instalação concluída. Falha: pacote ou dependência indisponível. Interrupção: erro de rede ou repositório que impeça completar a instalação.
+
+**P3 — F/R, obtenção do código.** Diretório: `~`. Comando: `git clone https://github.com/cristianzsh/foremost-ng.git`. Resultado esperado: pasta `foremost-ng`, conforme o procedimento do artigo [artigo.pdf:p.6, §4]. Evidência: saída do clone. Sucesso: código obtido. Falha: clone inválido ou incompleto. Interrupção: rede ou acesso indisponível.
+
+**P4 — F/R, identidade do artefato.** Diretório: `~`. Comando: `git -C ./foremost-ng checkout bb812a22cb06ef87b5a2d877dfb6f40eb12d460d`. **[NÃO DOCUMENTADO]** Os autores não instruem a fixar esse commit; o passo é necessário para não testar uma versão posterior àquela representada por `artefato.txt` [artefato.txt:linha 3]. Resultado esperado: checkout desse commit. Evidência: saída do Git e hash selecionado. Sucesso: checkout concluído. Falha: commit inexistente no clone. **Interrupção:** se o commit não estiver disponível, não continuarei a avaliação dessa versão usando o HEAD remoto.
+
+**P5 — F/R, compilação.** Diretório: `~/foremost-ng/src`. Comando: `make`. Resultado esperado: binário `foremost-ng`, conforme o README [README.md:31-34] e a lista de fontes do Makefile [src/Makefile:54-57]. Evidência: transcrição integral da compilação e eventuais erros. Sucesso: retorno zero e binário produzido. Falha: erro de compilação ou ligação. Interrupção: dependência exigida, mas não especificada pelos autores, que não possa ser obtida.
+
+**P6 — F/R, instalação.** Diretório: `~/foremost-ng/src`. Comando: `sudo make install`. Resultado esperado: `foremost-ng` disponível no sistema [README.md:31-34; artigo.pdf:p.7, §4]. Evidência: saída da instalação. Sucesso: retorno zero. Falha: erro de instalação. Interrupção: falta de permissão ou problema no sistema de arquivos.
+
+**P7 — F, entrada mínima.** Diretório: `~/foremost-ng/src`. Comando: `test -r ./disk.img`. **[NÃO DOCUMENTADO]** É uma checagem necessária porque o artigo usa `disk.img`, mas não fornece essa imagem nem explica como obtê-la [artigo.pdf:p.7, §4.1]. Resultado esperado: entrada legível. Evidência: presença ou ausência e origem declarada do arquivo. Sucesso: arquivo presente, com conteúdo conhecido capaz de produzir ao menos uma recuperação. Falha: arquivo presente, mas ilegível. **Interrupção:** arquivo ausente ou conteúdo desconhecido; nesse caso, um teste sem saída não avaliaria F.
+
+**P8 — F, teste mínimo.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -i disk.img -o ./carved-f`. O artigo fornece a forma `foremost-ng -i disk.img -o /temp/output/carved` [artigo.pdf:p.7, §4.1]. **[NÃO DOCUMENTADO]** Substituí apenas o destino por um diretório gravável pelo usuário comum. Resultado esperado segundo os autores: arquivos recuperados em subdiretórios por formato e registro da extração [artigo.pdf:p.7, §4.1–4.2]. Evidência: comando, saída integral, registro e arquivos gerados. Sucesso F em execução: retorno sem erro, ao menos uma recuperação prevista pelo conteúdo conhecido da entrada e saída inspecionável. Falha: erro, travamento ou saída incompatível com uma entrada positiva conhecida. Interrupção: P7 não satisfeito. Mesmo com sucesso, as faltas obrigatórias do README apontadas na etapa A continuariam a impedir atribuir F sem corrigir a documentação.
+
+## R — uma verificação por reivindicação
+
+**P9 — R/C1, EVTX.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c1`. O artigo documenta essa seleção de formatos; **[NÃO DOCUMENTADO]** o destino relativo é adaptação ao contêiner [artigo.pdf:p.7, §4.1]. Resultado esperado: arquivo `.evtx` recuperado, com `ElfFile` e chunks delimitados, legível por ferramenta de eventos [artigo.pdf:p.6, §3, “Windows Event Logs”]. Evidência: saída, registro, `.evtx` e análise de sua estrutura. Sucesso: entrada comprovadamente contendo EVTX produz arquivo estruturalmente legível. Falha: não recupera ou produz arquivo inválido diante de entrada positiva conhecida. Interrupção: não há imagem EVTX identificada; os autores não indicam ferramenta nem comando de validação estrutural, ambos **[NÃO DOCUMENTADO]**.
+
+**P10 — R/C2, scripts.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -i disk.img -o ./carved-c2`. É o modo padrão documentado, no qual todos os parsers registrados inspecionam a entrada [artigo.pdf:p.7, §4.1]. **[NÃO DOCUMENTADO]** O destino relativo é adaptação. Resultado esperado: script legível com shebang, pelo menos 32 bytes e corpo além de comentários [artigo.pdf:p.6, §3, “Script Files”]. Evidência: saída, arquivo e seu conteúdo, inclusive casos aceitos e rejeitados. Sucesso: entrada positiva recuperada e entrada contendo só comentários rejeitada. Falha: script positivo perdido ou script composto só por comentários aceito. Interrupção: entradas positiva e negativa identificadas não foram fornecidas; o procedimento dos autores não ensina a prepará-las. A checagem negativa é necessária para confrontar a condição expressa na reivindicação.
+
+**P11 — R/C3, Mach-O.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -i disk.img -o ./carved-c3`. Resultado esperado: Mach-O *fat* e *thin* extraídos com tamanho delimitado pelos cabeçalhos ou comandos de carga [artigo.pdf:p.6, §3, “Mach-O”]. Evidência: saída, arquivos e identificação estrutural das variantes. Sucesso: amostras positivas conhecidas *fat* e *thin* são recuperadas e reconhecidas. Falha: uma variante conhecida não é recuperada ou é inválida. Interrupção: faltam amostras identificadas de ambas as variantes e os autores não dão ferramenta ou comando para reconhecê-las; isso fica **[NÃO DOCUMENTADO]**. A divergência de assinatura observada no código na etapa A torna o teste *thin* especialmente necessário.
+
+**P12 — R/C4, ELF.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c4`. É a seleção exemplificada pelos autores [artigo.pdf:p.7, §4.1]; **[NÃO DOCUMENTADO]** somente o destino relativo foi adaptado. Resultado esperado: `.elf` de 32 e 64 bits delimitados pelos cabeçalhos de programa [artigo.pdf:p.6, §3, “ELF”]. Evidência: saída, arquivos e leitura estrutural de cada classe. Sucesso: ambas as classes, em entradas positivas conhecidas, são reconhecíveis por analisador ELF. Falha: classe conhecida não recuperada ou inválida. Interrupção: entradas de ambas as classes ou analisador não especificados; a escolha e instalação desse analisador seriam **[NÃO DOCUMENTADO]**.
+
+**P13 — R/C5, pré-requisito de entrada.** Diretório: `~/foremost-ng/src`. Comando: `test -r ./memory.dump`. **[NÃO DOCUMENTADO]** Checagem necessária para o exemplo VT dos autores, cuja entrada não acompanha o artefato [artigo.pdf:p.7, §4.1]. Resultado esperado: imagem legível contendo ao menos um ELF. Evidência: presença, origem e conteúdo esperado. Sucesso: entrada positiva conhecida. Falha: ilegível. Interrupção: ausente ou sem conteúdo conhecido.
+
+**P14 — R/C5, pré-requisito de chave.** Diretório: `~/foremost-ng/src`. Comando: `test -n "${VT_API_KEY:-}"`. **[NÃO DOCUMENTADO]** É uma verificação sem expor a chave; os autores mandam defini-la, mas não a fornecem [README.md:93-107]. Resultado esperado: chave configurada. Evidência: apenas resultado da checagem, nunca o valor secreto. Sucesso: chave presente. Falha: chave vazia. Interrupção: sem chave válida não haverá ensaio de consulta; P16, sem chave, ainda poderá ser feito.
+
+**P15 — R/C5, consulta com chave.** Diretório: `~/foremost-ng/src`. Comando: `foremost-ng -x -t elf -i memory.dump -o ./carved-vt`. Corresponde ao exemplo do artigo com destino relativo adaptado **[NÃO DOCUMENTADO]** [artigo.pdf:p.7, §4.1]. Resultado esperado: hash do ELF recuperado consultado no VirusTotal e contagens maliciosas/não detectadas anotadas no registro [artigo.pdf:p.7, §4.1]. Evidência: arquivo, hash, saída, registro e resposta ou erro da consulta sem registrar a chave. Sucesso: associação verificável entre hash do arquivo e resposta VT. Falha: consulta incorreta ou resultado não registrado diante de chave e rede válidas. Interrupção: P13/P14 não satisfeitos ou serviço externo indisponível.
+
+**P16 — R/C5, comportamento sem chave.** Diretório: `~/foremost-ng/src`. Comando: `env -u VT_API_KEY foremost-ng -x -t elf -i memory.dump -o ./carved-vt-sem-chave`. **[NÃO DOCUMENTADO]** `env -u` e o destino separado são controles necessários para garantir ausência de chave sem alterar a sessão. O comportamento esperado vem do artigo: aviso, carving e nenhuma consulta VT [artigo.pdf:p.7, §4.1]. Evidência: saída, aviso, arquivos e registro. Sucesso: recupera o ELF, avisa e não faz consulta; qualquer `Clean (0)` sem consulta será registrado como rótulo ambíguo, não como veredito VT. Falha: não faz carving por falta de chave ou realiza consulta. Interrupção: P13 não satisfeito.
+
+**P17 — R/C6, pré-requisito da Figura 2.** Diretório: `~/foremost-ng/src`. Comando: `test -r ./evidence2.dd`. **[NÃO DOCUMENTADO]** Checagem necessária porque a figura usa essa imagem, mas o índice integral do artefato não a contém [artigo.pdf:p.8, Fig. 2; artefato.txt:índice, linhas 9-49]. Resultado esperado: imagem exata legível. Evidência: presença, origem e tamanho. Sucesso: imagem identificada como a usada pelos autores. Falha: arquivo ilegível ou diferente. **Interrupção:** ausência da imagem exata; outra imagem não permite comparar os offsets da figura.
+
+**P18 — R/C6, execução da Figura 2.** Diretório: `~/foremost-ng/src`. Comando: `./foremost-ng -v -x evidence2.dd`, exatamente como na figura [artigo.pdf:p.8, Fig. 2]. Resultado esperado: tabela com 3 ELF, 1 script, 6 EXE e 2 ZIP. Os offsets a confrontar são `2228224`, `2467840`, `2615296`, `2811904`, `204740608`, `207390720`, `212445184`, `219508736`, `226570240`, `229046272`, `914484119` e `914965615`, nessa ordem [artigo.pdf:p.8, Fig. 2]. Evidência: saída integral, registro e arquivos. Sucesso: tipos, quantidade e offsets correspondem; contagens VT podem variar [reivindicacoes.md:Critério de reprodução]. Falha: divergência em entrada idêntica e execução concluída. Interrupção: P17 não satisfeito; sem chave, também não se concluirá a parte VT da figura.
+
+**P19 — R/C7, arquitetura, fora da regra do selo.** Diretório: `~/foremost-ng/src`. Comando: `grep -nE 'init_builtin|extract_file' state.c extract.c`. **[NÃO DOCUMENTADO]** Os autores não fornecem um experimento para C7; esta inspeção localiza registro e despacho para comparar com a Figura 1 [artigo.pdf:p.3, Fig. 1; reivindicacoes.md:Regra para o selo R]. Resultado esperado: identificadores, assinaturas e chamadas dos parsers organizados como descrito. Evidência: linhas de código e comparação com o diagrama. Sucesso: correspondência justificável. Falha: organização contraditória. Interrupção: fonte da versão fixada indisponível. C7 será relatada separadamente e **não** contará na decisão de R.
+
+## Tempo estimado
+
+Com rede e todas as entradas já disponíveis: **30 a 90 minutos** para preparação, compilação, execuções e conferência inicial. Processar os 2,845 GB de C6 e aguardar VirusTotal pode ampliar esse intervalo. A obtenção de imagens, da chave VT e de validadores estruturais **não tem duração estimável**, pois os autores não fornecem arquivos ou procedimentos específicos.
+
+| Passo | Selo/reivindicação | Comando ou ação central | Procedimento dos autores? | Estimativa |
+|---|---|---|---|---:|
+| P1 | F/R | `sudo apt-get update` | Dockerfile; `sudo` adaptado | 2–5 min |
+| P2 | F/R | `sudo apt-get install -y gcc make git libssl-dev libcurl4-openssl-dev` | Pacotes do Dockerfile; `sudo` adaptado | 5–15 min |
+| P3 | F/R | `git clone https://github.com/cristianzsh/foremost-ng.git` | Sim | 1–5 min |
+| P4 | F/R | `git -C ./foremost-ng checkout bb812a22cb06ef87b5a2d877dfb6f40eb12d460d` | **[NÃO DOCUMENTADO]** | <1 min |
+| P5 | F/R | `make` | Sim | 1–5 min |
+| P6 | F/R | `sudo make install` | Sim | 1–2 min |
+| P7 | F | `test -r ./disk.img` | **[NÃO DOCUMENTADO]** | <1 min |
+| P8 | F | `foremost-ng -i disk.img -o ./carved-f` | Exemplo, destino adaptado | Conforme imagem |
+| P9 | R/C1 | `foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c1` | Exemplo, destino adaptado | Conforme imagem |
+| P10 | R/C2 | `foremost-ng -i disk.img -o ./carved-c2` | Modo padrão, destino adaptado | Conforme imagem |
+| P11 | R/C3 | `foremost-ng -i disk.img -o ./carved-c3` | Modo padrão, destino adaptado | Conforme imagem |
+| P12 | R/C4 | `foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c4` | Exemplo, destino adaptado | Conforme imagem |
+| P13 | R/C5 | `test -r ./memory.dump` | **[NÃO DOCUMENTADO]** | <1 min |
+| P14 | R/C5 | `test -n "${VT_API_KEY:-}"` | **[NÃO DOCUMENTADO]** | <1 min |
+| P15 | R/C5 | `foremost-ng -x -t elf -i memory.dump -o ./carved-vt` | Exemplo, destino adaptado | Conforme imagem e API |
+| P16 | R/C5 | `env -u VT_API_KEY foremost-ng -x -t elf -i memory.dump -o ./carved-vt-sem-chave` | **[NÃO DOCUMENTADO]** controle | Conforme imagem |
+| P17 | R/C6 | `test -r ./evidence2.dd` | **[NÃO DOCUMENTADO]** | <1 min |
+| P18 | R/C6 | `./foremost-ng -v -x evidence2.dd` | Sim, Figura 2 | Minutos a dezenas de minutos |
+| P19 | R/C7 | `grep -nE 'init_builtin|extract_file' state.c extract.c` | **[NÃO DOCUMENTADO]** inspeção; fora de R | 2–5 min |

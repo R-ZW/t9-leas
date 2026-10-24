@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:22:10 2026
+Invocation: foremost-ng -i comments-only.dd -o ./carved-c2-negativo 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c2-negativo
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: comments-only.dd
+Start: Sat Oct 24 17:22:10 2026
+Length: 52 B (52 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.script            52 B            0                            N/A            
+Finish: Sat Oct 24 17:22:10 2026
+
+1 FILES EXTRACTED
+	
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:22:10 2026

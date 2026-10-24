@@ -1,0 +1,1 @@
+cmp script original/recuperado: exit=0

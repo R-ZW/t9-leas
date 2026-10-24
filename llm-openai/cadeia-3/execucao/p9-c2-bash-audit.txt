@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:57:47 2026
+Invocation: foremost-ng -i /tmp/c2-bash.img -o /temp/output/c2-bash 
+Output directory: /temp/output/c2-bash
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: /tmp/c2-bash.img
+Start: Sat Oct 24 18:57:47 2026
+Length: 51 B (51 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.script            49 B            1                            N/A            
+Finish: Sat Oct 24 18:57:47 2026
+
+1 FILES EXTRACTED
+	
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:57:47 2026

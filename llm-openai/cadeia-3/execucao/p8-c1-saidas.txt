@@ -1,0 +1,31 @@
+[FORA DO ROTEIRO] C1: comparação de bytes e registro
+/temp/output/c1-carved/audit.txt 806 bytes
+/temp/output/c1-carved/evtx/00000000.evtx 2166785 bytes
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:20:42 2026
+Invocation: foremost-ng -t evtx,elf,exe -i /tmp/c1-disk.img -o /temp/output/c1-carved 
+Output directory: /temp/output/c1-carved
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: /tmp/c1-disk.img
+Start: Sat Oct 24 17:20:42 2026
+Length: 2 MB (2166789 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.evtx              2 MB            4                            N/A            
+Finish: Sat Oct 24 17:20:42 2026
+
+1 FILES EXTRACTED
+	
+evtx=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:20:42 2026
+HASHES
+20ec407c08258c1148a7523348f98fc5e4a4e2886c14da3f7a373dcef55ae9fe  /temp/output/c1-carved/audit.txt
+a877022173660e0c1c344394408d1a213eed6263090e70cc2f28ed0e69d147b6  /temp/output/c1-carved/evtx/00000000.evtx
+cmp: EOF on /tmp/python-evtx/tests/data/security.evtx after byte 2166784, in line 8386
+cmp_exit_code=1
+exit_code=0

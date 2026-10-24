@@ -1,0 +1,1 @@
+carved-c3/macho/00000000.macho: Mach-O universal binary with 1 architecture: [i386:\012- Mach-O i386 executable]

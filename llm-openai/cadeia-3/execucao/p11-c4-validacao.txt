@@ -1,0 +1,25 @@
+[FORA DO ROTEIRO] D2: validação ELF
+CASE=ELF32
+4448 /tmp/c4-elf32
+4105 /temp/output/c4-elf32/elf/00000000.elf
+8553 total
+d65136364af3f98d35acdcfac5571bca2f26c220ab845ed6897abc39cb74a292  /tmp/c4-elf32
+766e447dce17afb859c3f8747a3ed2833c332e055c6a761ddffbc9d2a559beb2  /temp/output/c4-elf32/elf/00000000.elf
+/temp/output/c4-elf32/elf/00000000.elf: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, missing section headers at 4408
+prefix_cmp_exit_code=0
+readelf_hl_exit_code=0
+readelf_sections_exit_code=0
+There are 5 section headers, starting at offset 0x1098:
+readelf: Error: Reading 200 bytes extends past end of file for section headers
+CASE=ELF64
+4616 /tmp/c4-elf64
+4108 /temp/output/c4-elf64/elf/00000000.elf
+8724 total
+6939af77f0c0486628522216a8c9b463195be713cc9d6d52252c46e5f67131fd  /tmp/c4-elf64
+32b15e73281f86af25cfeb6d6fb2b94d818f0b656fd20e489071e54b7c2783e8  /temp/output/c4-elf64/elf/00000000.elf
+/temp/output/c4-elf64/elf/00000000.elf: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, missing section headers at 4552
+prefix_cmp_exit_code=0
+readelf_hl_exit_code=0
+readelf_sections_exit_code=0
+There are 5 section headers, starting at offset 0x10c8:
+readelf: Error: Reading 320 bytes extends past end of file for section headers

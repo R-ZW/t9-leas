@@ -1,0 +1,15 @@
+URL=https://github.com/williballenthin/python-evtx.git
+c0007441657899c39180de10a2be1a0e43dbeaf9
+7317150	/home/revisor/dados-evtx
+/home/revisor/dados-evtx/tests/data/dns_log_malformed.evtx 69632 bytes
+/home/revisor/dados-evtx/tests/data/issue_39.evtx 1052672 bytes
+/home/revisor/dados-evtx/tests/data/issue_38.evtx 69632 bytes
+/home/revisor/dados-evtx/tests/data/security.evtx 2166784 bytes
+/home/revisor/dados-evtx/tests/data/issue_43.evtx 2166784 bytes
+/home/revisor/dados-evtx/tests/data/system.evtx 1118208 bytes
+56884d5665a02dd4f26de67eabfad751843eff06f3fdeee7ea57a9911baa090b  /home/revisor/dados-evtx/tests/data/dns_log_malformed.evtx
+a687d8b81ff56da980c2389a31539a97dfe985dccfc5a288230cbb1b0a853279  /home/revisor/dados-evtx/tests/data/issue_39.evtx
+becab64455866f8fae5583fbaa5dab901115e4397ea7abe14f37ad732d5d7eb9  /home/revisor/dados-evtx/tests/data/issue_38.evtx
+5f29a03cf8c1b4bfbd82c4074ccc81ecfe85d7ee15375afc352ed5025c9a4d8d  /home/revisor/dados-evtx/tests/data/security.evtx
+ddc56c81f525f0f5d8f4c1f3bd35cb9b9b87ce08d6cb2550c746da99e875fc5b  /home/revisor/dados-evtx/tests/data/issue_43.evtx
+ccb83cfefc9038017224cd97b800b66e248fe14529649ddf47907e5a2021449e  /home/revisor/dados-evtx/tests/data/system.evtx

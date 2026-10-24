@@ -1,0 +1,30 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libbfio1 libevtx1t64
+The following NEW packages will be installed:
+  libbfio1 libevtx-utils libevtx1t64
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Need to get 1000 kB of archives.
+After this operation, 3033 kB of additional disk space will be used.
+Get:1 https://snapshot.ubuntu.com/ubuntu/20250708T190020Z noble/universe amd64 libbfio1 amd64 20170123-6 [306 kB]
+Get:2 https://snapshot.ubuntu.com/ubuntu/20250708T190020Z noble/universe amd64 libevtx1t64 amd64 20181227-2.1build1 [511 kB]
+Get:3 https://snapshot.ubuntu.com/ubuntu/20250708T190020Z noble/universe amd64 libevtx-utils amd64 20181227-2.1build1 [182 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 1000 kB in 3s (302 kB/s)
+Selecting previously unselected package libbfio1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15915 files and directories currently installed.)
+Preparing to unpack .../libbfio1_20170123-6_amd64.deb ...
+Unpacking libbfio1:amd64 (20170123-6) ...
+Selecting previously unselected package libevtx1t64:amd64.
+Preparing to unpack .../libevtx1t64_20181227-2.1build1_amd64.deb ...
+Unpacking libevtx1t64:amd64 (20181227-2.1build1) ...
+Selecting previously unselected package libevtx-utils.
+Preparing to unpack .../libevtx-utils_20181227-2.1build1_amd64.deb ...
+Unpacking libevtx-utils (20181227-2.1build1) ...
+Setting up libbfio1:amd64 (20170123-6) ...
+Setting up libevtx1t64:amd64 (20181227-2.1build1) ...
+Setting up libevtx-utils (20181227-2.1build1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...

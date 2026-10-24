@@ -1,0 +1,10 @@
+URL=https://github.com/cristianzsh/foremost-ng.git
+COMMIT=bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+37059048	/tmp/foremost-ng
+/tmp/foremost-ng/.git/objects/pack/pack-c243380858680b8a10b6c8fddadb5b391c3b33fd.pack 7346023 bytes
+b401a815267657f3e7b9461063c313d2c9ff0b8bf9eacbda6bb7a190decb4e66  /tmp/foremost-ng/.git/objects/pack/pack-c243380858680b8a10b6c8fddadb5b391c3b33fd.pack
+URL=https://github.com/williballenthin/python-evtx.git
+COMMIT=c0007441657899c39180de10a2be1a0e43dbeaf9
+7445488	/tmp/python-evtx
+/tmp/python-evtx/.git/objects/pack/pack-8c6cbcfd2f7fbd9f734aec3d7e20b809cb7c279d.pack 450422 bytes
+424ba643e1385cea0cd801dd0e594508c77efc90fb45c2d7add73d9a8fae0c0e  /tmp/python-evtx/.git/objects/pack/pack-8c6cbcfd2f7fbd9f734aec3d7e20b809cb7c279d.pack

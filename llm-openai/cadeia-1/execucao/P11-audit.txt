@@ -1,0 +1,33 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:57:11 2026
+Invocation: foremost-ng -i disk.img -o /temp/output/c2 
+Output directory: /temp/output/c2
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 18:57:11 2026
+Length: 5 MB (5242880 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00006144.elf              128 B      3145728                            N/A            
+   1: 00006400.elf              24 KB      3276800                            N/A            
+   2: 00008224.macho            160 B      4210688                            N/A            
+   3: 00000008.evtx            124 KB         4096                            N/A            
+   4: 00000256.evtx              4 MB       131072                            N/A            
+   5: 00006656.script            39 B      3407872                            N/A            
+   6: 00006672.script            56 B      3416064                            N/A            
+   7: 00006688.script            61 B      3424256                            N/A            
+   8: 00006704.script            72 B      3432448                            N/A            
+Finish: Sat Oct 24 18:57:11 2026
+
+9 FILES EXTRACTED
+	
+elf=2
+macho=1
+evtx=2
+script=4
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:57:11 2026

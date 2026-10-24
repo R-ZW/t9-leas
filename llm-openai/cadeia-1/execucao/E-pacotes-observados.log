@@ -1,0 +1,9 @@
+binutils	2.42-4ubuntu2.5
+file	1:5.45-3build1
+gcc	4:13.2.0-7ubuntu1
+git	1:2.43.0-1ubuntu7.3
+libcurl4-openssl-dev:amd64	8.5.0-2ubuntu10.6
+libevtx-utils	20181227-2.1build1
+libssl-dev:amd64	3.0.13-0ubuntu3.5
+make	4.3-4.1build2
+python3	3.12.3-0ubuntu2

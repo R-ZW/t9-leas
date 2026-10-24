@@ -1,0 +1,30 @@
+/temp/output/carved/script/00006656.script 39 bytes
+/temp/output/carved/script/00006672.script 56 bytes
+/temp/output/carved/script/00006688.script 61 bytes
+/temp/output/carved/script/00006704.script 72 bytes
+/temp/output/carved/audit.txt 1543 bytes
+/temp/output/carved/elf/00006400.elf 24596 bytes
+/temp/output/carved/elf/00006144.elf 128 bytes
+/temp/output/carved/macho/00008224.macho 160 bytes
+/temp/output/carved/evtx/00000256.evtx 5111808 bytes
+/temp/output/carved/evtx/00000008.evtx 126976 bytes
+/temp/output/carved/script/00006656.script: Bourne-Again shell script, ASCII text executable
+/temp/output/carved/script/00006672.script: Python script, ASCII text executable
+/temp/output/carved/script/00006688.script: a pwsh script, ASCII text executable
+/temp/output/carved/script/00006704.script: Bourne-Again shell script, ASCII text executable
+/temp/output/carved/audit.txt: ASCII text
+/temp/output/carved/elf/00006400.elf: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 26872
+/temp/output/carved/elf/00006144.elf: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
+/temp/output/carved/macho/00008224.macho: Mach-O universal binary with 1 architecture: [i386:\012- Mach-O i386 executable]
+/temp/output/carved/evtx/00000256.evtx: MS Windows Vista-8.1 Event Log, 26 chunks (no. 25 in use), next record no. 2226, DIRTY
+/temp/output/carved/evtx/00000008.evtx: MS Windows Vista-8.1 Event Log, 1 chunks (no. 0 in use), next record no. 2
+1df9383478ca3a98497c1efe1f611df716032a2e12ce37e2727a6110b3002e3e  /temp/output/carved/script/00006656.script
+8e607092808ad8d19ca598544f83e4af578640ace9eb42cc96e3ca609748f6d2  /temp/output/carved/script/00006672.script
+73d73751b763b9b3c20b3e0bbc6e950acb063f85938ac9cdf12ea0b9df8ef2d3  /temp/output/carved/script/00006688.script
+a0bc90d9dec1e0940f2b0ecd6fb2242856c997e1402ff3da81e43138cdcf5013  /temp/output/carved/script/00006704.script
+4927f6976eab4695d620141bca9ab8ceeb07646d01253772e8a852b1570f38b5  /temp/output/carved/audit.txt
+d0cd2bec3dc342c1c1fd5e8a0e880a4d14e878e7a6e3fe8f858034cc600ae753  /temp/output/carved/elf/00006400.elf
+6cc0b9b0da246ee2f8f6cecc4f007ada981bc88cc61fe2fab74494768d44ad9f  /temp/output/carved/elf/00006144.elf
+b16e9cd13bae6435bdf72a645c40bd4c808e463ab2340ad384e08e16602cf8f6  /temp/output/carved/macho/00008224.macho
+fcf4e99776dec1b48da1aeab3dc60b63fa0025e07ed8736a160907e5e4d1d73a  /temp/output/carved/evtx/00000256.evtx
+619e70c0986c61d3f3b4d2ad59b0aa911f51d6fb9ca3c2bb03d06859fb85b357  /temp/output/carved/evtx/00000008.evtx

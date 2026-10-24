@@ -1,0 +1,8 @@
+[FORA DO ROTEIRO] D1: cópias de saídas para inspeção
+     50 /home/revisor/evidencias/p7-script.script
+   8688 /home/revisor/evidencias/p10-c3-fat.macho
+2166785 /home/revisor/evidencias/p8-c1-extraido.evtx
+2175523 total
+381faf711a99b2b6fafb23e8acc8731e5211fe417e8d1c77520f6f1ce9927f5e  /home/revisor/evidencias/p7-script.script
+9aa400562ce6e881bacd45c9b2ab1438c3a99e71c41da30e076f6c741ad2e20b  /home/revisor/evidencias/p10-c3-fat.macho
+a877022173660e0c1c344394408d1a213eed6263090e70cc2f28ed0e69d147b6  /home/revisor/evidencias/p8-c1-extraido.evtx

@@ -1,0 +1,29 @@
+carved-c4/audit.txt 855 bytes
+carved-c4/elf/00000000.elf 4105 bytes
+2fe8382185d67202c9b06f2441e9c37f60579c9c0ee2ac37f0ddae0effea9aaf  carved-c4/audit.txt
+766e447dce17afb859c3f8747a3ed2833c332e055c6a761ddffbc9d2a559beb2  carved-c4/elf/00000000.elf
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:59:07 2026
+Invocation: foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c4 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c4
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 18:59:07 2026
+Length: 4 KB (4448 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.elf               4 KB            0                            N/A            
+Finish: Sat Oct 24 18:59:07 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:59:07 2026
+carved-c4/elf/00000000.elf: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, missing section headers at 4408
+readelf: Error: Reading 200 bytes extends past end of file for section headers
+  Class:                             ELF32

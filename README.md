@@ -10,7 +10,7 @@ Tarefa 9 de LEAS 2026/2 (Unipampa): avaliação dos selos F e R do **Foremost-NG
 | LLM | Responsável | Situação |
 |---|---|---|
 | Claude | Eduardo Prates Tiadoro | 3 cadeias concluídas em 24/10/2026 — [`llm-anthropic/`](llm-anthropic/LEIA-ME.md) |
-| GPT | Reinaldo Zimmer Wendt | a fazer |
+| GPT | Reinaldo Zimmer Wendt | 3 cadeias concluídas em 24/10/2026 — [`llm-openai/`](llm-openai/LEIA-ME.md) |
 | Gemini | Miguel Ângelo Bastos Muniz | a fazer |
 
 ## Estrutura
@@ -41,3 +41,12 @@ Detalhes em [`analise/resumo-claude.md`](analise/resumo-claude.md).
   - sem chave, a coluna do VirusTotal registra "Clean (0)" (com chave inválida também, nas cadeias 1 e 3, que testaram); com a chave válida, o rótulo bate com a consulta direta à API;
   - `evidence2.dd` (Fig. 2, C6) continua indisponível.
 - **Custo médio por cadeia:** cerca de 29 min e 108 mil tokens de saída (14 milhões no total, quase todos leitura de cache). A execução (E) leva mais da metade do tempo e cerca de 80% dos tokens.
+
+## Resultado do GPT (3 cadeias)
+
+Detalhes, medições por sessão e diferenças entre cadeias em [`analise/resumo-openai.md`](analise/resumo-openai.md).
+
+- **Etapa A e B2:** F e R = Não atribuir nas três cadeias.
+- O artefato compilou e executou um teste mínimo nos três contêineres. Os controles complementares observaram extração de scripts compostos só por comentários, ausência de extração Mach-O `thin` e limitações na delimitação de EVTX e ELF.
+- A imagem `evidence2.dd` da Figura 2 permaneceu indisponível; C6 não foi reproduzida.
+- As três etapas E foram interrompidas pelo limite de uso do Codex e retomadas nos mesmos chats e contêineres. Os tokens e tempos das duas sessões E de cada cadeia foram preservados nas medições.

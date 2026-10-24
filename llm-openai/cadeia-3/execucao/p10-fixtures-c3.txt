@@ -1,0 +1,13 @@
+[FORA DO ROTEIRO] D2: Mach-O objetos gerados pelo revisor via clang, sem dados dos autores
+clang64_exit_code=0 clang32_exit_code=0 lipo_exit_code=0
+/tmp/c3-fat.o:    Mach-O universal binary with 2 architectures: [i386:\012- Mach-O i386 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+/tmp/c3-thin32.o: Mach-O i386 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+/tmp/c3-thin64.o: Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+8688 /tmp/c3-fat.o
+ 428 /tmp/c3-thin32.o
+ 496 /tmp/c3-thin64.o
+9612 total
+9aa400562ce6e881bacd45c9b2ab1438c3a99e71c41da30e076f6c741ad2e20b  /tmp/c3-fat.o
+868f1d674a470a650595ae1fcf2ff12975dd13a0f924d2cbf1a4ffb40c0a94ed  /tmp/c3-thin32.o
+f01254e4ea7284d7c23f08c0bb993a7c6be36aed0ae5f78c2c7c0fc484f0d1dc  /tmp/c3-thin64.o
+Architectures in the fat file: /tmp/c3-fat.o are: i386 x86_64 

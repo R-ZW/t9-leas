@@ -1,0 +1,9 @@
+Installing binary to /usr/local/bin
+install -d /usr/local/bin
+install -m 755 foremost-ng /usr/local/bin
+Installing man page to /usr/share/man/man8
+install -d /usr/share/man/man8
+install -m 444 foremost-ng.8.gz /usr/share/man/man8
+Installing config to /usr/local/etc
+install -d /usr/local/etc
+install -m 444 foremost.conf /usr/local/etc

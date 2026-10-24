@@ -1,0 +1,4 @@
+2166784 /home/revisor/dados-evtx/tests/data/security.evtx
+2232320 evtx-com-cauda.dd
+4399104 total
+1464162bbd1ee727ad651e82fb8146bf999086d824378209af44d65b815216ca  evtx-com-cauda.dd

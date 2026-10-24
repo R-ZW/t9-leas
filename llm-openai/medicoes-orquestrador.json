@@ -1,0 +1,44 @@
+{
+  "chat_id": "01a16ee0-8087-7a63-beec-e41d9cc064f4",
+  "etapas": {
+    "orquestracao-inicial": {
+      "turn_id": "01a16ee0-a760-7d13-8ee8-0fd79117384f",
+      "inicio_utc": "2026-10-24T17:06:19.584Z",
+      "tokens": {
+        "input_tokens": 6207820,
+        "cached_input_tokens": 6104704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27155,
+        "reasoning_output_tokens": 9656,
+        "total_tokens": 6234975
+      },
+      "fim_utc": "2026-10-24T17:22:38.916Z",
+      "duracao_s": 979.3
+    },
+    "retomada": {
+      "turn_id": "01a16f44-fff5-7701-894e-5c1725525541",
+      "inicio_utc": "2026-10-24T18:55:55.426Z",
+      "tokens": {
+        "input_tokens": 14939533,
+        "cached_input_tokens": 14759040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38928,
+        "reasoning_output_tokens": 15131,
+        "total_tokens": 14978461
+      },
+      "observado_utc": "2026-10-24T19:15:06.459Z",
+      "duracao_s_ate_registro": 1151.0,
+      "parcial": true
+    }
+  },
+  "total_tokens": {
+    "input_tokens": 21147353,
+    "cached_input_tokens": 20863744,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 66083,
+    "reasoning_output_tokens": 24787,
+    "total_tokens": 21213436
+  },
+  "tempo_ativo_s": 2130.3,
+  "observacao": "O turno de retomada é uma fotografia anterior à resposta final do orquestrador."
+}

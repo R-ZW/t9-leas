@@ -1,0 +1,41 @@
+FILE=/tmp/foremost-ng/src/testdata/issue_38.evtx
+evtxinfo 20181227
+
+Windows Event Viewer Log (EVTX) information:
+	Version				: 3.1
+	Number of records		: 1
+	Number of recovered records	: 38
+
+RC=0
+FILE=/temp/output/c1/evtx/00000008.evtx
+evtxinfo 20181227
+
+Windows Event Viewer Log (EVTX) information:
+	Version				: 3.1
+	Number of records		: 1
+	Number of recovered records	: 38
+
+RC=0
+FILE=/tmp/foremost-ng/src/testdata/security.evtx
+evtxinfo 20181227
+
+Windows Event Viewer Log (EVTX) information:
+	Version				: 3.1
+	Number of records		: 2261
+	Number of recovered records	: 30
+	Log type			: Security
+	Flags:
+		Is dirty
+
+RC=0
+FILE=/temp/output/c1/evtx/00000256.evtx
+evtxinfo 20181227
+
+Windows Event Viewer Log (EVTX) information:
+	Version				: 3.1
+	Number of records		: 2261
+	Number of recovered records	: 30
+	Flags:
+		Is dirty
+
+RC=0

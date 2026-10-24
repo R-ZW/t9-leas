@@ -1,0 +1,19 @@
+[FORA DO ROTEIRO] D2: ELF32/ELF64 mínimos gerados pelo revisor
+elf32_build_exit_code=0 elf64_build_exit_code=0
+/tmp/c4-elf32: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, not stripped
+/tmp/c4-elf64: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+4448 /tmp/c4-elf32
+4616 /tmp/c4-elf64
+9064 total
+d65136364af3f98d35acdcfac5571bca2f26c220ab845ed6897abc39cb74a292  /tmp/c4-elf32
+6939af77f0c0486628522216a8c9b463195be713cc9d6d52252c46e5f67131fd  /tmp/c4-elf64
+  Class:                             ELF32
+  Machine:                           Intel 80386
+Program Headers:
+  LOAD           0x000000 0x08048000 0x08048000 0x00074 0x00074 R   0x1000
+  LOAD           0x001000 0x08049000 0x08049000 0x00009 0x00009 R E 0x1000
+  Class:                             ELF64
+  Machine:                           Advanced Micro Devices X86-64
+Program Headers:
+  LOAD           0x0000000000000000 0x0000000000400000 0x0000000000400000
+  LOAD           0x0000000000001000 0x0000000000401000 0x0000000000401000

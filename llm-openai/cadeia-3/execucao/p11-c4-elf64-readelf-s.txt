@@ -1,0 +1,2 @@
+There are 5 section headers, starting at offset 0x10c8:
+readelf: Error: Reading 320 bytes extends past end of file for section headers

@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 19:00:50 2026
+Invocation: foremost-ng -x -t elf -i memory.dump -o ./carved-vt-sem-chave 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-vt-sem-chave
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: memory.dump
+Start: Sat Oct 24 19:00:50 2026
+Length: 4 KB (4616 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.elf               4 KB            0                            Clean (0)      
+Finish: Sat Oct 24 19:00:50 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 19:00:50 2026

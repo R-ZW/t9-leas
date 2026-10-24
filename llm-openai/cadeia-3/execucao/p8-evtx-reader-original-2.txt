@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/tmp/evtx-venv/lib/python3.12/site-packages/Evtx/Evtx.py", line 85, in wrapped
+    raise TypeError("An Evtx object must be used with" " a context (see the `with` statement).")
+TypeError: An Evtx object must be used with a context (see the `with` statement).

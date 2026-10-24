@@ -1,0 +1,12 @@
+00006656.script 39 bytes
+00006672.script 56 bytes
+00006688.script 61 bytes
+00006704.script 72 bytes
+1df9383478ca3a98497c1efe1f611df716032a2e12ce37e2727a6110b3002e3e  /temp/output/c2/script/00006656.script
+8e607092808ad8d19ca598544f83e4af578640ace9eb42cc96e3ca609748f6d2  /temp/output/c2/script/00006672.script
+73d73751b763b9b3c20b3e0bbc6e950acb063f85938ac9cdf12ea0b9df8ef2d3  /temp/output/c2/script/00006688.script
+a0bc90d9dec1e0940f2b0ecd6fb2242856c997e1402ff3da81e43138cdcf5013  /temp/output/c2/script/00006704.script
+sample-bash.script 00006656.script CMP_RC=0
+sample-python.script 00006672.script CMP_RC=0
+sample-powershell.script 00006688.script CMP_RC=0
+only-comments.script 00006704.script CMP_RC=0

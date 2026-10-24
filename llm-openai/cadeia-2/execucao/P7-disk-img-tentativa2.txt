@@ -1,0 +1,1 @@
+P7 tentativa 2 test -r ./disk.img: exit=0

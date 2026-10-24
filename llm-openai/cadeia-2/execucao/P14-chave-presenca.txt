@@ -1,0 +1,1 @@
+P14 VT_API_KEY presente: exit=0

@@ -1,0 +1,11 @@
+readelf: Error: Reading 200 bytes extends past end of file for section headers
+
+Elf file type is EXEC (Executable file)
+Entry point 0x8049000
+There are 2 program headers, starting at offset 52
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x08048000 0x08048000 0x00074 0x00074 R   0x1000
+  LOAD           0x001000 0x08049000 0x08049000 0x00009 0x00009 R E 0x1000
+readelf_rc=0

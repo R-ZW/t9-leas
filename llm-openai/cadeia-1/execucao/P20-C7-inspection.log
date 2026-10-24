@@ -1,0 +1,36 @@
+STATE
+    init_builtin(state, ELF, "elf", "\x7F\x45\x4C\x46",
+                 NULL, 4, 0, 50 * MEGABYTE, TRUE);
+
+    init_builtin(state, MACHO, "macho", "\xCA\xFE\xBA\xBE",
+                 NULL, 4, 0, 10 * MEGABYTE, TRUE);
+
+    init_builtin(state, MACHO, "macho", "\xCE\xFA\xED\xFE",
+                 NULL, 4, 0, 10 * MEGABYTE, TRUE);
+
+    init_builtin(state, MACHO, "macho", "\xCF\xFA\xED\xFE",
+                 NULL, 4, 0, 10 * MEGABYTE, TRUE);
+
+    init_builtin(state, EVTX, "evtx", "ElfFile\0\0",
+                 NULL, 8, 0, 100 * MEGABYTE, TRUE);
+
+    init_builtin(state, SCRIPT, "script", "#!",
+                 NULL, 2, 0, 2 * MEGABYTE, TRUE);
+DISPATCH
+/**
+ * Dispatcher that calls the appropriate extract_*
+ * function based on needle->type (JPEG, PNG, AVI, ZIP, OLE, etc.).
+ */
+unsigned char *extract_file(f_state *s, uint64_t c_offset, unsigned char *foundat, uint64_t buflen,
+                            s_spec *needle, uint64_t f_offset) {
+    if (needle->type == JPEG) {
+    } else if (needle->type == EXE) {
+        return extract_exe(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == ELF) {
+        return extract_elf(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MACHO) {
+        return extract_macho(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == EVTX) {
+        return extract_evtx(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == SCRIPT) {
+        return extract_script(s, c_offset, foundat, buflen, needle, f_offset);

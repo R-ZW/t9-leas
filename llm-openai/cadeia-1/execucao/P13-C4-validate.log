@@ -1,0 +1,43 @@
+00006400.elf 24596 bytes
+00006144.elf 128 bytes
+/tmp/foremost-ng/src/testdata/sample32.elf: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
+/tmp/foremost-ng/src/testdata/sample64.elf: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8aeac9874954214754c1c072a55bedc595b32c14, for GNU/Linux 3.2.0, stripped
+/temp/output/c4/elf/00006144.elf:           ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
+/temp/output/c4/elf/00006400.elf:           ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 26872
+6cc0b9b0da246ee2f8f6cecc4f007ada981bc88cc61fe2fab74494768d44ad9f  /tmp/foremost-ng/src/testdata/sample32.elf
+7e419b0d95e2ae12993878ad13ad4b911ce5464c15cde7a6adce2fca7ee22706  /tmp/foremost-ng/src/testdata/sample64.elf
+6cc0b9b0da246ee2f8f6cecc4f007ada981bc88cc61fe2fab74494768d44ad9f  /temp/output/c4/elf/00006144.elf
+d0cd2bec3dc342c1c1fd5e8a0e880a4d14e878e7a6e3fe8f858034cc600ae753  /temp/output/c4/elf/00006400.elf
+READELF=/temp/output/c4/elf/00006144.elf
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x8048000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          0 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         1
+  Size of section headers:           40 (bytes)
+  Number of section headers:         0
+  Section header string table index: 0
+
+There are no sections in this file.
+RC=0
+READELF=/temp/output/c4/elf/00006400.elf
+readelf: Error: Reading 1920 bytes extends past end of file for section headers
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x19f0
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          25016 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         13
+  Size of section headers:           64 (bytes)
+  Number of section headers:         30
+  Section header string table index: 29
+readelf: Error: Reading 1920 bytes extends past end of file for section headers
+There are 30 section headers, starting at offset 0x61b8:
+RC=0

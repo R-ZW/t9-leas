@@ -1,0 +1,23 @@
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.2 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+x86_64
+16
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       891Mi       5.2Gi        26Mi       1.7Gi       6.7Gi
+Swap:          2.0Gi          0B       2.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+overlay        1007G  4.2G  952G   1% /
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+GNU Make 4.3
+git version 2.43.0
+Python 3.12.3
+file-5.45
+OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+libcurl4-openssl-dev:amd64	8.5.0-2ubuntu10.6
+libssl-dev:amd64	3.0.13-0ubuntu3.5
+bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+955c770e29893527f789e11afc28dcc6b83d7af4a64f14b416e39f554b388e0a  /home/revisor/artefato.zip

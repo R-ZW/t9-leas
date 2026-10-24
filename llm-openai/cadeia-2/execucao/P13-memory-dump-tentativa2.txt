@@ -1,0 +1,1 @@
+P13 tentativa 2 test -r ./memory.dump: exit=0

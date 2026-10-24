@@ -1,0 +1,84 @@
+{
+  "chat_id": "01a16ee2-e1db-7851-b737-6ef70a9095e1",
+  "etapas": {
+    "A": {
+      "turn_id": "01a16ee2-e446-7040-b5a1-78a58778d30b",
+      "inicio_utc": "2026-10-24T17:08:47.159Z",
+      "tokens": {
+        "input_tokens": 1819067,
+        "cached_input_tokens": 1752192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14545,
+        "reasoning_output_tokens": 7659,
+        "total_tokens": 1833612
+      },
+      "fim_utc": "2026-10-24T17:12:50.580Z",
+      "duracao_s": 243.4
+    },
+    "B1": {
+      "turn_id": "01a16ee6-dc92-7072-8332-ba6c3d4e6176",
+      "inicio_utc": "2026-10-24T17:13:06.053Z",
+      "tokens": {
+        "input_tokens": 95426,
+        "cached_input_tokens": 89600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11279,
+        "reasoning_output_tokens": 6705,
+        "total_tokens": 106705
+      },
+      "fim_utc": "2026-10-24T17:15:33.115Z",
+      "duracao_s": 147.1
+    },
+    "E-interrompida": {
+      "turn_id": "01a16ee9-55b8-7a41-900f-1f8f3e1d7673",
+      "inicio_utc": "2026-10-24T17:15:48.144Z",
+      "tokens": {
+        "input_tokens": 4157923,
+        "cached_input_tokens": 4118144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13772,
+        "reasoning_output_tokens": 6783,
+        "total_tokens": 4171695
+      },
+      "fim_utc": "2026-10-24T17:22:55.288Z",
+      "duracao_s": 427.1
+    },
+    "E-retomada": {
+      "turn_id": "01a16f45-bbdf-7c12-86cc-7b19a9cd8520",
+      "inicio_utc": "2026-10-24T18:56:43.503Z",
+      "tokens": {
+        "input_tokens": 8336483,
+        "cached_input_tokens": 8173568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34908,
+        "reasoning_output_tokens": 13104,
+        "total_tokens": 8371391
+      },
+      "fim_utc": "2026-10-24T19:06:09.426Z",
+      "duracao_s": 565.9
+    },
+    "B2": {
+      "turn_id": "01a16f4e-842c-7f61-bab8-32290c46ba2f",
+      "inicio_utc": "2026-10-24T19:06:19.063Z",
+      "tokens": {
+        "input_tokens": 770391,
+        "cached_input_tokens": 756864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7363,
+        "reasoning_output_tokens": 5223,
+        "total_tokens": 777754
+      },
+      "fim_utc": "2026-10-24T19:07:51.506Z",
+      "duracao_s": 92.4
+    }
+  },
+  "total_tokens": {
+    "input_tokens": 15179290,
+    "cached_input_tokens": 14890368,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 81867,
+    "reasoning_output_tokens": 39474,
+    "total_tokens": 15261157
+  },
+  "tempo_ativo_s": 1475.9
+}

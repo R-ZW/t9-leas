@@ -1,0 +1,26 @@
+carved-c3/audit.txt 841 bytes
+carved-c3/macho/00000000.macho 128 bytes
+c0a68e61e9ebd37bf6d2591603db1e8f1ebe3bb5aba0b7bf03912443059f42de  carved-c3/audit.txt
+7b08fc621ed2f3400984172b4132a20a3606c64364393eacbb5e83c9567e462b  carved-c3/macho/00000000.macho
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:58:02 2026
+Invocation: foremost-ng -i disk.img -o ./carved-c3 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c3
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 18:58:02 2026
+Length: 128 B (128 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.macho            128 B            0                            N/A            
+Finish: Sat Oct 24 18:58:02 2026
+
+1 FILES EXTRACTED
+	
+macho=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:58:02 2026

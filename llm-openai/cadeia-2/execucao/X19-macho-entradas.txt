@@ -1,0 +1,6 @@
+macho-fat.dd:    Mach-O universal binary with 1 architecture: [i386:\012- Mach-O i386 executable]
+macho-thin32.dd: Mach-O i386 executable
+macho-thin64.dd: Mach-O 64-bit x86_64 executable
+7b08fc621ed2f3400984172b4132a20a3606c64364393eacbb5e83c9567e462b  macho-fat.dd
+9cac902441c6893b9160eb1c0ae47abd48c74ee276c85866414178d9ca011835  macho-thin32.dd
+b93746afce45bf1fb8c8f99bc9f845c688abc3780258bf1726f9969d082959cd  macho-thin64.dd

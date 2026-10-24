@@ -1,0 +1,2 @@
+40 disk.img
+d984f2d82ee4f328bd3ebd4effe6f7ca685d2a9e1216a2d3ecefdce7dc687f6e  disk.img

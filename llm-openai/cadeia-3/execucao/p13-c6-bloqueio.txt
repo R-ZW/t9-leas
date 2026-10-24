@@ -1,0 +1,4 @@
+P13 C6: conferência da entrada publicada
+zip_grep_exit_code=1
+src_test_exit_code=1
+Comando ./foremost-ng -v -x evidence2.dd não executado: imagem exata indisponível

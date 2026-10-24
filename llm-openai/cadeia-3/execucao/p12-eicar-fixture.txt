@@ -1,0 +1,12 @@
+[FORA DO ROTEIRO] D3: EICAR ZIP público em imagem sintética
+184 /tmp/eicar_com.zip
+186 /tmp/c5-eicar.img
+370 total
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  /tmp/eicar_com.zip
+77b072c77dedc3f3d7fa850b371f4e5fae664fe3b947a2aa880ec2aeef10a5ab  /tmp/c5-eicar.img
+Archive:  /tmp/eicar_com.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       68  2000-05-24 19:07   eicar.com
+---------                     -------
+       68                     1 file

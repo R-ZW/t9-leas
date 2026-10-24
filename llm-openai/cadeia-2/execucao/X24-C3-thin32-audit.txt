@@ -1,0 +1,20 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:58:16 2026
+Invocation: foremost-ng -i macho-thin32.dd -o ./carved-c3-thin32 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c3-thin32
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: macho-thin32.dd
+Start: Sat Oct 24 18:58:16 2026
+Length: 100 B (100 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+Finish: Sat Oct 24 18:58:16 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:58:16 2026

@@ -1,0 +1,8 @@
+issue_38.evtx source=69632 output=126976
+PREFIX_RC=0
+becab64455866f8fae5583fbaa5dab901115e4397ea7abe14f37ad732d5d7eb9  /tmp/foremost-ng/src/testdata/issue_38.evtx
+619e70c0986c61d3f3b4d2ad59b0aa911f51d6fb9ca3c2bb03d06859fb85b357  /temp/output/c1/evtx/00000008.evtx
+security.evtx source=2166784 output=5111808
+PREFIX_RC=0
+5f29a03cf8c1b4bfbd82c4074ccc81ecfe85d7ee15375afc352ed5025c9a4d8d  /tmp/foremost-ng/src/testdata/security.evtx
+fcf4e99776dec1b48da1aeab3dc60b63fa0025e07ed8736a160907e5e4d1d73a  /temp/output/c1/evtx/00000256.evtx

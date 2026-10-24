@@ -1,0 +1,28 @@
+Processing /tmp/python-evtx
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting hexdump>=3.3 (from python-evtx==0.8.1)
+  Downloading hexdump-3.3.zip (12 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: python-evtx, hexdump
+  Building wheel for python-evtx (pyproject.toml): started
+  Building wheel for python-evtx (pyproject.toml): finished with status 'done'
+  Created wheel for python-evtx: filename=python_evtx-0.8.1-py3-none-any.whl size=40553 sha256=3e82caaf1124187b44970f07af574ac5c5f5642dccc1df904f1e332e541e6848
+  Stored in directory: /home/revisor/.cache/pip/wheels/26/46/56/de4a23e9a6fd57d55f6987694d2804280430d86b987fad143d
+  Building wheel for hexdump (pyproject.toml): started
+  Building wheel for hexdump (pyproject.toml): finished with status 'done'
+  Created wheel for hexdump: filename=hexdump-3.3-py3-none-any.whl size=8933 sha256=2160019f12bf0054248ab5673acd874b642f36eb66d24774533089078c3a1ebe
+  Stored in directory: /home/revisor/.cache/pip/wheels/5e/b9/b5/227a20e7e8bbdb2b17e46a087c0f0119059ee65fe8374cac18
+Successfully built python-evtx hexdump
+Installing collected packages: hexdump, python-evtx
+Successfully installed hexdump-3.3 python-evtx-0.8.1
+exit_code=0

@@ -1,0 +1,26 @@
+carved-c2/script/00000000.script 40 bytes
+carved-c2/audit.txt 840 bytes
+d984f2d82ee4f328bd3ebd4effe6f7ca685d2a9e1216a2d3ecefdce7dc687f6e  carved-c2/script/00000000.script
+1e7fd085c9e9dbe72edd6da34e974c755c495b13114c471a7a80d2743d22a0b3  carved-c2/audit.txt
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:21:44 2026
+Invocation: foremost-ng -i disk.img -o ./carved-c2 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c2
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 17:21:44 2026
+Length: 40 B (40 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.script            40 B            0                            N/A            
+Finish: Sat Oct 24 17:21:44 2026
+
+1 FILES EXTRACTED
+	
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:21:44 2026

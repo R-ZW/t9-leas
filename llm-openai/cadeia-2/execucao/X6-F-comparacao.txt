@@ -1,0 +1,1 @@
+cmp entrada/recuperado: exit=0

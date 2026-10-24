@@ -1,0 +1,21 @@
+carved-c3-thin64/audit.txt 767 bytes
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:58:27 2026
+Invocation: foremost-ng -i macho-thin64.dd -o ./carved-c3-thin64 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c3-thin64
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: macho-thin64.dd
+Start: Sat Oct 24 18:58:27 2026
+Length: 120 B (120 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+Finish: Sat Oct 24 18:58:27 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:58:27 2026

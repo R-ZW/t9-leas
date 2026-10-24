@@ -1,0 +1,10 @@
+[FORA DO ROTEIRO] D2: validação C3
+ 8688 /tmp/c3-fat.o
+ 8688 /temp/output/c3-fat/macho/00000000.macho
+17376 total
+9aa400562ce6e881bacd45c9b2ab1438c3a99e71c41da30e076f6c741ad2e20b  /tmp/c3-fat.o
+9aa400562ce6e881bacd45c9b2ab1438c3a99e71c41da30e076f6c741ad2e20b  /temp/output/c3-fat/macho/00000000.macho
+cmp_exit_code=0
+/temp/output/c3-fat/macho/00000000.macho: Mach-O universal binary with 2 architectures: [i386:\012- Mach-O i386 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+Architectures in the fat file: /temp/output/c3-fat/macho/00000000.macho are: i386 x86_64 
+exit_code=0

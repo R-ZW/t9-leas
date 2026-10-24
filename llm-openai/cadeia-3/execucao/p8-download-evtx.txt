@@ -1,0 +1,12 @@
+Cloning into '/tmp/python-evtx'...
+URL=https://github.com/williballenthin/python-evtx.git
+c0007441657899c39180de10a2be1a0e43dbeaf9
+6871040
+2157c8869ff580b5370ff3090d5f783428bf9decab2acc539f6ba3fd76250106  -
+/tmp/python-evtx/tests/data/dns_log_malformed.evtx 69632 bytes
+/tmp/python-evtx/tests/data/issue_39.evtx 1052672 bytes
+/tmp/python-evtx/tests/data/issue_38.evtx 69632 bytes
+/tmp/python-evtx/tests/data/security.evtx 2166784 bytes
+/tmp/python-evtx/tests/data/issue_43.evtx 2166784 bytes
+/tmp/python-evtx/tests/data/system.evtx 1118208 bytes
+exit_code=0

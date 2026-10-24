@@ -1,0 +1,26 @@
+carved-vt-sem-chave/audit.txt 875 bytes
+carved-vt-sem-chave/elf/00000000.elf 4105 bytes
+f73a5fd3625f04e5025a39e3d7330e6bace7dab4c8728e4525c7e65a91654b8e  carved-vt-sem-chave/audit.txt
+4303231ef3b5bf8e5f655fa624b972b5cb6c055d8bf54350b7dcc73402d9af99  carved-vt-sem-chave/elf/00000000.elf
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 19:00:50 2026
+Invocation: foremost-ng -x -t elf -i memory.dump -o ./carved-vt-sem-chave 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-vt-sem-chave
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: memory.dump
+Start: Sat Oct 24 19:00:50 2026
+Length: 4 KB (4616 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.elf               4 KB            0                            Clean (0)      
+Finish: Sat Oct 24 19:00:50 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 19:00:50 2026

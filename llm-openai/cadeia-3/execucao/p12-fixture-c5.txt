@@ -1,0 +1,4 @@
+[FORA DO ROTEIRO] D2: memory.dump sintético com ELF64 do revisor
+4618 memory.dump
+3c67a7007c0a93ef1033a277165197eec9910039c002dcbd575d2365fb813f44  memory.dump
+VT_KEY_PRESENTE=sim

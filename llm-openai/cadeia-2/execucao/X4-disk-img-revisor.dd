@@ -1,0 +1,2 @@
+#!/bin/sh
+printf smoke-test-foremost-ng

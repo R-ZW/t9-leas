@@ -1,0 +1,12 @@
+[FORA DO ROTEIRO] D2: cinco imagens sintéticas C2, sem amostras dos autores
+ 51 /tmp/c2-bash.img
+ 56 /tmp/c2-comments.img
+ 63 /tmp/c2-pwsh.img
+ 53 /tmp/c2-python.img
+ 17 /tmp/c2-short.img
+240 total
+4c9bd3c481bf996c592d2c0d38cec9beb49171f1cea3c625ceb7aa57b34a4b94  /tmp/c2-bash.img
+b3873a05938a6c3e9661dec63c56c55ce90ceeeefe6be6051a702516848c7b12  /tmp/c2-comments.img
+97ec4831f80ad3e98e29aa08c20df3c5269d886cb968f3277250083b22f8cf46  /tmp/c2-pwsh.img
+fc08ff27febf1b51d82478d83f3f3643652ae57f6c64aa894f54fe06d428d091  /tmp/c2-python.img
+1ad6a0790d065a4fd971608440201e93f9df8306d1ddae95eeed8a17eeb364c0  /tmp/c2-short.img

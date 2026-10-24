@@ -1,0 +1,26 @@
+carved-c1/audit.txt 859 bytes
+carved-c1/evtx/00000000.evtx 2166784 bytes
+8ac7dab994fb71bf850397f478bf4262d52c652687da7ac8d1e5dab0365ccbd1  carved-c1/audit.txt
+5f29a03cf8c1b4bfbd82c4074ccc81ecfe85d7ee15375afc352ed5025c9a4d8d  carved-c1/evtx/00000000.evtx
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:21:10 2026
+Invocation: foremost-ng -t evtx,elf,exe -i disk.img -o ./carved-c1 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c1
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 17:21:10 2026
+Length: 2 MB (2166784 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.evtx              2 MB            0                            N/A            
+Finish: Sat Oct 24 17:21:10 2026
+
+1 FILES EXTRACTED
+	
+evtx=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:21:10 2026

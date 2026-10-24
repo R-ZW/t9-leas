@@ -1,0 +1,23 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:58:03 2026
+Invocation: foremost-ng -x -t elf -i memory.dump -o ./carved-files 
+Output directory: /tmp/foremost-ng/src/carved-files
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: memory.dump
+Start: Sat Oct 24 18:58:03 2026
+Length: 5 MB (5242880 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00006144.elf              128 B      3145728                            Clean (0)      
+   1: 00006400.elf              24 KB      3276800                            Clean (0)      
+Finish: Sat Oct 24 18:58:04 2026
+
+2 FILES EXTRACTED
+	
+elf=2
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:58:04 2026

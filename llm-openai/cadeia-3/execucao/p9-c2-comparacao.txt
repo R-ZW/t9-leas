@@ -1,0 +1,19 @@
+[FORA DO ROTEIRO] D2: confronto exato das saídas C2
+CASE=bash
+49 /temp/output/c2-bash/script/00000000.script
+2cc10d3f444470bba36901f364e660d98a01454fc2d900894624a1867e662b20  /temp/output/c2-bash/script/00000000.script
+cmp_exit_code=0
+CASE=python
+51 /temp/output/c2-python/script/00000000.script
+a363fec2c4c8aebea1af5b1618fb37cc2751a7e3174d144e560952b76e41cb6e  /temp/output/c2-python/script/00000000.script
+cmp_exit_code=0
+CASE=pwsh
+61 /temp/output/c2-pwsh/script/00000000.script
+aaa822ef81f0ed07ced207f7c2fd709846a0989326ba7d881d8ea98bc63b6e6f  /temp/output/c2-pwsh/script/00000000.script
+cmp_exit_code=0
+CASE=comments
+54 /temp/output/c2-comments/script/00000000.script
+38ae995b600ac02348886f996f75862e39033a234d24d920b0d28c0f0f25a29b  /temp/output/c2-comments/script/00000000.script
+cmp_exit_code=0
+CASE=short
+/temp/output/c2-short/audit.txt 684 bytes

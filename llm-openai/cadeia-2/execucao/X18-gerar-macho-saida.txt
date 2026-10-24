@@ -1,0 +1,3 @@
+macho-fat.dd 128
+macho-thin32.dd 100
+macho-thin64.dd 120

@@ -1,0 +1,4 @@
+libevtx-dev - Windows XML Event Log format access library -- development files
+libevtx-utils - Windows XML Event Log format access library -- Utilities
+libevtx1t64 - Windows XML Event Log format access library
+python3-libevtx - Windows XML Event Log format access library -- Python 3 bindings

@@ -1,0 +1,10 @@
+00008224.macho 160 bytes
+/tmp/foremost-ng/src/testdata/fat.macho:    Mach-O universal binary with 1 architecture: [i386:\012- Mach-O i386 executable]
+/tmp/foremost-ng/src/testdata/thin32.macho: Mach-O i386 executable
+/tmp/foremost-ng/src/testdata/thin64.macho: Mach-O 64-bit x86_64 executable
+/temp/output/c3/macho/00008224.macho:       Mach-O universal binary with 1 architecture: [i386:\012- Mach-O i386 executable]
+b16e9cd13bae6435bdf72a645c40bd4c808e463ab2340ad384e08e16602cf8f6  /tmp/foremost-ng/src/testdata/fat.macho
+ee5007a49d3f6bcec427b9f68275b365f49b9acc219d1f895cf3aaba420f047e  /tmp/foremost-ng/src/testdata/thin32.macho
+026fed1dddc3e1cd6e94e08591426e5194c219ffda31014fec87dafa5e1e8ad1  /tmp/foremost-ng/src/testdata/thin64.macho
+b16e9cd13bae6435bdf72a645c40bd4c808e463ab2340ad384e08e16602cf8f6  /temp/output/c3/macho/00008224.macho
+FAT_CMP_RC=0

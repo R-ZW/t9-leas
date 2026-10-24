@@ -1,0 +1,30 @@
+[FORA DO ROTEIRO] verificação de saída P7
+/temp/output/carved/script/00000000.script 50 bytes
+/temp/output/carved/audit.txt 765 bytes
+AUDIT
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:19:47 2026
+Invocation: foremost-ng -i disk.img -o /temp/output/carved 
+Output directory: /temp/output/carved
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: disk.img
+Start: Sat Oct 24 17:19:47 2026
+Length: 55 B (55 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.script            50 B            4                            N/A            
+Finish: Sat Oct 24 17:19:47 2026
+
+1 FILES EXTRACTED
+	
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:19:47 2026
+HASHES
+381faf711a99b2b6fafb23e8acc8731e5211fe417e8d1c77520f6f1ce9927f5e  /temp/output/carved/script/00000000.script
+52a92d40947ff59190fd54833367c9c959618a3217854b09025fbfe36bf4d435  /temp/output/carved/audit.txt
+exit_code=0

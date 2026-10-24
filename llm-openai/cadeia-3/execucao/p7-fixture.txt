@@ -1,0 +1,5 @@
+[FORA DO ROTEIRO] P7: imagem sintética mínima; conteúdo criado pelo revisor, não pelos autores
+comando=printf bytes nulos + script com shebang + sentinela NUL > disk.img
+55 disk.img
+b719e05bec2455cd800edffa89b2cb697f7bc0f42b3dcbe9069ee350adb0deb4  disk.img
+exit_code=0

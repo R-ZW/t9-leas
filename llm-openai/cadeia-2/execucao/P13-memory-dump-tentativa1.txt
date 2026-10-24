@@ -1,0 +1,1 @@
+P13 test -r ./memory.dump: exit=1

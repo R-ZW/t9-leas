@@ -1,0 +1,1 @@
+cmp EVTX original/recuperado: exit=0

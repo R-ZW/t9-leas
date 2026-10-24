@@ -1,0 +1,9 @@
+elf32.dd: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, not stripped
+elf64.dd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+4448 elf32.dd
+4616 elf64.dd
+9064 total
+d65136364af3f98d35acdcfac5571bca2f26c220ab845ed6897abc39cb74a292  elf32.dd
+65abeff0cb04d05d93ae8db3c1d621bd6d8d79997239c0316e5e0120af6f4146  elf64.dd
+  Class:                             ELF32
+  Class:                             ELF64

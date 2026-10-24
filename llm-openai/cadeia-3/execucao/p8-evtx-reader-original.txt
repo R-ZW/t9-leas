@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/tmp/python-evtx/Evtx/Evtx.py", line 29, in <module>
+    import Evtx.Views as e_views
+  File "/tmp/python-evtx/Evtx/Views.py", line 23, in <module>
+    import Evtx.Nodes as e_nodes
+  File "/tmp/python-evtx/Evtx/Nodes.py", line 24, in <module>
+    import hexdump
+ModuleNotFoundError: No module named 'hexdump'

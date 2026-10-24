@@ -1,0 +1,2 @@
+#!/usr/bin/env pwsh
+Write-Output POWERSHELL_VALID_1234567890

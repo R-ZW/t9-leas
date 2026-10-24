@@ -1,0 +1,197 @@
+FOREMOST-NG(8)              System Manager's Manual             FOREMOST-NG(8)
+
+NAME
+       foremost-ng - recover files by header, footer, and data structures.
+
+SYNOPSIS
+       foremost-ng  [  -h ] [ -V ] [ -d ] [ -v ] [ -q ] [ -Q ] [ -w ] [ -a ] [
+       -T ] [ -x ] [ -b blocksize ] [ -k chunksize ] [ -o  directory  ]  [  -c
+       config_file ] [ -s number ] [ -t types ] [ -i input_file ]
+
+BUILT-IN FORMATS
+       Recover  files  from  a disk or image based on file types specified via
+       the -t switch.
+
+       jpg    Support for JFIF and Exif formats used by  modern  digital  cam‐
+              eras.
+
+       gif    Support for GIF images.
+
+       png    Support for PNG images.
+
+       bmp    Support for Windows BMP format.
+
+       avi    Support for AVI files (uses the RIFF container format).
+
+       exe    Support  for  Windows  PE  binaries;  extracts DLL and EXE files
+              along with their compile timestamps.
+
+       mpg    Support for MPEG files (must begin with 0x000001BA).
+
+       mp4    Support for MP4 files.
+
+       wav    Support for WAV files.
+
+       riff   Support for RIFF files; extracts both AVI and  RIFF  since  they
+              share the same format (faster than running each separately).
+
+       wmv    Support for WMV files; may also extract WMA files due to similar
+              format.
+
+       mov    Support for MOV files.
+
+       pdf    Support for PDF files.
+
+       ole    Extract any file using the OLE file structure (e.g., PowerPoint,
+              Word, Excel, Access, StarWriter).
+
+       doc    Support  for  Microsoft Word documents; more efficient to run -t
+              ole if you wish to extract all OLE-based files.
+
+       zip    Support for ZIP archives (including JAR  files).  Also  extracts
+              OpenOffice  documents (SXW, SXC, SXI, etc.) and Office 2007 XML-
+              based files (PPTX, DOCX, XLSX).
+
+       rar    Support for RAR archives.
+
+       htm    Support for HTML files.
+
+       cpp    Primitive C source code  detection  (may  generate  false  posi‐
+              tives).
+
+       all    Run all predefined extraction methods (default if no -t is spec‐
+              ified).
+
+OPTIONS
+       -h     Show a help screen and exit.
+
+       -V     Show version and copyright information and exit.
+
+       -d     Enable indirect block detection (useful for Unix file systems).
+
+       -v     Enable  verbose  mode. Displays detailed progress and status in‐
+              formation (recommended).
+
+       -q     Enable quick mode: search only the  start  of  each  sector  for
+              matching  headers  (up  to  the  length  of the longest header).
+              Faster but may miss embedded files (e.g., JPEGs inside Word doc‐
+              uments). Not recommended on NTFS, as small files in  the  Master
+              File Table might be missed.
+
+       -Q     Enable quiet mode: suppress most error messages.
+
+       -w     Enable  write-audit  mode: generate only an audit report; do not
+              extract any files.
+
+       -a     Write all headers and perform no error  detection  on  corrupted
+              files.
+
+       -T     Timestamp the output directory to avoid overwriting previous re‐
+              sults when running multiple times.
+
+       -x     For each discovered file, submit its hash to VirusTotal to check
+              for  detections.  You must export your API key as an environment
+              variable.
+              Example: export VT_API_KEY=yourkey
+
+       -b blocksize
+              Set the block size (in bytes) for extraction and quick  searches
+              (default: 512).
+              Example: foremost-ng -b 1024 image.dd
+
+       -k chunksize
+              Set  the  chunk  size  (in MB) used by foremost-ng. Larger chunk
+              sizes can improve speed when sufficient RAM is available.
+              Example: foremost-ng -k 500 image.dd
+
+       -o directory
+              Write recovered files to the specified directory. The  directory
+              is created if it does not exist.
+
+       -c config_file
+              Specify  an  alternative  configuration  file.  If not provided,
+              foremost-ng searches for foremost.conf in the current directory,
+              then /etc/foremost.conf.
+
+       -s number
+              Skip number blocks (each of size “-b”) in the input  before  be‐
+              ginning the header/footer search.
+              Example: foremost-ng -s 512 -t jpg -i /dev/hda1
+
+       -t types
+              Comma-separated  list  of  file  types to recover (see “BUILT-IN
+              FORMATS”). Use all to run all methods.
+
+       -i input_file
+              Specify the input file or disk image. If omitted or  unreadable,
+              stdin is used.
+
+CONFIGURATION FILE
+       The  configuration file is used to control what types of files foremost
+       searches for. A sample configuration file, foremost.conf,  is  included
+       with  this distribution. For each file type, the configuration file de‐
+       scribes the file's extension, whether the header and  footer  are  case
+       sensitive,  the  maximum  file  size, and the header and footer for the
+       file. The footer field is optional, but header, size, case sensitivity,
+       and extension are not!
+
+       Any line that begins with a pound sign is considered a comment and  ig‐
+       nored. Thus, to skip a file type just put a pound sign at the beginning
+       of that line.
+
+       Headers and footers are decoded before use. To specify a value in hexa‐
+       decimal  use  \x[0-f][0-f], and for octal use \[0-7][0-7][0-7].  Spaces
+       can be represented by \s.
+
+       Example: "\x4F\123\I\sCCI" decodes to "OSI CCI"
+
+       To match any single character (aka a wildcard) use a ?. If you need  to
+       search  for  the ? character, you will need to change the wildcard line
+       *and* every occurrence of the old wildcard character in the  configura‐
+       tion file. Do not forget those hex and octal values! ? is equal to \x3f
+       and \063.
+
+EXAMPLES
+       Recover JPEG files from image.dd, skipping the first 100 blocks:
+       foremost-ng -s 100 -t jpg -i image.dd
+
+       Generate only an audit report and display verbose output:
+       foremost-ng -a -v image.dd
+
+       Recover all defined file types from image.dd:
+       foremost-ng -t all -i image.dd
+
+       Recover GIF and PDF files from image.dd:
+       foremost-ng -t gif,pdf -i image.dd
+
+       Recover OLE documents and JPEG files from a Unix file system in verbose
+       mode:
+       foremost-ng -v -d -t ole,jpeg -i image.dd
+
+       Submit  the  hashes  of all discovered files to VirusTotal to check for
+       detections:
+       foremost-ng -x image.dd
+
+       Run with default settings on image.dd:
+       foremost-ng image.dd
+
+AUTHORS
+       Originally developed as FOREMOST by Jesse  Kornblum,  Kris  Kendall,  &
+       Nick Mikus.
+
+       Modified and extended by Cristian Souza.
+
+BUGS
+       On  systems with glibc 2.1.x or older, harmless compiler warnings about
+       fseeko and ftello implicit declarations may appear; these can be safely
+       ignored.
+
+REPORTING BUGS
+       Please include a description of the problem, how  you  encountered  it,
+       and your contact information. Send bug reports to:
+       cristianmsbr@gmail.com
+
+       Or open an issue at: https://github.com/cristianzsh/foremost-ng
+
+                               v1.5 – June 2025                 FOREMOST-NG(8)
+exit_code=0

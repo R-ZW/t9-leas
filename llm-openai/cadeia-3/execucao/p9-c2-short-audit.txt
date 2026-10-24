@@ -1,0 +1,20 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:57:47 2026
+Invocation: foremost-ng -i /tmp/c2-short.img -o /temp/output/c2-short 
+Output directory: /temp/output/c2-short
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: /tmp/c2-short.img
+Start: Sat Oct 24 18:57:47 2026
+Length: 17 B (17 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+Finish: Sat Oct 24 18:57:47 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:57:47 2026

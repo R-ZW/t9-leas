@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 19:00:38 2026
+Invocation: foremost-ng -i /tmp/c4-elf64.img -o /temp/output/c4-elf64 
+Output directory: /temp/output/c4-elf64
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: /tmp/c4-elf64.img
+Start: Sat Oct 24 19:00:38 2026
+Length: 4 KB (4618 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.elf               4 KB            1                            N/A            
+Finish: Sat Oct 24 19:00:38 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 19:00:38 2026

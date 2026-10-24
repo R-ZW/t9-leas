@@ -1,0 +1,27 @@
+carved-c1-cauda/audit.txt 881 bytes
+carved-c1-cauda/evtx/00000000.evtx 2232320 bytes
+d6f3c20778b101349545d2c2e76514a0c5fb4f9b68be12ed5196116cb8780dc8  carved-c1-cauda/audit.txt
+1464162bbd1ee727ad651e82fb8146bf999086d824378209af44d65b815216ca  carved-c1-cauda/evtx/00000000.evtx
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 19:01:59 2026
+Invocation: foremost-ng -t evtx -i evtx-com-cauda.dd -o ./carved-c1-cauda 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c1-cauda
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: evtx-com-cauda.dd
+Start: Sat Oct 24 19:01:59 2026
+Length: 2 MB (2232320 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.evtx              2 MB            0                            N/A            
+Finish: Sat Oct 24 19:01:59 2026
+
+1 FILES EXTRACTED
+	
+evtx=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 19:01:59 2026
+carved-c1-cauda/evtx/00000000.evtx: MS Windows Vista-8.1 Event Log, 26 chunks (no. 25 in use), next record no. 2226, DIRTY

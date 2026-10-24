@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:59:17 2026
+Invocation: foremost-ng -x -t zip -i eicar.img -o ./carved-eicar 
+Output directory: /tmp/foremost-ng/src/carved-eicar
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: eicar.img
+Start: Sat Oct 24 18:59:17 2026
+Length: 1 MB (1048576 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000008.zip              184 B         4096                            Malicious (61) 
+Finish: Sat Oct 24 18:59:18 2026
+
+1 FILES EXTRACTED
+	
+zip=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:59:18 2026

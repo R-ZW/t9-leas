@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 19:02:40 2026
+Invocation: foremost-ng -x -i /tmp/c5-eicar.img -o /temp/output/c5-eicar 
+Output directory: /temp/output/c5-eicar
+Configuration file: /tmp/foremost-ng/src/foremost.conf
+------------------------------------------------------------------
+File: /tmp/c5-eicar.img
+Start: Sat Oct 24 19:02:40 2026
+Length: 186 B (186 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.zip              184 B            1                            Malicious (61) 
+Finish: Sat Oct 24 19:02:40 2026
+
+1 FILES EXTRACTED
+	
+zip=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 19:02:40 2026

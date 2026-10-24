@@ -1,0 +1,11 @@
+    } else if (needle->type == EXE) {
+        return extract_exe(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == ELF) {
+        return extract_elf(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MACHO) {
+        return extract_macho(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == EVTX) {
+        return extract_evtx(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == SCRIPT) {
+        return extract_script(s, c_offset, foundat, buflen, needle, f_offset);
+    } else if (needle->type == MOV || needle->type == VJPEG) {

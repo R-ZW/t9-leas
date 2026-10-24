@@ -1,0 +1,8 @@
+fonte URL=https://github.com/cristianzsh/foremost-ng.git
+bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+22975758	/home/revisor/foremost-ng
+2b5ea9d5dfcd200589e1e758fc6758c676000e9183b8ea30e942b5038300e70a  -
+amostras URL=https://github.com/williballenthin/python-evtx.git
+c0007441657899c39180de10a2be1a0e43dbeaf9
+7317150	/home/revisor/dados-evtx
+9a72713c262ae85d0859eab676a4a0b1c350d04b054b264df24be7f8b5fa0675  -

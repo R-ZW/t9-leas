@@ -1,0 +1,40 @@
+carved-c4-elf64/audit.txt 867 bytes
+carved-c4-elf64/elf/00000000.elf 4105 bytes
+4ab435e24ef4242b09e4240eacaff028a45206c42c2d9d7c0ec5a1bc695cebb7  carved-c4-elf64/audit.txt
+4303231ef3b5bf8e5f655fa624b972b5cb6c055d8bf54350b7dcc73402d9af99  carved-c4-elf64/elf/00000000.elf
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 18:59:25 2026
+Invocation: foremost-ng -t evtx,elf,exe -i elf64.dd -o ./carved-c4-elf64 
+Output directory: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/carved-c4-elf64
+Configuration file: /home/revisor/artefato-extraido/foremost-ng-bb812a22/src/foremost.conf
+------------------------------------------------------------------
+File: elf64.dd
+Start: Sat Oct 24 18:59:25 2026
+Length: 4 KB (4616 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000000.elf               4 KB            0                            N/A            
+Finish: Sat Oct 24 18:59:25 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 18:59:25 2026
+carved-c4-elf64/elf/00000000.elf: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, missing section headers at 4552
+readelf: Error: Reading 320 bytes extends past end of file for section headers
+
+Elf file type is EXEC (Executable file)
+Entry point 0x401000
+There are 2 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x0000000000000000 0x0000000000400000 0x0000000000400000
+                 0x00000000000000b0 0x00000000000000b0  R      0x1000
+  LOAD           0x0000000000001000 0x0000000000401000 0x0000000000401000
+                 0x0000000000000009 0x0000000000000009  R E    0x1000
