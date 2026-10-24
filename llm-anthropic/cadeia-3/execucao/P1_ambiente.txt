@@ -1,0 +1,24 @@
+Sat Oct 24 15:46:56 UTC 2026
+Linux revisor-c3 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.2 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+16
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       824Mi       6.5Gi        26Mi       457Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+overlay        1007G  4.7G  951G   1% /
+ii  man-db                  2.12.0-4build2                    amd64        tools for reading manual pages
+ii  sudo                    1.9.15p5-3ubuntu5.24.04.1         amd64        Provide limited super user privileges to specific users
+ii  unzip                   6.0-28ubuntu4.1                   amd64        De-archiver for .zip files

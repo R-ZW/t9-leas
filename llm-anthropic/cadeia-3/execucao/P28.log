@@ -1,0 +1,26 @@
+== P28: sem VT_API_KEY
+[1m[34m[INFO] Processing: img_c5.dd
+[0mError: VT_API_KEY environment variable is not set.
+Error: VT_API_KEY environment variable is not set.
+Error: VT_API_KEY environment variable is not set.
+[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mrc=0
+/home/revisor/aval/out/C5_sem:
+total 16
+-rw-r--r-- 1 revisor revisor 1022 Oct 24 16:00 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 16:00 com
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 16:00 elf
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 16:00 script
+
+/home/revisor/aval/out/C5_sem/com:
+total 4
+-rw-r--r-- 1 revisor revisor 68 Oct 24 16:00 00002000.com
+
+/home/revisor/aval/out/C5_sem/elf:
+total 16
+-rw-r--r-- 1 revisor revisor 12304 Oct 24 16:00 00001000.elf
+
+/home/revisor/aval/out/C5_sem/script:
+total 4
+-rw-r--r-- 1 revisor revisor 1984 Oct 24 16:00 00000100.script

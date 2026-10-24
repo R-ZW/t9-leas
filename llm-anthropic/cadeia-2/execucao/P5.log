@@ -1,0 +1,15 @@
+# 2026-10-24T15:50:33+00:00 cwd=/home/revisor/aval/foremost-ng/src
+# cmd: bash -c sudo make install && ls -l /usr/local/bin/foremost-ng /usr/share/man/man8/foremost-ng.8.gz /usr/local/etc/foremost.conf
+Installing binary to /usr/local/bin
+install -d /usr/local/bin
+install -m 755 foremost-ng /usr/local/bin
+Installing man page to /usr/share/man/man8
+install -d /usr/share/man/man8
+install -m 444 foremost-ng.8.gz /usr/share/man/man8
+Installing config to /usr/local/etc
+install -d /usr/local/etc
+install -m 444 foremost.conf /usr/local/etc
+-rwxr-xr-x 1 root root 87200 Oct 24 15:50 /usr/local/bin/foremost-ng
+-r--r--r-- 1 root root  9380 Oct 24 15:50 /usr/local/etc/foremost.conf
+-r--r--r-- 1 root root  2914 Oct 24 15:50 /usr/share/man/man8/foremost-ng.8.gz
+# exit=0

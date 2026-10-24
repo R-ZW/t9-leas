@@ -1,0 +1,10 @@
+# 2026-10-24T15:56:15+00:00 cwd=/home/revisor/aval/amostras
+# cmd: bash -c python3 ~/aval/bin/mkfat.py fat.bin m64_x86 m64_arm && file fat.bin && stat -c "%s bytes" fat.bin && head -c 48 fat.bin | od -A d -t x1 && sha256sum fat.bin
+fat.bin: Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\012- arm64:\012- Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]
+1676336 bytes
+0000000 ca fe ba be 00 00 00 02 01 00 00 07 00 00 00 03
+0000016 00 00 40 00 00 0c fd 80 00 00 00 0e 01 00 00 0c
+0000032 00 00 00 00 00 0d 40 00 00 0c 54 30 00 00 00 0e
+0000048
+12a05b7dad1fa83945ad105702dad45d5983ca313a955a25eccfda34fbc8f41a  fat.bin
+# exit=0

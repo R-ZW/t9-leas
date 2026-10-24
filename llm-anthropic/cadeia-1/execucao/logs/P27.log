@@ -1,0 +1,15 @@
+### 2026-10-24T15:54:35+00:00 | bash -c ls -lR out/P26; cd out/P26/macho 2>/dev/null || { echo "SEM_DIRETORIO_MACHO"; exit 0; }; file *; cmp 00008192.macho ~/aval/dados/m_fat.o && echo FAT_IDENTICO; for b in 00002048 00004096 00006144; do if [ -f $b.macho ]; then /usr/lib/llvm-18/bin/llvm-objdump --macho --private-headers $b.macho | head -20; else echo "AUSENTE $b"; fi; done
+out/P26:
+total 8
+-rw-r--r-- 1 revisor revisor  841 Oct 24 15:54 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 macho
+
+out/P26/macho:
+total 20
+-rw-r--r-- 1 revisor revisor 17032 Oct 24 15:54 00008192.macho
+00008192.macho: Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- arm64:\012- Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+FAT_IDENTICO
+AUSENTE 00002048
+AUSENTE 00004096
+AUSENTE 00006144
+exit=0

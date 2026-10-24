@@ -1,0 +1,6 @@
+# 2026-10-24T15:57:46+00:00 cwd=/home/revisor
+# cmd: bash -c unzip -l ~/artefato.zip | grep -i -E "evidence|\.dd$|\.img$|\.raw$" || echo nenhum_dd_no_artefato_zip; cd ~/aval/clone/foremost-ng && (git log --all --name-only --format= | grep -i -E "evidence|\.dd$" | sort -u || true); git ls-files | grep -i -E "evidence|\.dd$" || echo nenhum_dd_no_repositorio_HEAD; git log --all --oneline | wc -l
+nenhum_dd_no_artefato_zip
+nenhum_dd_no_repositorio_HEAD
+51
+# exit=0

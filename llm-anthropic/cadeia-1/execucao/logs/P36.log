@@ -1,0 +1,13 @@
+### 2026-10-24T15:56:06+00:00 | curl -fsSL -o eicar_com.zip -w url=%{url_effective} http=%{http_code} bytes=%{size_download}\n https://secure.eicar.org/eicar_com.zip
+url=https://secure.eicar.org/eicar_com.zip http=200 bytes=184
+exit=0
+### 2026-10-24T15:56:08+00:00 | bash -c stat -c "%n %s" eicar_com.zip; sha256sum eicar_com.zip; unzip -l eicar_com.zip
+eicar_com.zip 184
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  eicar_com.zip
+Archive:  eicar_com.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       68  2000-05-24 19:07   eicar.com
+---------                     -------
+       68                     1 file
+exit=0

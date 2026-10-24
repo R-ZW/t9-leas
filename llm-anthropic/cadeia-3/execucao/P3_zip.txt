@@ -1,0 +1,37 @@
+955c770e29893527f789e11afc28dcc6b83d7af4a64f14b416e39f554b388e0a  artefato.zip
+Archive:  artefato.zip
+bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+unzip rc=0
+ff3414f09c67a27acb8a86a51e4f74f9dc2c9eb625d65cdb050588c6b0b4cacb  /home/revisor/aval/foremost-ng-bb812a22/README.md
+ce9da14a43cb79a04962177c1de9be06d0310c087732f284bd67145badf40716  /home/revisor/aval/foremost-ng-bb812a22/src/Makefile
+4f81160c4f83e08b2f9bcd91873e9261ed11de2d8c3bc029d8dc91f225dabe34  /home/revisor/aval/foremost-ng-bb812a22/src/extract.c
+d20bf9723161ea2a51fa03929e1b1e8bafe1e2eeca82e1bc2b31fe214bcf81e9  /home/revisor/aval/foremost-ng-bb812a22/src/vt_query.c
+542ca2e30f42df566f940ba96fbbe6a7933bebe8a9c33a73fd52fd3811650b45  /home/revisor/aval/foremost-ng-bb812a22/windows_dlls/zlib1.dll
+6f59aae2ad56e066a27448fbfbea6070443f42123242aa2ce68259f2fae949d9  /home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libbrotlidec.dll
+/home/revisor/aval/foremost-ng-bb812a22:
+Dockerfile
+LICENSE
+README.md
+screenshots
+src
+windows_dlls
+
+/home/revisor/aval/foremost-ng-bb812a22/src:
+Makefile
+ansi_colors.h
+api.c
+cli.c
+config.c
+dir.c
+engine.c
+extract.c
+extract.h
+foremost-ng.8.gz
+foremost.conf
+helpers.c
+main.c
+main.h
+ole.h
+state.c
+vt_query.c
+vt_query.h

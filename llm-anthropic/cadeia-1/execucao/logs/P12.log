@@ -1,0 +1,92 @@
+### 2026-10-24T15:50:15+00:00 | bash -c ls -lR out/P11; cat out/P11/audit.txt; cmp out/P11/script/00006144.script dados/teste.sh && echo SCRIPT_IDENTICO; readelf -h -l out/P11/elf/00002048.elf
+out/P11:
+total 12
+-rw-r--r-- 1 revisor revisor  931 Oct 24 15:50 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:50 elf
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:50 script
+
+out/P11/elf:
+total 16
+-rw-r--r-- 1 revisor revisor 12304 Oct 24 15:50 00002048.elf
+
+out/P11/script:
+total 4
+-rw-r--r-- 1 revisor revisor 85 Oct 24 15:50 00006144.script
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:50:14 2026
+Invocation: foremost-ng -v -i /home/revisor/aval/img/img_f.img -o /home/revisor/aval/out/P11 
+Output directory: /home/revisor/aval/out/P11
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/img/img_f.img
+Start: Sat Oct 24 15:50:15 2026
+Length: 16 MB (16777216 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.elf              12 KB      1048576                            N/A            
+   1: 00006144.script            85 B      3145728                            N/A            
+Finish: Sat Oct 24 15:50:15 2026
+
+2 FILES EXTRACTED
+	
+elf=1
+script=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:50:15 2026
+SCRIPT_IDENTICO
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x1060
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          13976 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         13
+  Size of section headers:           64 (bytes)
+  Number of section headers:         31
+  Section header string table index: 30
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  PHDR           0x0000000000000040 0x0000000000000040 0x0000000000000040
+                 0x00000000000002d8 0x00000000000002d8  R      0x8
+  INTERP         0x0000000000000318 0x0000000000000318 0x0000000000000318
+                 0x000000000000001c 0x000000000000001c  R      0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000628 0x0000000000000628  R      0x1000
+  LOAD           0x0000000000001000 0x0000000000001000 0x0000000000001000
+                 0x0000000000000175 0x0000000000000175  R E    0x1000
+  LOAD           0x0000000000002000 0x0000000000002000 0x0000000000002000
+                 0x00000000000000f4 0x00000000000000f4  R      0x1000
+  LOAD           0x0000000000002db8 0x0000000000003db8 0x0000000000003db8
+                 0x0000000000000258 0x0000000000000260  RW     0x1000
+  DYNAMIC        0x0000000000002dc8 0x0000000000003dc8 0x0000000000003dc8
+                 0x00000000000001f0 0x00000000000001f0  RW     0x8
+  NOTE           0x0000000000000338 0x0000000000000338 0x0000000000000338
+                 0x0000000000000030 0x0000000000000030  R      0x8
+  NOTE           0x0000000000000368 0x0000000000000368 0x0000000000000368
+                 0x0000000000000044 0x0000000000000044  R      0x4
+  GNU_PROPERTY   0x0000000000000338 0x0000000000000338 0x0000000000000338
+                 0x0000000000000030 0x0000000000000030  R      0x8
+  GNU_EH_FRAME   0x0000000000002014 0x0000000000002014 0x0000000000002014
+                 0x0000000000000034 0x0000000000000034  R      0x4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     0x10
+  GNU_RELRO      0x0000000000002db8 0x0000000000003db8 0x0000000000003db8
+                 0x0000000000000248 0x0000000000000248  R      0x1
+exit=0

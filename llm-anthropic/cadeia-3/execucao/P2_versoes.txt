@@ -1,0 +1,16 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                       Version             Architecture Description
++++-==========================-===================-============-=================================================================
+ii  gcc                        4:13.2.0-7ubuntu1   amd64        GNU C compiler
+ii  git                        1:2.43.0-1ubuntu7.3 amd64        fast, scalable, distributed revision control system
+ii  libcurl4-openssl-dev:amd64 8.5.0-2ubuntu10.6   amd64        development files and documentation for libcurl (OpenSSL flavour)
+ii  libssl-dev:amd64           3.0.13-0ubuntu3.5   amd64        Secure Sockets Layer toolkit - development files
+ii  make                       4.3-4.1build2       amd64        utility for directing compilation
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+git version 2.43.0

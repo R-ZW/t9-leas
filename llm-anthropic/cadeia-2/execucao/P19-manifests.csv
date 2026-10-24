@@ -1,0 +1,5 @@
+offset,bloco512,bytes,sha256,arquivo
+1048576,2048,851328,4155822bbf5ea90f5c79cf254665975eb4274d426d0709770c21774de5407443,/home/revisor/aval/amostras/m64_x86
+1966080,3840,807984,0bbe619e663e0de2c550be2fe0d240d076799d6f8a652b70fa04aea8a8362e8a,/home/revisor/aval/amostras/m64_arm
+offset,bloco512,bytes,sha256,arquivo
+1048576,2048,1676336,12a05b7dad1fa83945ad105702dad45d5983ca313a955a25eccfda34fbc8f41a,/home/revisor/aval/amostras/fat.bin

@@ -1,0 +1,15 @@
+/home/revisor/aval/saidas/P8/audit.txt
+/home/revisor/aval/saidas/P8/gif/00020841.gif
+/home/revisor/aval/saidas/P8/jpg/00019717.jpg
+/home/revisor/aval/saidas/P8/jpg/00019777.jpg
+/home/revisor/aval/saidas/P8/jpg/00020645.jpg
+/home/revisor/aval/saidas/P8/mov/00020853.mov
+/home/revisor/aval/saidas/P8/ole/00000281.ole
+/home/revisor/aval/saidas/P8/ole/00016693.ole
+/home/revisor/aval/saidas/P8/ole/00023957.ole
+/home/revisor/aval/saidas/P8/pdf/00016741.pdf
+/home/revisor/aval/saidas/P8/pdf/00019477.pdf
+/home/revisor/aval/saidas/P8/wav/00016021.wav
+/home/revisor/aval/saidas/P8/wmv/00000321.wmv
+/home/revisor/aval/saidas/P8/wmv/00021929.wmv
+/home/revisor/aval/saidas/P8/zip/00023981.zip

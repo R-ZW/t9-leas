@@ -1,0 +1,20 @@
+# 2026-10-24T15:57:34+00:00 cwd=/home/revisor/aval/amostras
+# cmd: bash -c curl -sSL -w "http=%{http_code}\n" -o eicar_com.zip https://secure.eicar.org/eicar_com.zip; echo URL=https://secure.eicar.org/eicar_com.zip; stat -c "%s bytes" eicar_com.zip; sha256sum eicar_com.zip; file eicar_com.zip
+http=200
+URL=https://secure.eicar.org/eicar_com.zip
+184 bytes
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  eicar_com.zip
+eicar_com.zip: Zip archive data, at least v1.0 to extract, compression method=store
+# exit=0
+# 2026-10-24T15:57:39+00:00 cwd=/home/revisor
+# cmd: /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/imagens/c5.dd /home/revisor/aval/amostras/eicar_com.zip
+# exit=0
+# 2026-10-24T15:59:37+00:00 cwd=/home/revisor
+# cmd: foremost-ng -x -t zip -i /home/revisor/aval/imagens/c5.dd -o /home/revisor/aval/saidas/P28
+[1m[34m[INFO] Processing: /home/revisor/aval/imagens/c5.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0m# exit=0
+/home/revisor/aval/saidas/P28/audit.txt
+/home/revisor/aval/saidas/P28/zip/00002048.zip
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  /home/revisor/aval/saidas/P28/zip/00002048.zip

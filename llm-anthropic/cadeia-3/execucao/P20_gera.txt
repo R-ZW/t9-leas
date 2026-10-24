@@ -1,0 +1,38 @@
++ clang -target x86_64-apple-macos11 -c h.c -o t64.o
++ clang -target arm64-apple-macos11 -c h.c -o t64a.o
++ clang -target i386-apple-macos10.6 -c h.c -o t32.o
++ llvm-lipo-18 -create t64.o t64a.o -output fat.o
++ ld64.lld-18 -arch x86_64 -platform_version macos 11.0 11.0 -e _main -o t64.exe t64.o
+ld64.lld-18: error: undefined symbol: _puts
+>>> referenced by t64.o:(symbol _main+0x17)
++ echo 'ld64 rc=1'
+ld64 rc=1
++ set +x
+total 52
+-rw-r--r-- 1 revisor revisor 21208 Oct 24 15:56 fat.o
+-rw-r--r-- 1 revisor revisor    98 Oct 24 15:56 h.c
+-rw-r--r-- 1 revisor revisor  4768 Oct 24 15:56 t32.o
+-rw-r--r-- 1 revisor revisor  4880 Oct 24 15:56 t64.o
+-rw-r--r-- 1 revisor revisor  4824 Oct 24 15:56 t64a.o
+t64.o:   Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+t64a.o:  Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+t32.o:   Mach-O i386 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+fat.o:   Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- arm64:\012- Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+t64.exe: cannot open `t64.exe' (No such file or directory)
+== 2a tentativa executavel (FORA DO ROTEIRO: -undefined dynamic_lookup)
++ ld64.lld-18 -arch x86_64 -platform_version macos 11.0 11.0 -e _main -undefined dynamic_lookup -o t64.exe t64.o
++ echo rc=0
+rc=0
++ ld64.lld-18 -arch arm64 -platform_version macos 11.0 11.0 -e _main -undefined dynamic_lookup -o t64a.exe t64a.o
++ echo rc=0
+rc=0
++ llvm-lipo-18 -create t64.exe t64a.exe -output fat.exe
++ echo rc=0
+rc=0
++ set +x
+-rwxr-xr-x 1 revisor revisor 82752 Oct 24 15:56 fat.exe
+-rwxr-xr-x 1 revisor revisor 20768 Oct 24 15:56 t64.exe
+-rwxr-xr-x 1 revisor revisor 49984 Oct 24 15:56 t64a.exe
+t64.exe:  Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>
+t64a.exe: Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>
+fat.exe:  Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\012- arm64:\012- Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]

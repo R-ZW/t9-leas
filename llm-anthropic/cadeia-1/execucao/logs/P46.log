@@ -1,0 +1,5 @@
+### 2026-10-24T15:58:59+00:00 | bash -c find out dados img -type f ! -path "*/pyevtx-repo/*" ! -path "*/gohello/*" -exec sha256sum {} + | sort -k2 > /home/revisor/evidencias/saidas/sha256_manifesto.txt; wc -l /home/revisor/evidencias/saidas/sha256_manifesto.txt; tar czf ~/aval/evidencias_completas.tgz out dados/*.c dados/*.sh dados/*.py dados/*.ps1 && sha256sum ~/aval/evidencias_completas.tgz && stat -c %s ~/aval/evidencias_completas.tgz
+67 /home/revisor/evidencias/saidas/sha256_manifesto.txt
+2317b37449130da25a0c433534fef8a6ceafa2ebf6d36a5387b16683d79683c4  /home/revisor/aval/evidencias_completas.tgz
+364132
+exit=0

@@ -1,0 +1,3 @@
+### 2026-10-24T15:53:57+00:00 | bash -c truncate -s 64M img_c1.img && dd if=../dados/amostra.evtx of=img_c1.img bs=512 seek=2048 conv=notrunc status=none && sha256sum img_c1.img
+2257835ec6f9e6add15e4c293f3ad7cb6b4433646016e29e955d5d8d6905dafc  img_c1.img
+exit=0

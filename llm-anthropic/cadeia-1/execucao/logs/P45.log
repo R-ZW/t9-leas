@@ -1,0 +1,52 @@
+### 2026-10-24T15:58:49+00:00 | bash -c grep -n "needle->type ==" extract.c; grep -n "init_builtin(state" state.c
+2630:    if (needle->type == JPEG) {
+2632:    } else if (needle->type == GIF) {
+2634:    } else if (needle->type == PNG) {
+2636:    } else if (needle->type == BMP) {
+2638:    } else if (needle->type == RIFF) {
+2641:    } else if (needle->type == AVI) {
+2643:    } else if (needle->type == WAV) {
+2646:    } else if (needle->type == WMV) {
+2648:    } else if (needle->type == OLE) {
+2651:    } else if (needle->type == DOC) {
+2653:    } else if (needle->type == PPT) {
+2655:    } else if (needle->type == XLS) {
+2658:    } else if (needle->type == PDF) {
+2660:    } else if (needle->type == CPP) {
+2662:    } else if (needle->type == HTM) {
+2664:    } else if (needle->type == MPG) {
+2666:    } else if (needle->type == MP4) {
+2668:    } else if (needle->type == ZIP) {
+2670:    } else if (needle->type == RAR) {
+2672:    } else if (needle->type == SXW) {
+2674:    } else if (needle->type == SXC) {
+2676:    } else if (needle->type == SXI) {
+2678:    } else if (needle->type == EXE) {
+2680:    } else if (needle->type == ELF) {
+2682:    } else if (needle->type == MACHO) {
+2684:    } else if (needle->type == EVTX) {
+2686:    } else if (needle->type == SCRIPT) {
+2688:    } else if (needle->type == MOV || needle->type == VJPEG) {
+2690:    } else if (needle->type == CONF) {
+324:    init_builtin(state, JPEG, "jpg",
+328:    index = init_builtin(state, GIF, "gif",
+333:    init_builtin(state, BMP, "bmp", "BM", NULL,
+336:    init_builtin(state, WMV, "wmv",
+341:    init_builtin(state, MOV, "mov", "moov", NULL,
+344:    init_builtin(state, MP4, "mp4",
+348:    init_builtin(state, RIFF, "rif", "RIFF", "INFO",
+351:    init_builtin(state, HTM, "htm", "<html", "</html>",
+354:    init_builtin(state, OLE, "ole",
+358:    init_builtin(state, ZIP, "zip", "\x50\x4B\x03\x04",
+361:    init_builtin(state, RAR, "rar",
+366:    init_builtin(state, EXE, "exe", "MZ", NULL,
+369:    init_builtin(state, ELF, "elf", "\x7F\x45\x4C\x46",
+372:    init_builtin(state, MACHO, "macho", "\xCA\xFE\xBA\xBE",
+375:    init_builtin(state, MACHO, "macho", "\xCE\xFA\xED\xFE",
+378:    init_builtin(state, MACHO, "macho", "\xCF\xFA\xED\xFE",
+381:    init_builtin(state, EVTX, "evtx", "ElfFile\0\0",
+384:    init_builtin(state, SCRIPT, "script", "#!",
+387:    index = init_builtin(state, PNG, "png",
+391:    index = init_builtin(state, MPG, "mpg", "\x00\x00\x01\xba",
+396:    index = init_builtin(state, PDF, "pdf", "%PDF-1.", "%%EOF",
+exit=0

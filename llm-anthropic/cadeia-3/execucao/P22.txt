@@ -1,0 +1,20 @@
+== /home/revisor/aval/out/C3/macho/00000100.macho (original fat.o)
+/home/revisor/aval/out/C3/macho/00000100.macho: Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- arm64:\012- Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+llvm-objdump rc=0
+Architectures in the fat file: /home/revisor/aval/out/C3/macho/00000100.macho are: x86_64 arm64 
+lipo rc=0
+tam_extraido=21208 tam_original=21208
+IDENTICO ao original
+== /home/revisor/aval/out/C3/macho/00001000.macho (original t32.o)
+NAO EXTRAIDO
+== /home/revisor/aval/out/C3/macho/00002000.macho (original t64.o)
+NAO EXTRAIDO
+== /home/revisor/aval/out/C3/macho/00003000.macho (original fat.exe)
+/home/revisor/aval/out/C3/macho/00003000.macho: Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\012- arm64:\012- Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]
+llvm-objdump rc=0
+Architectures in the fat file: /home/revisor/aval/out/C3/macho/00003000.macho are: x86_64 arm64 
+lipo rc=0
+tam_extraido=82752 tam_original=82752
+IDENTICO ao original
+== /home/revisor/aval/out/C3/macho/00004000.macho (original t64.exe)
+NAO EXTRAIDO

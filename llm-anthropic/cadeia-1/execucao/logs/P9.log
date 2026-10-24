@@ -1,0 +1,9 @@
+### 2026-10-24T15:50:14+00:00 | gcc -O0 -o hello64 hello.c
+exit=0
+### 2026-10-24T15:50:14+00:00 | bash -c ls -l hello64 teste.sh; sha256sum hello64 teste.sh; ./hello64
+-rwxr-xr-x 1 revisor revisor 15960 Oct 24 15:50 hello64
+-rw-r--r-- 1 revisor revisor    85 Oct 24 15:50 teste.sh
+1ebdac471be30b8d695ed48dde7460c3d085fbc5ee8843b0f81ad6a262dcabf6  hello64
+8595579771d018985ee743658ac6de0106808cda1d28e495ff971273652029f6  teste.sh
+ola foremost-ng
+exit=0

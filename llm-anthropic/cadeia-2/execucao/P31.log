@@ -1,0 +1,18 @@
+# 2026-10-24T15:57:46+00:00 cwd=/home/revisor
+# cmd: bash -c cd ~/aval/foremost-ng/src && grep -n "init_builtin(state" state.c | wc -l && grep -n "needle->type ==" extract.c | tail -12 && grep -n "extract_file(" engine.c
+21
+2668:    } else if (needle->type == ZIP) {
+2670:    } else if (needle->type == RAR) {
+2672:    } else if (needle->type == SXW) {
+2674:    } else if (needle->type == SXC) {
+2676:    } else if (needle->type == SXI) {
+2678:    } else if (needle->type == EXE) {
+2680:    } else if (needle->type == ELF) {
+2682:    } else if (needle->type == MACHO) {
+2684:    } else if (needle->type == EVTX) {
+2686:    } else if (needle->type == SCRIPT) {
+2688:    } else if (needle->type == MOV || needle->type == VJPEG) {
+2690:    } else if (needle->type == CONF) {
+334:            foundat = extract_file(
+357:                extract_file(s, c_offset, newbuf, needle->max_len, needle, f_offset);
+# exit=0

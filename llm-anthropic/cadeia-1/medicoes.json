@@ -1,0 +1,103 @@
+{
+  "transcricao": "agent-aeb6aa0d0a160d3ce.jsonl",
+  "etapas": {
+    "A": {
+      "inicio_utc": "2026-10-24T15:31:49.274000+00:00",
+      "fim_utc": "2026-10-24T15:37:00.643000+00:00",
+      "duracao_s": 311.4,
+      "respostas_api": 21,
+      "tokens": {
+        "entrada": 42,
+        "saida": 26310,
+        "cache_criado": 209941,
+        "cache_lido": 2447451,
+        "total": 2683744
+      },
+      "chamadas_ferramenta": {
+        "Glob": 1,
+        "Read": 14,
+        "Bash": 1,
+        "Grep": 7,
+        "SubagentHandback": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "claude-opus-5-5"
+      ]
+    },
+    "B1": {
+      "inicio_utc": "2026-10-24T15:37:07.701000+00:00",
+      "fim_utc": "2026-10-24T15:44:16.545000+00:00",
+      "duracao_s": 428.8,
+      "respostas_api": 1,
+      "tokens": {
+        "entrada": 4,
+        "saida": 41562,
+        "cache_criado": 13261,
+        "cache_lido": 209941,
+        "total": 264768
+      },
+      "chamadas_ferramenta": {
+        "SubagentHandback": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "claude-opus-5-5"
+      ]
+    },
+    "E": {
+      "inicio_utc": "2026-10-24T15:46:41.820000+00:00",
+      "fim_utc": "2026-10-24T16:02:09.448000+00:00",
+      "duracao_s": 927.6,
+      "respostas_api": 25,
+      "tokens": {
+        "entrada": 52,
+        "saida": 35477,
+        "cache_criado": 326185,
+        "cache_lido": 6905558,
+        "total": 7267272
+      },
+      "chamadas_ferramenta": {
+        "Bash": 20,
+        "Write": 13,
+        "Edit": 1,
+        "SubagentHandback": 1
+      },
+      "comandos_docker_exec": 19,
+      "modelos": [
+        "claude-opus-5-5"
+      ]
+    },
+    "B2": {
+      "inicio_utc": "2026-10-24T16:02:26.094000+00:00",
+      "fim_utc": "2026-10-24T16:03:59.801000+00:00",
+      "duracao_s": 93.7,
+      "respostas_api": 2,
+      "tokens": {
+        "entrada": 6,
+        "saida": 8583,
+        "cache_criado": 3689,
+        "cache_lido": 654229,
+        "total": 666507
+      },
+      "chamadas_ferramenta": {
+        "Read": 1,
+        "SubagentHandback": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "claude-opus-5-5"
+      ]
+    }
+  },
+  "total": {
+    "tokens": {
+      "entrada": 104,
+      "saida": 111932,
+      "cache_criado": 553076,
+      "cache_lido": 10217179,
+      "total": 10882291
+    },
+    "duracao_s": 1761.5
+  }
+}

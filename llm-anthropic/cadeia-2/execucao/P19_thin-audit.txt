@@ -1,0 +1,20 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:56:21 2026
+Invocation: foremost-ng -t macho -i /home/revisor/aval/imagens/c3_thin.dd -o /home/revisor/aval/saidas/P19_thin 
+Output directory: /home/revisor/aval/saidas/P19_thin
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/imagens/c3_thin.dd
+Start: Sat Oct 24 15:56:21 2026
+Length: 3 MB (3932160 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+Finish: Sat Oct 24 15:56:21 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:56:21 2026

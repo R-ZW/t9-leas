@@ -1,0 +1,45 @@
+### 2026-10-24T15:47:06+00:00 | sha256sum artefato.zip
+955c770e29893527f789e11afc28dcc6b83d7af4a64f14b416e39f554b388e0a  artefato.zip
+exit=0
+### 2026-10-24T15:47:06+00:00 | unzip -z artefato.zip
+Archive:  artefato.zip
+bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+exit=0
+### 2026-10-24T15:47:06+00:00 | unzip -q artefato.zip -d /home/revisor/aval/src-art
+exit=0
+### 2026-10-24T15:47:06+00:00 | ls -la /home/revisor/aval/src-art/foremost-ng-bb812a22 /home/revisor/aval/src-art/foremost-ng-bb812a22/src
+/home/revisor/aval/src-art/foremost-ng-bb812a22:
+total 36
+drwxr-xr-x 5 revisor revisor 4096 Jul  8  2025 .
+drwxr-xr-x 3 revisor revisor 4096 Oct 24 15:47 ..
+-rw-r--r-- 1 revisor revisor  520 Jul  8  2025 .gitignore
+-rw-r--r-- 1 revisor revisor  338 Jul  8  2025 Dockerfile
+-rw-r--r-- 1 revisor revisor 1092 Jul  8  2025 LICENSE
+-rw-r--r-- 1 revisor revisor 2795 Jul  8  2025 README.md
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 screenshots
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 src
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 windows_dlls
+
+/home/revisor/aval/src-art/foremost-ng-bb812a22/src:
+total 268
+drwxr-xr-x 2 revisor revisor  4096 Jul  8  2025 .
+drwxr-xr-x 5 revisor revisor  4096 Jul  8  2025 ..
+-rwxr-xr-x 1 revisor revisor  4530 Jul  8  2025 Makefile
+-rw-r--r-- 1 revisor revisor   525 Jul  8  2025 ansi_colors.h
+-rwxr-xr-x 1 revisor revisor 17303 Jul  8  2025 api.c
+-rwxr-xr-x 1 revisor revisor   959 Jul  8  2025 cli.c
+-rwxr-xr-x 1 revisor revisor  7792 Jul  8  2025 config.c
+-rwxr-xr-x 1 revisor revisor  8846 Jul  8  2025 dir.c
+-rwxr-xr-x 1 revisor revisor 14563 Jul  8  2025 engine.c
+-rwxr-xr-x 1 revisor revisor 88580 Jul  8  2025 extract.c
+-rwxr-xr-x 1 revisor revisor  5105 Jul  8  2025 extract.h
+-rw-r--r-- 1 revisor revisor  2914 Jul  8  2025 foremost-ng.8.gz
+-rwxr-xr-x 1 revisor revisor  9380 Jul  8  2025 foremost.conf
+-rwxr-xr-x 1 revisor revisor  9099 Jul  8  2025 helpers.c
+-rwxr-xr-x 1 revisor revisor  9226 Jul  8  2025 main.c
+-rwxr-xr-x 1 revisor revisor 10732 Jul  8  2025 main.h
+-rwxr-xr-x 1 revisor revisor  3506 Jul  8  2025 ole.h
+-rwxr-xr-x 1 revisor revisor 24328 Jul  8  2025 state.c
+-rw-r--r-- 1 revisor revisor  6377 Jul  8  2025 vt_query.c
+-rw-r--r-- 1 revisor revisor   874 Jul  8  2025 vt_query.h
+exit=0

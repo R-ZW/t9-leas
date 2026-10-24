@@ -1,0 +1,61 @@
+== /home/revisor/aval/out/C4/elf/00000100.elf (original e64)
+/home/revisor/aval/out/C4/elf/00000100.elf: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 15896
+-- readelf -h -l:
+readelf -h -l rc=0
+  Class:                             ELF64
+  Machine:                           Advanced Micro Devices X86-64
+  Number of program headers:         13
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+-- readelf -S (primeiras linhas):
+There are 31 section headers, starting at offset 0x3698:
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+-- readelf -s (contagem de linhas / erros):
+1
+tam_extraido=12304 tam_original=15960
+prefixo = original (cmp rc=0)
+cmp: EOF on /home/revisor/aval/out/C4/elf/00000100.elf after byte 12304
+nao identico
+== /home/revisor/aval/out/C4/elf/00001000.elf (original e32)
+/home/revisor/aval/out/C4/elf/00001000.elf: ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, missing section headers at 14896
+-- readelf -h -l:
+readelf -h -l rc=0
+  Class:                             ELF32
+  Machine:                           Intel 80386
+  Number of program headers:         11
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+-- readelf -S (primeiras linhas):
+There are 29 section headers, starting at offset 0x35d0:
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+-- readelf -s (contagem de linhas / erros):
+1
+tam_extraido=12296 tam_original=14936
+prefixo = original (cmp rc=0)
+cmp: EOF on /home/revisor/aval/out/C4/elf/00001000.elf after byte 12296
+nao identico
+== /home/revisor/aval/out/C4/elf/00002000.elf (original ls64)
+/home/revisor/aval/out/C4/elf/00002000.elf: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 142248
+-- readelf -h -l:
+readelf -h -l rc=0
+  Class:                             ELF64
+  Machine:                           Advanced Micro Devices X86-64
+  Number of program headers:         13
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+-- readelf -S (primeiras linhas):
+There are 31 section headers, starting at offset 0x22428:
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+-- readelf -s (contagem de linhas / erros):
+1
+tam_extraido=139896 tam_original=142312
+prefixo = original (cmp rc=0)
+cmp: EOF on /home/revisor/aval/out/C4/elf/00002000.elf after byte 139896
+nao identico
+== execucao dos extraidos
+--- 00000100
+ola foremost-ng
+rc=0
+--- 00001000
+ola foremost-ng
+rc=0
+--- 00002000
+/etc/hostname
+rc=0

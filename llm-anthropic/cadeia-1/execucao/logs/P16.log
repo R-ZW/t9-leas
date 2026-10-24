@@ -1,0 +1,10 @@
+### 2026-10-24T15:53:45+00:00 | bash -c od -A d -c -N 8 amostra.evtx; echo "u64@0x18:"; od -A d -t u8 -j 24 -N 8 amostra.evtx; echo "u16@0x2A:"; od -A d -t u2 -j 42 -N 2 amostra.evtx
+0000000   E   l   f   F   i   l   e  \0
+0000008
+u64@0x18:
+0000024                  395
+0000032
+u16@0x2A:
+0000042    11
+0000044
+exit=0

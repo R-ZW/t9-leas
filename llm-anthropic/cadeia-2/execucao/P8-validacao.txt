@@ -1,0 +1,14 @@
+d25fb845e6a41395adaed8bd14db7bf2 5498 ./gif/00020841.gif :: GIF image data, version 89a, 88 x 31
+37a49f97ed279832cd4f7bd002c826a2 29885 ./jpg/00019717.jpg :: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300
+6c9859e5121ff54d5d6298f65f0bf3b3 444314 ./jpg/00019777.jpg :: JPEG image data, Exif standard: [TIFF image data, big-endian, direntri
+d83428b8742a075b57b0dc424cd297c4 99298 ./jpg/00020645.jpg :: JPEG image data, JFIF standard 1.02, resolution (DPI), density 72x72, 
+5328d2b066f428ea95b2793849ab97fa 550653 ./mov/00020853.mov :: Apple QuickTime movie (fast start)
+5ae5cd40c3d07d5df554b2030a001ebd 20992 ./ole/00000281.ole :: Composite Document File V2 Document, Little Endian, Os: Windows, Versi
+a9bba638866a7f5ba4badb727a1628c9 25088 ./ole/00016693.ole :: Composite Document File V2 Document, Little Endian, Os: Windows, Versi
+634a5f382431dde14d4f148a495f662d 7212032 ./ole/00023957.ole :: Composite Document File V2 Document, Little Endian, Os: Windows, Versi
+e026ec863410725ba1f5765a1874800d 1399508 ./pdf/00016741.pdf :: PDF document, version 1.2, 15 page(s)
+5b3e806e8c9c06a475cd45bf821af709 122434 ./pdf/00019477.pdf :: PDF document, version 1.4, 6 page(s)
+4020b55670015ee50672260efd138aff 318886 ./wav/00016021.wav :: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 8 bit, mono 1102
+63c0c6986cf0a446cb54b0ac65a921a5 8037267 ./wmv/00000321.wmv :: Microsoft ASF ASF_Stream_Bitrate_Properties_Object
+ff085d0c4d0e0fdc8f3427db68e26266 1036994 ./wmv/00021929.wmv :: Microsoft ASF
+c0be59d49b7ee0fdc492d2df32f2c6c6 78899 ./zip/00023981.zip :: Zip archive data, at least v2.0 to extract, compression method=deflate

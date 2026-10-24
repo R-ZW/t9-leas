@@ -1,0 +1,19 @@
+== P29: VT_API_KEY=chave-invalida-teste
+[1m[34m[INFO] Processing: img_c5.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mrc=0
+/home/revisor/aval/out/C5_inv:
+audit.txt
+com
+elf
+script
+
+/home/revisor/aval/out/C5_inv/com:
+00002000.com
+
+/home/revisor/aval/out/C5_inv/elf:
+00001000.elf
+
+/home/revisor/aval/out/C5_inv/script:
+00000100.script

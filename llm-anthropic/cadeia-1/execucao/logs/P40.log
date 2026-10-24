@@ -1,0 +1,37 @@
+### 2026-10-24T15:57:35+00:00 | env -u VT_API_KEY foremost-ng -v -x -t zip,elf -i /home/revisor/aval/img/img_c5.img -o /home/revisor/aval/out/P40
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:57:35 2026
+Invocation: foremost-ng -v -x -t zip,elf -i /home/revisor/aval/img/img_c5.img -o /home/revisor/aval/out/P40 
+Output directory: /home/revisor/aval/out/P40
+Configuration file: /usr/local/etc/foremost.conf
+[1m[34m[INFO] Processing: /home/revisor/aval/img/img_c5.img
+[0m------------------------------------------------------------------
+File: /home/revisor/aval/img/img_c5.img
+Start: Sat Oct 24 15:57:35 2026
+Length: 16 MB (16777216 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+Error: VT_API_KEY environment variable is not set.
+   0: 00002048.zip              184 B      1048576                            Clean (0)      
+Error: VT_API_KEY environment variable is not set.
+   1: 00006144.elf              12 KB      3145728                            Clean (0)      
+[1m[34m
+[INFO] Processing finished.
+[0mFinish: Sat Oct 24 15:57:35 2026
+
+2 FILES EXTRACTED
+	
+zip=1
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:57:35 2026
+exit=0
+### 2026-10-24T15:57:35+00:00 | bash -c sha256sum out/P40/zip/* out/P40/elf/*; grep -E "^ +[0-9]+:" out/P40/audit.txt
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  out/P40/zip/00002048.zip
+16ab4938b5961dc1a851a38972e0a0657641a1b76e249b81d0950b9893461114  out/P40/elf/00006144.elf
+   0: 00002048.zip              184 B      1048576                            Clean (0)      
+   1: 00006144.elf              12 KB      3145728                            Clean (0)      
+exit=0

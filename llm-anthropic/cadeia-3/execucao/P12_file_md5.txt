@@ -1,0 +1,28 @@
+gif/00020841.gif: GIF image data, version 89a, 88 x 31
+jpg/00019717.jpg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 300x300, segment length 16, baseline, precision 8, 396x461, components 1
+jpg/00019777.jpg: JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=8, manufacturer=Hewlett-Packard, model=HP PhotoSmart 318, xresolution=206, yresolution=214, resolutionunit=2, software=V4.00], baseline, precision 8, 1792x1200, components 3
+jpg/00020645.jpg: JPEG image data, JFIF standard 1.02, resolution (DPI), density 72x72, segment length 16, Exif Standard: [TIFF image data, big-endian, direntries=10, manufacturer=Canon, model=Canon EOS 20D, orientation=upper-left, xresolution=154, yresolution=162, resolutionunit=2, software=Adobe Photoshop CS Windows, datetime=2004:09:27 16:28:10], baseline, precision 8, 864x538, components 3
+mov/00020853.mov: Apple QuickTime movie (fast start)
+ole/00000281.ole: Composite Document File V2 Document, Little Endian, Os: Windows, Version 5.1, Code page: 1252, Title: Nick is a pretty man with a 2003 document, Author: Nick Mikus, Template: Normal.dot, Last Saved By: Nick Mikus, Revision Number: 1, Name of Creating Application: Microsoft Office Word, Total Editing Time: 01:00, Create Time/Date: Sat Nov  6 00:44:00 2004, Last Saved Time/Date: Sat Nov  6 00:45:00 2004, Number of Pages: 1, Number of Words: 6, Number of Characters: 37, Security: 0
+ole/00016693.ole: Composite Document File V2 Document, Little Endian, Os: Windows, Version 5.1, Code page: 1252, Author: Nick Mikus, Last Saved By: Nick Mikus, Name of Creating Application: Microsoft Excel, Create Time/Date: Tue Sep 28 05:03:56 2004, Last Saved Time/Date: Tue Sep 28 05:35:27 2004, Security: 0
+ole/00023957.ole: Composite Document File V2 Document, Little Endian, Os: Windows, Version 4.0
+pdf/00016741.pdf: PDF document, version 1.2, 15 page(s)
+pdf/00019477.pdf: PDF document, version 1.4, 6 page(s)
+wav/00016021.wav: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 8 bit, mono 11025 Hz
+wmv/00000321.wmv: Microsoft ASF ASF_Stream_Bitrate_Properties_Object
+wmv/00021929.wmv: Microsoft ASF
+zip/00023981.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+d25fb845e6a41395adaed8bd14db7bf2  gif/00020841.gif
+37a49f97ed279832cd4f7bd002c826a2  jpg/00019717.jpg
+6c9859e5121ff54d5d6298f65f0bf3b3  jpg/00019777.jpg
+d83428b8742a075b57b0dc424cd297c4  jpg/00020645.jpg
+5328d2b066f428ea95b2793849ab97fa  mov/00020853.mov
+5ae5cd40c3d07d5df554b2030a001ebd  ole/00000281.ole
+a9bba638866a7f5ba4badb727a1628c9  ole/00016693.ole
+634a5f382431dde14d4f148a495f662d  ole/00023957.ole
+e026ec863410725ba1f5765a1874800d  pdf/00016741.pdf
+5b3e806e8c9c06a475cd45bf821af709  pdf/00019477.pdf
+4020b55670015ee50672260efd138aff  wav/00016021.wav
+63c0c6986cf0a446cb54b0ac65a921a5  wmv/00000321.wmv
+ff085d0c4d0e0fdc8f3427db68e26266  wmv/00021929.wmv
+c0be59d49b7ee0fdc492d2df32f2c6c6  zip/00023981.zip

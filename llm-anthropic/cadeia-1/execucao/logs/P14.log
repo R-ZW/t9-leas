@@ -1,0 +1,19 @@
+### 2026-10-24T15:53:39+00:00 | git clone --depth 1 https://github.com/williballenthin/python-evtx.git pyevtx-repo
+Cloning into 'pyevtx-repo'...
+exit=0
+### 2026-10-24T15:53:40+00:00 | git -C pyevtx-repo rev-parse HEAD
+c0007441657899c39180de10a2be1a0e43dbeaf9
+exit=0
+### 2026-10-24T15:53:40+00:00 | bash -c find pyevtx-repo -name "*.evtx" -printf "%s %p\n" | sort -n
+69632 pyevtx-repo/tests/data/dns_log_malformed.evtx
+69632 pyevtx-repo/tests/data/issue_38.evtx
+1052672 pyevtx-repo/tests/data/issue_39.evtx
+1118208 pyevtx-repo/tests/data/system.evtx
+2166784 pyevtx-repo/tests/data/issue_43.evtx
+2166784 pyevtx-repo/tests/data/security.evtx
+exit=0
+### 2026-10-24T15:53:40+00:00 | bash -c f=$(find pyevtx-repo -name "*.evtx" -size +68k -printf "%s %p\n" | sort -n | head -1 | cut -d" " -f2); echo "escolhido: $f"; cp "$f" amostra.evtx && sha256sum amostra.evtx && stat -c %s amostra.evtx
+escolhido: pyevtx-repo/tests/data/issue_39.evtx
+a687d8b81ff56da980c2389a31539a97dfe985dccfc5a288230cbb1b0a853279  amostra.evtx
+1052672
+exit=0

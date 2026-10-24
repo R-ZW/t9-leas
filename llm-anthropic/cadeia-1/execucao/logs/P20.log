@@ -1,0 +1,13 @@
+### 2026-10-24T15:54:21+00:00 | bash -c wc -c s_bash.sh s_py.py s_ps.ps1 neg_coment.sh neg_curto.sh; sha256sum s_* neg_*
+106 s_bash.sh
+ 75 s_py.py
+ 84 s_ps.ps1
+ 66 neg_coment.sh
+ 18 neg_curto.sh
+349 total
+2fca16db0e7286a8be21f33fe4d78f00b4c0bc3345ee356bf41db50460b0c3bc  s_bash.sh
+92a9b76e3bbdff5ec01a7a3f258369deb88571f722a209554e8226ffbb6030f5  s_ps.ps1
+56c267f8fc4d4805363b885f88c26e2c83a5bd617911002299ad02ec51e91ceb  s_py.py
+567f3f04815faf5802999427e279f75e7365404ad2bde2caad11a67f40786562  neg_coment.sh
+397a2a1f305a0cde04b3f92dabbfa8187d2e229e91ad0afee4ca894744170dc3  neg_curto.sh
+exit=0

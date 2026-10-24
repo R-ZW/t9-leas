@@ -1,0 +1,40 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:56:29 2026
+Invocation: foremost-ng -v -t script -i img_c2.dd -o /home/revisor/aval/out/C2 
+Output directory: /home/revisor/aval/out/C2
+Configuration file: /usr/local/etc/foremost.conf
+[1m[34m[INFO] Processing: img_c2.dd
+[0m------------------------------------------------------------------
+File: img_c2.dd
+Start: Sat Oct 24 15:56:29 2026
+Length: 8 MB (8388608 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000100.script            64 B        51200                            N/A            
+   1: 00000200.script            60 B       102400                            N/A            
+   2: 00000300.script            48 B       153600                            N/A            
+   3: 00000400.script            46 B       204800                            N/A            
+[1m[34m
+[INFO] Processing finished.
+[0mFinish: Sat Oct 24 15:56:29 2026
+
+4 FILES EXTRACTED
+	
+script=4
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:56:29 2026
+rc=0
+/home/revisor/aval/out/C2:
+total 8
+-rw-r--r-- 1 revisor revisor 1073 Oct 24 15:56 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:56 script
+
+/home/revisor/aval/out/C2/script:
+total 16
+-rw-r--r-- 1 revisor revisor 64 Oct 24 15:56 00000100.script
+-rw-r--r-- 1 revisor revisor 60 Oct 24 15:56 00000200.script
+-rw-r--r-- 1 revisor revisor 48 Oct 24 15:56 00000300.script
+-rw-r--r-- 1 revisor revisor 46 Oct 24 15:56 00000400.script

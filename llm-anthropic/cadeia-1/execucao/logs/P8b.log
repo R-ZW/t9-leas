@@ -1,0 +1,54 @@
+### 2026-10-24T15:50:22+00:00 | bash -c man -P cat foremost-ng | sed -n 150,400p; echo ---grep; man -P cat foremost-ng | grep -n -i -E "evtx|elf|macho|script|virustotal|VT_API"
+       *and* every occurrence of the old wildcard character in the  configura‐
+       tion file. Do not forget those hex and octal values! ? is equal to \x3f
+       and \063.
+
+EXAMPLES
+       Recover JPEG files from image.dd, skipping the first 100 blocks:
+       foremost-ng -s 100 -t jpg -i image.dd
+
+       Generate only an audit report and display verbose output:
+       foremost-ng -a -v image.dd
+
+       Recover all defined file types from image.dd:
+       foremost-ng -t all -i image.dd
+
+       Recover GIF and PDF files from image.dd:
+       foremost-ng -t gif,pdf -i image.dd
+
+       Recover OLE documents and JPEG files from a Unix file system in verbose
+       mode:
+       foremost-ng -v -d -t ole,jpeg -i image.dd
+
+       Submit  the  hashes  of all discovered files to VirusTotal to check for
+       detections:
+       foremost-ng -x image.dd
+
+       Run with default settings on image.dd:
+       foremost-ng image.dd
+
+AUTHORS
+       Originally developed as FOREMOST by Jesse  Kornblum,  Kris  Kendall,  &
+       Nick Mikus.
+
+       Modified and extended by Cristian Souza.
+
+BUGS
+       On  systems with glibc 2.1.x or older, harmless compiler warnings about
+       fseeko and ftello implicit declarations may appear; these can be safely
+       ignored.
+
+REPORTING BUGS
+       Please include a description of the problem, how  you  encountered  it,
+       and your contact information. Send bug reports to:
+       cristianmsbr@gmail.com
+
+       Or open an issue at: https://github.com/cristianzsh/foremost-ng
+
+                               v1.5 – June 2025                 FOREMOST-NG(8)
+---grep
+92:       -x     For each discovered file, submit its hash to VirusTotal to check
+95:              Example: export VT_API_KEY=yourkey
+171:       Submit  the  hashes  of all discovered files to VirusTotal to check for
+190:       Please include a description of the problem, how  you  encountered  it,
+exit=0

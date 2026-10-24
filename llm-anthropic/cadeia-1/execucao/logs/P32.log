@@ -1,0 +1,3 @@
+### 2026-10-24T15:55:48+00:00 | bash -c truncate -s 80M disk.img; for p in "amostra.evtx 2048" "hello32 131072" "hello64 135168" "s_bash.sh 139264" "m_fat.o 143360" "m_x86_64.o 147456"; do set -- $p; dd if=../dados/$1 of=disk.img bs=512 seek=$2 conv=notrunc status=none; done; sha256sum disk.img
+b6dc9b2589e41ab0a70cc4f36edccd3522376cfdfd0f03ea468bef46766d49ac  disk.img
+exit=0

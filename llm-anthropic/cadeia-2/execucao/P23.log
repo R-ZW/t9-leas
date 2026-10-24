@@ -1,0 +1,64 @@
+# 2026-10-24T15:56:53+00:00 cwd=/home/revisor/aval
+# cmd: bash -c for p in "e32 00002048" "e64 00002304" "e64_ls 00002560"; do set -- $p; o=amostras/$1; c=saidas/P22/elf/$2.elf; sc=$(stat -c %s $c); echo "=== $1 orig=$(stat -c %s $o) carved=$sc"; cmp -n $sc $o $c && echo prefixo_identico; file -b $c; readelf -h $c >/dev/null; echo rc_readelf_h=$?; readelf -l $c > /dev/null; echo rc_readelf_l=$?; readelf -S $c 2>&1 | grep -i -E "warning|error|There are" | head -3; readelf -h $c | grep -E "Class|Type|Start of section|Number of section"; done
+=== e32 orig=14904 carved=12296
+prefixo_identico
+ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, missing section headers at 14864
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+rc_readelf_h=0
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+rc_readelf_l=0
+There are 29 section headers, starting at offset 0x35b0:
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+readelf: Error: Reading 1160 bytes extends past end of file for section headers
+  Class:                             ELF32
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          13744 (bytes into file)
+  Number of section headers:         29
+=== e64 orig=15776 carved=12304
+prefixo_identico
+ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 15712
+readelf: Error: Reading 1856 bytes extends past end of file for section headers
+rc_readelf_h=0
+readelf: Error: Reading 1856 bytes extends past end of file for section headers
+rc_readelf_l=0
+There are 29 section headers, starting at offset 0x3660:
+readelf: Error: Reading 1856 bytes extends past end of file for section headers
+readelf: Error: Reading 1856 bytes extends past end of file for section headers
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          13920 (bytes into file)
+  Number of section headers:         29
+=== e64_ls orig=142312 carved=139896
+prefixo_identico
+ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, missing section headers at 142248
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+rc_readelf_h=0
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+rc_readelf_l=0
+There are 31 section headers, starting at offset 0x22428:
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+readelf: Error: Reading 1984 bytes extends past end of file for section headers
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          140328 (bytes into file)
+  Number of section headers:         31
+# exit=0
+# 2026-10-24T15:57:00+00:00 cwd=/home/revisor/aval
+# cmd: bash -c readelf -l saidas/P22/elf/00002304.elf 2>/dev/null | sed -n "1,12p"; echo ---; echo orig_symtab=$(readelf -s amostras/e64 2>/dev/null | grep -c "FUNC"); echo carved_symtab=$(readelf -s saidas/P22/elf/00002304.elf 2>/dev/null | grep -c "FUNC"); echo carved_dynsym=$(readelf --dyn-syms saidas/P22/elf/00002304.elf 2>/dev/null | grep -c FUNC)
+
+Elf file type is DYN (Position-Independent Executable file)
+Entry point 0x1040
+There are 13 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  PHDR           0x0000000000000040 0x0000000000000040 0x0000000000000040
+                 0x00000000000002d8 0x00000000000002d8  R      0x8
+  INTERP         0x0000000000000318 0x0000000000000318 0x0000000000000318
+                 0x000000000000001c 0x000000000000001c  R      0x1
+---
+orig_symtab=12
+carved_symtab=0
+carved_dynsym=0
+# exit=0

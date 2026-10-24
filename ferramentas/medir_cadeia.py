@@ -17,6 +17,9 @@ from datetime import datetime
 from pathlib import Path
 
 ETAPAS = ["A", "B1", "E", "B2"]
+# Início fixo de cada prompt (prompts/prompt-*.txt). Outras mensagens de usuário, como
+# avisos de tarefa em segundo plano do Claude Code, não abrem etapa nova.
+INICIOS = ("Atue como revisor", "Com base no mesmo material", "Agora execute você mesmo", "Leia o registro factual")
 
 
 def carregar(caminho):
@@ -29,12 +32,18 @@ def eh_prompt(reg):
     if reg.get("type") != "user":
         return False
     conteudo = (reg.get("message") or {}).get("content")
-    if isinstance(conteudo, str):
-        return not conteudo.lstrip().startswith("<")
-    if isinstance(conteudo, list):
-        tipos = {c.get("type") for c in conteudo if isinstance(c, dict)}
-        return "text" in tipos and "tool_result" not in tipos
-    return False
+    if isinstance(conteudo, list) and any(isinstance(c, dict) and c.get("type") == "tool_result" for c in conteudo):
+        return False
+    return sem_moldura(texto(conteudo or "")).startswith(INICIOS)
+
+
+# O Claude Code entrega ao agente as mensagens enviadas com SendMessage (B1, E, B2) com esta moldura.
+MOLDURA = "The coordinator sent a message while you were working:"
+
+
+def sem_moldura(t):
+    t = t.lstrip()
+    return t[len(MOLDURA):].lstrip() if t.startswith(MOLDURA) else t
 
 
 def texto(conteudo):
@@ -52,7 +61,7 @@ def dividir(registros):
     etapas = []
     for reg in registros:
         if eh_prompt(reg):
-            t = texto(reg["message"]["content"]).strip()
+            t = texto(reg["message"]["content"]).strip()  # com a moldura, como o agente recebeu
             if etapas and not any(r.get("type") == "assistant" for r in etapas[-1][1]) and t == etapas[-1][0]["texto"]:
                 continue
             etapas.append(({"texto": t, "ts": ts(reg)}, []))
@@ -116,7 +125,7 @@ def caminhos_citados(regs):
                     if inp.get(campo):
                         yield c["name"], inp[campo]
                 if inp.get("command"):
-                    for p in re.findall(r"[A-Za-z]:[\\/][^\s'\"|;&]+|/(?:c|d)/[^\s'\"|;&]+", inp["command"]):
+                    for p in re.findall(r"(?<![A-Za-z])[A-Za-z]:[\\/][^\s'\"|;&]+|(?<![\w:/])/(?:c|d)/[^\s'\"|;&]+", inp["command"]):
                         yield c["name"], p
 
 
@@ -156,8 +165,16 @@ def main():
                 if isinstance(c, dict) and c.get("type") == "tool_use" and c["id"] not in vistos:
                     vistos.add(c["id"])
                     md.append(f"- `{r['timestamp']}` **{c['name']}** `{ocultar(json.dumps(c.get('input'), ensure_ascii=False), chave)[:600]}`")
+        # A resposta final do agente é a mensagem do SubagentHandback; sem ela, o último texto.
+        entregas = [c["input"]["message"] for r in rs if r.get("type") == "assistant"
+                    for c in r["message"].get("content") or []
+                    if isinstance(c, dict) and c.get("type") == "tool_use" and c.get("name") == "SubagentHandback"
+                    and (c.get("input") or {}).get("message")]
         finais = [r for r in rs if r.get("type") == "assistant" and texto(r["message"].get("content") or []).strip()]
-        resposta = texto(finais[-1]["message"]["content"]) if finais else "(sem resposta de texto)"
+        if entregas:
+            resposta = entregas[-1]
+        else:
+            resposta = texto(finais[-1]["message"]["content"]) if finais else "(sem resposta de texto)"
         md += ["", "### Resposta final", "", ocultar(resposta, chave), ""]
         (saida / f"resposta-{nome}.md").write_text(ocultar(resposta, chave), encoding="utf-8")
 

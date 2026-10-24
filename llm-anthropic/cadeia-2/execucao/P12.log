@@ -1,0 +1,9 @@
+# 2026-10-24T15:55:07+00:00 cwd=/home/revisor
+# cmd: /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/imagens/c1.dd /home/revisor/aval/amostras/a.evtx /home/revisor/aval/amostras/b.evtx
+# exit=0
+# 2026-10-24T15:55:07+00:00 cwd=/home/revisor
+# cmd: foremost-ng -t evtx -i /home/revisor/aval/imagens/c1.dd -o /home/revisor/aval/saidas/P12
+[1m[34m[INFO] Processing: /home/revisor/aval/imagens/c1.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0m# exit=0

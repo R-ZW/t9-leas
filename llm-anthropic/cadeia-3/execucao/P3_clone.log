@@ -1,0 +1,33 @@
+== P3 caminho B (clone) ==
+HEAD inicial do clone: 09ad68b398ded9d7b68043c07028850284fcc318 (Sat Oct 17 21:40:45 2026 -0300)
+apos checkout: bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+-- diff -r (ignorando .git) linhas de arquivos diferentes:
+Files /home/revisor/aval/foremost-ng/.gitignore and /home/revisor/aval/foremost-ng-bb812a22/.gitignore differ
+Files /home/revisor/aval/foremost-ng/Dockerfile and /home/revisor/aval/foremost-ng-bb812a22/Dockerfile differ
+Files /home/revisor/aval/foremost-ng/LICENSE and /home/revisor/aval/foremost-ng-bb812a22/LICENSE differ
+Files /home/revisor/aval/foremost-ng/README.md and /home/revisor/aval/foremost-ng-bb812a22/README.md differ
+Files /home/revisor/aval/foremost-ng/src/Makefile and /home/revisor/aval/foremost-ng-bb812a22/src/Makefile differ
+Files /home/revisor/aval/foremost-ng/src/ansi_colors.h and /home/revisor/aval/foremost-ng-bb812a22/src/ansi_colors.h differ
+Files /home/revisor/aval/foremost-ng/src/api.c and /home/revisor/aval/foremost-ng-bb812a22/src/api.c differ
+Files /home/revisor/aval/foremost-ng/src/cli.c and /home/revisor/aval/foremost-ng-bb812a22/src/cli.c differ
+Files /home/revisor/aval/foremost-ng/src/config.c and /home/revisor/aval/foremost-ng-bb812a22/src/config.c differ
+Files /home/revisor/aval/foremost-ng/src/dir.c and /home/revisor/aval/foremost-ng-bb812a22/src/dir.c differ
+Files /home/revisor/aval/foremost-ng/src/engine.c and /home/revisor/aval/foremost-ng-bb812a22/src/engine.c differ
+Files /home/revisor/aval/foremost-ng/src/extract.c and /home/revisor/aval/foremost-ng-bb812a22/src/extract.c differ
+Files /home/revisor/aval/foremost-ng/src/extract.h and /home/revisor/aval/foremost-ng-bb812a22/src/extract.h differ
+Files /home/revisor/aval/foremost-ng/src/foremost.conf and /home/revisor/aval/foremost-ng-bb812a22/src/foremost.conf differ
+Files /home/revisor/aval/foremost-ng/src/helpers.c and /home/revisor/aval/foremost-ng-bb812a22/src/helpers.c differ
+Files /home/revisor/aval/foremost-ng/src/main.c and /home/revisor/aval/foremost-ng-bb812a22/src/main.c differ
+Files /home/revisor/aval/foremost-ng/src/ole.h and /home/revisor/aval/foremost-ng-bb812a22/src/ole.h differ
+Files /home/revisor/aval/foremost-ng/src/state.c and /home/revisor/aval/foremost-ng-bb812a22/src/state.c differ
+Files /home/revisor/aval/foremost-ng/src/vt_query.c and /home/revisor/aval/foremost-ng-bb812a22/src/vt_query.c differ
+Files /home/revisor/aval/foremost-ng/src/vt_query.h and /home/revisor/aval/foremost-ng-bb812a22/src/vt_query.h differ
+-- diff -r --strip-trailing-cr:
+IDENTICO ao zip (exceto fins de linha CR)
+-- fins de linha:
+0000000   F   R   O   M       u   b   u   n   t   u   :   l   a   t   e
+0000020   s   t  \n  \n
+0000000   F   R   O   M       u   b   u   n   t   u   :   l   a   t   e
+0000020   s   t  \r  \n
+09ad68b Update README.md
+db721a9 Add CITATION.cff

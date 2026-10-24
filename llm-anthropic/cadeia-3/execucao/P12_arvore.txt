@@ -1,0 +1,49 @@
+/home/revisor/aval/out/F_dftt:
+total 36
+-rw-r--r-- 1 revisor revisor 2150 Oct 24 15:54 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 gif
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 jpg
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 mov
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 ole
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 pdf
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 wav
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 wmv
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:54 zip
+
+/home/revisor/aval/out/F_dftt/gif:
+total 8
+-rw-r--r-- 1 revisor revisor 5498 Oct 24 15:54 00020841.gif
+
+/home/revisor/aval/out/F_dftt/jpg:
+total 568
+-rw-r--r-- 1 revisor revisor  29885 Oct 24 15:54 00019717.jpg
+-rw-r--r-- 1 revisor revisor 444314 Oct 24 15:54 00019777.jpg
+-rw-r--r-- 1 revisor revisor  99298 Oct 24 15:54 00020645.jpg
+
+/home/revisor/aval/out/F_dftt/mov:
+total 540
+-rw-r--r-- 1 revisor revisor 550653 Oct 24 15:54 00020853.mov
+
+/home/revisor/aval/out/F_dftt/ole:
+total 7096
+-rw-r--r-- 1 revisor revisor   20992 Oct 24 15:54 00000281.ole
+-rw-r--r-- 1 revisor revisor   25088 Oct 24 15:54 00016693.ole
+-rw-r--r-- 1 revisor revisor 7212032 Oct 24 15:54 00023957.ole
+
+/home/revisor/aval/out/F_dftt/pdf:
+total 1488
+-rw-r--r-- 1 revisor revisor 1399508 Oct 24 15:54 00016741.pdf
+-rw-r--r-- 1 revisor revisor  122434 Oct 24 15:54 00019477.pdf
+
+/home/revisor/aval/out/F_dftt/wav:
+total 312
+-rw-r--r-- 1 revisor revisor 318886 Oct 24 15:54 00016021.wav
+
+/home/revisor/aval/out/F_dftt/wmv:
+total 8868
+-rw-r--r-- 1 revisor revisor 8037267 Oct 24 15:54 00000321.wmv
+-rw-r--r-- 1 revisor revisor 1036994 Oct 24 15:54 00021929.wmv
+
+/home/revisor/aval/out/F_dftt/zip:
+total 80
+-rw-r--r-- 1 revisor revisor 78899 Oct 24 15:54 00023981.zip

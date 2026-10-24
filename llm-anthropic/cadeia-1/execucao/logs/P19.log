@@ -1,0 +1,9 @@
+### 2026-10-24T15:53:57+00:00 | bash -c c=out/P18/evtx/00002048.evtx; ls -l out/P18/evtx; sha256sum $c; stat -c %s $c dados/amostra.evtx; cmp -n $(stat -c %s dados/amostra.evtx) $c dados/amostra.evtx && echo PREFIXO_OK; ~/aval/venv/bin/python dados/conta_evtx.py $c
+total 25280
+-rw-r--r-- 1 revisor revisor 25886720 Oct 24 15:53 00002048.evtx
+7f86437551d11bbf9987d06c1f85e8481fda7d33b59cffdbf73131a05e047e9e  out/P18/evtx/00002048.evtx
+25886720
+1052672
+PREFIXO_OK
+registros 394
+exit=0

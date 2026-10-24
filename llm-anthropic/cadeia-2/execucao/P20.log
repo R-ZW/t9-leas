@@ -1,0 +1,12 @@
+# 2026-10-24T15:56:27+00:00 cwd=/home/revisor
+# cmd: bash -c ls -la ~/aval/saidas/P19_thin; file ~/aval/saidas/P19_fat/macho/*; stat -c "%n %s" ~/aval/saidas/P19_fat/macho/*; sha256sum ~/aval/saidas/P19_fat/macho/* ~/aval/amostras/fat.bin; cmp ~/aval/amostras/fat.bin ~/aval/saidas/P19_fat/macho/00002048.macho && echo fat_identico
+total 12
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 15:56 .
+drwxr-xr-x 7 revisor revisor 4096 Oct 24 15:56 ..
+-rw-r--r-- 1 revisor revisor  758 Oct 24 15:56 audit.txt
+/home/revisor/aval/saidas/P19_fat/macho/00002048.macho: Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\012- arm64:\012- Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]
+/home/revisor/aval/saidas/P19_fat/macho/00002048.macho 1676336
+12a05b7dad1fa83945ad105702dad45d5983ca313a955a25eccfda34fbc8f41a  /home/revisor/aval/saidas/P19_fat/macho/00002048.macho
+12a05b7dad1fa83945ad105702dad45d5983ca313a955a25eccfda34fbc8f41a  /home/revisor/aval/amostras/fat.bin
+fat_identico
+# exit=0

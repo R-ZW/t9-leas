@@ -1,0 +1,7 @@
+/home/revisor/aval/testes/c5/vt_consulta.py:15: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  ts = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+2026-10-24T15:58:43Z	275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f	HTTP 200	malicious=65	suspicious=0	undetected=2	harmless=0	nome=eicar.com-45105
+2026-10-24T15:59:00Z	f0b4d86b6a10064b7f2f41a452ab5437f61d4f17d8b1ab3488f3f345519f4f8d	HTTP 200	malicious=0	suspicious=0	undetected=61	harmless=0	nome=zcat
+2026-10-24T15:59:16Z	2f506d3547724df8e8dc9bdfa73bccb1a641b530fd5a40adc9b537f851d86b7f	HTTP 200	malicious=0	suspicious=0	undetected=60	harmless=0	nome=zgrep
+2026-10-24T15:59:33Z	55c2f67ca4c3cca0ebac659f0075461dd671ec4937ecd6c71123bb49ed322ebd	HTTP 200	malicious=0	suspicious=0	undetected=61	harmless=0	nome=gunzip
+2026-10-24T15:59:49Z	542ca2e30f42df566f940ba96fbbe6a7933bebe8a9c33a73fd52fd3811650b45	HTTP 200	malicious=0	suspicious=0	undetected=72	harmless=0	nome=zlib1.dll

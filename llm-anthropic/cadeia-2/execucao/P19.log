@@ -1,0 +1,18 @@
+# 2026-10-24T15:56:21+00:00 cwd=/home/revisor
+# cmd: /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/imagens/c3_thin.dd /home/revisor/aval/amostras/m64_x86 /home/revisor/aval/amostras/m64_arm
+# exit=0
+# 2026-10-24T15:56:21+00:00 cwd=/home/revisor
+# cmd: /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/imagens/c3_fat.dd /home/revisor/aval/amostras/fat.bin
+# exit=0
+# 2026-10-24T15:56:21+00:00 cwd=/home/revisor
+# cmd: foremost-ng -t macho -i /home/revisor/aval/imagens/c3_thin.dd -o /home/revisor/aval/saidas/P19_thin
+[1m[34m[INFO] Processing: /home/revisor/aval/imagens/c3_thin.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0m# exit=0
+# 2026-10-24T15:56:21+00:00 cwd=/home/revisor
+# cmd: foremost-ng -t macho -i /home/revisor/aval/imagens/c3_fat.dd -o /home/revisor/aval/saidas/P19_fat
+[1m[34m[INFO] Processing: /home/revisor/aval/imagens/c3_fat.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0m# exit=0

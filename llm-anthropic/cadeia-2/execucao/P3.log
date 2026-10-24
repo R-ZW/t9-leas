@@ -1,0 +1,25 @@
+# 2026-10-24T15:50:08+00:00 cwd=/home/revisor/aval
+# cmd: bash -c sha256sum ~/artefato.zip; stat -c "%s bytes" ~/artefato.zip; unzip -z ~/artefato.zip | head -3; unzip -q -o ~/artefato.zip -d ~/aval && ls ~/aval && mv ~/aval/foremost-ng-bb812a22 ~/aval/foremost-ng && cd ~/aval/foremost-ng && sha256sum README.md Dockerfile src/Makefile src/extract.c src/helpers.c src/vt_query.c src/dir.c src/state.c src/main.c src/main.h src/engine.c src/config.c src/foremost-ng.8.gz
+955c770e29893527f789e11afc28dcc6b83d7af4a64f14b416e39f554b388e0a  /home/revisor/artefato.zip
+7252858 bytes
+Archive:  /home/revisor/artefato.zip
+bb812a22cb06ef87b5a2d877dfb6f40eb12d460d
+amostras
+bin
+foremost-ng-bb812a22
+imagens
+saidas
+ff3414f09c67a27acb8a86a51e4f74f9dc2c9eb625d65cdb050588c6b0b4cacb  README.md
+a8848d0c6c98e63aafd0d67543e831288090945d92971f2a8133f59180cb1aeb  Dockerfile
+ce9da14a43cb79a04962177c1de9be06d0310c087732f284bd67145badf40716  src/Makefile
+4f81160c4f83e08b2f9bcd91873e9261ed11de2d8c3bc029d8dc91f225dabe34  src/extract.c
+fffa904bb1d94a251ed767a4a030014a4bc4c15ca3e08007a05a779a8312644b  src/helpers.c
+d20bf9723161ea2a51fa03929e1b1e8bafe1e2eeca82e1bc2b31fe214bcf81e9  src/vt_query.c
+ae64b63a153e0528145524b3482c02385f51cd31c320384c422d853ddc3f1efb  src/dir.c
+8bbf0ec5b5ccc804e586ef28fc6a3261fc84d6f8b5a9f5eb606684373a3c1d60  src/state.c
+966bffda265ab64783ac91f2f1dddfa932ebb901a691cf2e97a726563ee87ef1  src/main.c
+c2aef60868a9ceae189d063dd365c5a56bab061fcca3fce52e0df8bc7a2a1ec6  src/main.h
+14d06e39af4d3b3447f44587854d54ba53da608c13f8af7cc958189c831b0dbd  src/engine.c
+f09a2ab0103bd0247973fce8d1e54528fa2456be65d8ebbba262b355a8071458  src/config.c
+c77ca018e49ccc81014ad0f9d8b7bd754e3c349a39503d082f201d1e9f59d365  src/foremost-ng.8.gz
+# exit=0

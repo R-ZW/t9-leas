@@ -1,0 +1,3 @@
+a55edda8db2e2f54226801728b40cc0e14327a11841c89f13bfb1a063b47c08d  /home/revisor/aval/saidas/P26/elf/00002048.elf
+784e6de38ce6eb42e7a75004f219a9447ddb0588e6e205ef324b4a3ef9dfdb32  /home/revisor/aval/saidas/P26/elf/00002304.elf
+22b6b28b130716ccbc9edf0967c61031400c294cf6e3c83a319f8d1de4f87c4c  /home/revisor/aval/saidas/P26/elf/00002560.elf

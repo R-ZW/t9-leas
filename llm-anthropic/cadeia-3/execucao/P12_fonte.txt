@@ -1,0 +1,15 @@
+URL: https://prdownloads.sourceforge.net/dftt/11-carve-fat.zip?download
+Pagina: https://dftt.sourceforge.net/test11/index.html
+11596213 bytes
+0c5e850a29f5811a4861a8d75404f7c45ab1b4526981414c7f86d223d5a71b67  11-carve-fat.zip
+11-carve-fat.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+Archive:  11-carve-fat.zip
+  inflating: 11-carve-fat/11-carve-fat.dd  
+  inflating: 11-carve-fat/11-carve-fat.html  
+  inflating: 11-carve-fat/COPYING-GNU.txt  
+  inflating: 11-carve-fat/README.txt  
+total 11352
+drwxr-xr-x 2 revisor revisor     4096 Oct 24 15:54 11-carve-fat
+-rw-r--r-- 1 revisor revisor 11596213 Oct 24 15:54 11-carve-fat.zip
+-rw-r--r-- 1 revisor revisor     3018 Oct 24 15:53 dftt_index.html
+-rw-r--r-- 1 revisor revisor    13757 Oct 24 15:54 test11.html

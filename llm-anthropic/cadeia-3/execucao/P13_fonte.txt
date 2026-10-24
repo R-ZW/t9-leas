@@ -1,0 +1,5 @@
+Fonte: https://github.com/williballenthin/python-evtx (git clone --depth 1, commit c0007441657899c39180de10a2be1a0e43dbeaf9), tests/data/system.evtx -> e1.evtx, tests/data/security.evtx -> e2.evtx
+e1.evtx 1118208 bytes
+ccb83cfefc9038017224cd97b800b66e248fe14529649ddf47907e5a2021449e  e1.evtx
+e2.evtx 2166784 bytes
+5f29a03cf8c1b4bfbd82c4074ccc81ecfe85d7ee15375afc352ed5025c9a4d8d  e2.evtx

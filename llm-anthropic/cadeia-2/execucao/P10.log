@@ -1,0 +1,6 @@
+# 2026-10-24T15:54:45+00:00 cwd=/home/revisor
+# cmd: sha256sum /home/revisor/aval/bin/reg.sh /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/bin/mkfat.py
+a172414e6ade202edcb9db6f14faf60590ab83b457349cd0994d07dd298c16ad  /home/revisor/aval/bin/reg.sh
+39d28cf5f8396087836063447971aa06ab13b61a78ad28b0dc8caeff18a44a35  /home/revisor/aval/bin/mkimg.sh
+3ba8c3ba25fdb28e727e2d00aeeb9313daf1c3660da1a1d22872c704a1f068e0  /home/revisor/aval/bin/mkfat.py
+# exit=0

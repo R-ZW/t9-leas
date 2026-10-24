@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:59:37 2026
+Invocation: foremost-ng -x -t zip -i /home/revisor/aval/imagens/c5.dd -o /home/revisor/aval/saidas/P28 
+Output directory: /home/revisor/aval/saidas/P28
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/imagens/c5.dd
+Start: Sat Oct 24 15:59:37 2026
+Length: 2 MB (2228224 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.zip              184 B      1048576                            Malicious (62) 
+Finish: Sat Oct 24 15:59:37 2026
+
+1 FILES EXTRACTED
+	
+zip=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:59:37 2026

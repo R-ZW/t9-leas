@@ -1,0 +1,21 @@
+### 2026-10-24T15:55:50+00:00 | foremost-ng -t evtx,elf,exe -i /home/revisor/aval/img/disk.img -o /home/revisor/aval/out/P34
+[1m[34m[INFO] Processing: /home/revisor/aval/img/disk.img
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mexit=0
+### 2026-10-24T15:55:50+00:00 | bash -c find out/P34 -type f | sort; ls out/P34; grep -E "^ +[0-9]+:|FILES|=" out/P34/audit.txt
+out/P34/audit.txt
+out/P34/elf/00131072.elf
+out/P34/elf/00135168.elf
+out/P34/evtx/00002048.evtx
+audit.txt
+elf
+evtx
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.evtx             24 MB      1048576                            N/A            
+   1: 00131072.elf              12 KB     67108864                            N/A            
+   2: 00135168.elf              12 KB     69206016                            N/A            
+3 FILES EXTRACTED
+evtx=1
+elf=2
+exit=0

@@ -1,0 +1,24 @@
+### 2026-10-24T15:54:08+00:00 | bash -c sha256sum amostra2.evtx; stat -c %s amostra2.evtx; od -A d -t u8 -j 24 -N 8 amostra2.evtx; od -A d -t u2 -j 42 -N 2 amostra2.evtx; ~/aval/venv/bin/python conta_evtx.py amostra2.evtx
+ccb83cfefc9038017224cd97b800b66e248fe14529649ddf47907e5a2021449e  amostra2.evtx
+1118208
+0000024                13528
+0000032
+0000042     9
+0000044
+registros 1601
+exit=0
+### 2026-10-24T15:54:08+00:00 | bash -c truncate -s 64M img_c1b.img && dd if=../dados/amostra2.evtx of=img_c1b.img bs=512 seek=2048 conv=notrunc status=none && sha256sum img_c1b.img
+cdf475fddc81f187d037b1ae75bf7b1394d402d6b8fd51e47c8d10b3115086f7  img_c1b.img
+exit=0
+### 2026-10-24T15:54:08+00:00 | foremost-ng -t evtx -i /home/revisor/aval/img/img_c1b.img -o /home/revisor/aval/out/P19b
+[1m[34m[INFO] Processing: /home/revisor/aval/img/img_c1b.img
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mexit=0
+### 2026-10-24T15:54:08+00:00 | bash -c c=out/P19b/evtx/00002048.evtx; ls -l out/P19b/evtx; grep -E "^ +[0-9]+:" out/P19b/audit.txt; cmp -n $(stat -c %s dados/amostra2.evtx) $c dados/amostra2.evtx && echo PREFIXO_OK; ~/aval/venv/bin/python dados/conta_evtx.py $c
+total 64512
+-rw-r--r-- 1 revisor revisor 66060288 Oct 24 15:54 00002048.evtx
+   0: 00002048.evtx             63 MB      1048576                            N/A            
+PREFIXO_OK
+registros 1601
+exit=0

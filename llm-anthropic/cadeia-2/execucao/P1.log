@@ -1,0 +1,28 @@
+# 2026-10-24T15:47:05+00:00 cwd=/home/revisor
+# cmd: bash -c uname -a; cat /etc/os-release; nproc; free -h; df -h ~; lscpu | grep -i "byte order"; id; sudo -n true && echo sudo_ok; which gcc make git curl file python3 unzip man
+Linux revisor-c2 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.2 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+16
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       879Mi       6.4Gi        26Mi       505Mi       6.7Gi
+Swap:          2.0Gi          0B       2.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+overlay        1007G  4.7G  951G   1% /
+Byte Order:                              Little Endian
+uid=1001(revisor) gid=1001(revisor) groups=1001(revisor)
+sudo_ok
+/usr/bin/unzip
+/usr/bin/man
+# exit=1

@@ -1,0 +1,23 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:57:00 2026
+Invocation: foremost-ng -v -t macho -i img_c3.dd -o /home/revisor/aval/out/C3 
+Output directory: /home/revisor/aval/out/C3
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: img_c3.dd
+Start: Sat Oct 24 15:57:00 2026
+Length: 16 MB (16777216 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000100.macho            20 KB        51200                            N/A            
+   1: 00003000.macho            80 KB      1536000                            N/A            
+Finish: Sat Oct 24 15:57:00 2026
+
+2 FILES EXTRACTED
+	
+macho=2
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:57:00 2026

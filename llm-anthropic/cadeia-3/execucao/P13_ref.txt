@@ -1,0 +1,19 @@
+[FORA DO ROTEIRO] evtx_dump do pip falhou (ModuleNotFoundError: scripts); validacao via valida_evtx.py (API Evtx)
+== e1.evtx (original)
+magic_ok=True
+header_chunk_count=9
+header_next_record_number=13528
+header_verify=True
+chunks_iterados=9
+registros_xml=1601
+erros_render=0
+rc=0
+== e2.evtx (original)
+magic_ok=True
+header_chunk_count=26
+header_next_record_number=2226
+header_verify=True
+chunks_iterados=26
+registros_xml=2261
+erros_render=0
+rc=0

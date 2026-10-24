@@ -1,0 +1,5 @@
+bloco	offset	arquivo	bytes	sha256
+100	51200	/home/revisor/aval/testes/c4/e64	15960	ba8ca39ff2393ebdfc683c54bcfb77e3f956e47fae8fe4af39f7063962302fe0
+1000	512000	/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/zlib1.dll	91432	542ca2e30f42df566f940ba96fbbe6a7933bebe8a9c33a73fd52fd3811650b45
+2048	1048576	/home/revisor/aval/testes/c1/e1.evtx	1118208	ccb83cfefc9038017224cd97b800b66e248fe14529649ddf47907e5a2021449e
+1d0454f7523dfe04faa9079c7fc28caa3f03bb5d9919ac4118b998ac21ff3807  img_misto.dd

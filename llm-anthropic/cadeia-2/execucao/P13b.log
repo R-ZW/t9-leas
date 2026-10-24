@@ -1,0 +1,7 @@
+# 2026-10-24T15:55:25+00:00 cwd=/home/revisor/aval
+# cmd: venv/bin/python /home/revisor/aval/bin/conta_evtx.py amostras/a.evtx saidas/P12/evtx/00002048.evtx amostras/b.evtx saidas/P12/evtx/00004480.evtx
+amostras/a.evtx chunks=9 registros=1601 xml_ok=1601 erro=-
+saidas/P12/evtx/00002048.evtx chunks=9 registros=1601 xml_ok=1601 erro=-
+amostras/b.evtx chunks=26 registros=2261 xml_ok=2261 erro=-
+saidas/P12/evtx/00004480.evtx chunks=26 registros=2261 xml_ok=2261 erro=-
+# exit=0

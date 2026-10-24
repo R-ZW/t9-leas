@@ -1,0 +1,9 @@
+# 2026-10-24T15:50:14+00:00 cwd=/home/revisor/aval/clone
+# cmd: bash -c git clone -q https://github.com/cristianzsh/foremost-ng.git && cd foremost-ng && git rev-parse HEAD && git cat-file -t bb812a22cb06ef87b5a2d877dfb6f40eb12d460d && git log --oneline -1 bb812a22cb06ef87b5a2d877dfb6f40eb12d460d && git diff --stat bb812a22cb06ef87b5a2d877dfb6f40eb12d460d HEAD | tail -3
+09ad68b398ded9d7b68043c07028850284fcc318
+commit
+bb812a2 Add Foremost-NG Dockerfile
+ CITATION.cff | 36 ++++++++++++++++++++++++++++++++++++
+ README.md    | 19 +++++++++++++++++++
+ 2 files changed, 55 insertions(+)
+# exit=0

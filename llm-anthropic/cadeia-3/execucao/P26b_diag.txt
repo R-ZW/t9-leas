@@ -1,0 +1,53 @@
+[FORA DO ROTEIRO] diagnostico: zlib1.dll (PE32+) nao extraida em P26; execucao com -a -t exe em img_misto.dd
+comando: foremost-ng -a -t exe -i img_misto.dd -o $HOME/aval/out/P26b_diag
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:58:17 2026
+Invocation: foremost-ng -a -t exe -i img_misto.dd -o /home/revisor/aval/out/P26b_diag 
+Output directory: /home/revisor/aval/out/P26b_diag
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: img_misto.dd
+Start: Sat Oct 24 15:58:17 2026
+Length: 64 MB (67108864 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00001000.exe               2 MB       512000   (Header dump)            N/A            
+   1: 00001101.exe               2 MB       564020   (Header dump)            N/A            
+   2: 00001123.exe               2 MB       575274   (Header dump)            N/A            
+   3: 00001124.exe               2 MB       575490   (Header dump)            N/A            
+   4: 00001124_1.exe             2 MB       575554   (Header dump)            N/A            
+   5: 00001178.exe               2 MB       603356   (Header dump)            N/A            
+Finish: Sat Oct 24 15:58:17 2026
+
+6 FILES EXTRACTED
+	
+exe=6
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:58:17 2026
+total 12288
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001000.exe
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001101.exe
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001123.exe
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001124.exe
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001124_2.exe
+-rw-r--r-- 1 revisor revisor 2097152 Oct 24 15:58 00001178.exe
+== tipos das DLLs em windows_dlls
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libbrotlicommon.dll: PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libbrotlidec.dll:    PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 11 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libcrypto-3-x64.dll: PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 9 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libcurl-4.dll:       PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libiconv-2.dll:      PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 12 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libidn2-0.dll:       PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 11 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libintl-8.dll:       PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libnghttp2-14.dll:   PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libnghttp3-9.dll:    PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 11 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libpsl-5.dll:        PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 11 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libssh2-1.dll:       PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libssl-3-x64.dll:    PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 8 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libunistring-5.dll:  PE32+ executable (DLL) (console) x86-64 (stripped to external PDB), for MS Windows, 12 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/libzstd.dll:         PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 6 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/msvcr100.dll:        PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 9 sections
+/home/revisor/aval/foremost-ng-bb812a22/windows_dlls/zlib1.dll:           PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 6 sections

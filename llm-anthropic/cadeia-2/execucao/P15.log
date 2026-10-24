@@ -1,0 +1,9 @@
+# 2026-10-24T15:56:00+00:00 cwd=/home/revisor
+# cmd: /home/revisor/aval/bin/mkimg.sh /home/revisor/aval/imagens/c2.dd /home/revisor/aval/amostras/s1.sh /home/revisor/aval/amostras/s2.py /home/revisor/aval/amostras/s3.ps1 /home/revisor/aval/amostras/neg_curto.sh /home/revisor/aval/amostras/neg_coment.sh
+# exit=0
+# 2026-10-24T15:56:00+00:00 cwd=/home/revisor
+# cmd: foremost-ng -t script -i /home/revisor/aval/imagens/c2.dd -o /home/revisor/aval/saidas/P15
+[1m[34m[INFO] Processing: /home/revisor/aval/imagens/c2.dd
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0m# exit=0

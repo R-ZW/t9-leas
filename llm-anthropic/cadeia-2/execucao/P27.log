@@ -1,0 +1,12 @@
+# 2026-10-24T15:58:14+00:00 cwd=/home/revisor
+# cmd: bash -c for f in ~/aval/saidas/P26/elf/*.elf; do h=$(sha256sum "$f"|cut -d" " -f1); echo "== $f $h"; code=$(curl -s -w "%{http_code}" -H "x-apikey: $VT_API_KEY" "https://www.virustotal.com/api/v3/files/$h" -o ~/evidencias/P27_$h.json); echo "http=$code"; python3 -c "import json,sys;d=json.load(open(sys.argv[1]));print(d.get(\"data\",{}).get(\"attributes\",{}).get(\"last_analysis_stats\"),d.get(\"error\"))" ~/evidencias/P27_$h.json; sleep 16; done
+== /home/revisor/aval/saidas/P26/elf/00002048.elf a55edda8db2e2f54226801728b40cc0e14327a11841c89f13bfb1a063b47c08d
+http=404
+None {'code': 'NotFoundError', 'message': 'File "a55edda8db2e2f54226801728b40cc0e14327a11841c89f13bfb1a063b47c08d" not found'}
+== /home/revisor/aval/saidas/P26/elf/00002304.elf 784e6de38ce6eb42e7a75004f219a9447ddb0588e6e205ef324b4a3ef9dfdb32
+http=404
+None {'code': 'NotFoundError', 'message': 'File "784e6de38ce6eb42e7a75004f219a9447ddb0588e6e205ef324b4a3ef9dfdb32" not found'}
+== /home/revisor/aval/saidas/P26/elf/00002560.elf 22b6b28b130716ccbc9edf0967c61031400c294cf6e3c83a319f8d1de4f87c4c
+http=404
+None {'code': 'NotFoundError', 'message': 'File "22b6b28b130716ccbc9edf0967c61031400c294cf6e3c83a319f8d1de4f87c4c" not found'}
+# exit=0

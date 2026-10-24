@@ -1,0 +1,7 @@
+== P30b: conferencia de saida (hash no audit? recovery.log?)
+0
+0
+== P31: evidence2.dd
+ls: cannot access '/home/revisor/evidence2.dd': No such file or directory
+ls: cannot access '/home/revisor/aval/testes/c6/evidence2.dd': No such file or directory
+conclusao: arquivo indisponivel (nao esta no artefato; informado pelo coordenador como nao encontrado)

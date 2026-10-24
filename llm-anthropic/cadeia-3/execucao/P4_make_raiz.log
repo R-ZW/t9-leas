@@ -1,0 +1,6 @@
+== make na raiz do zip (foremost-ng-bb812a22) ==
+make: *** No targets specified and no makefile found.  Stop.
+rc=2
+== make na raiz do clone (foremost-ng, commit bb812a22) ==
+make: *** No targets specified and no makefile found.  Stop.
+rc=2

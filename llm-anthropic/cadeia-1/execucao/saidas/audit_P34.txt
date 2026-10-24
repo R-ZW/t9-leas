@@ -1,0 +1,25 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:55:50 2026
+Invocation: foremost-ng -t evtx,elf,exe -i /home/revisor/aval/img/disk.img -o /home/revisor/aval/out/P34 
+Output directory: /home/revisor/aval/out/P34
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/img/disk.img
+Start: Sat Oct 24 15:55:50 2026
+Length: 80 MB (83886080 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.evtx             24 MB      1048576                            N/A            
+   1: 00131072.elf              12 KB     67108864                            N/A            
+   2: 00135168.elf              12 KB     69206016                            N/A            
+Finish: Sat Oct 24 15:55:50 2026
+
+3 FILES EXTRACTED
+	
+evtx=1
+elf=2
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:55:50 2026

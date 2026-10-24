@@ -1,0 +1,47 @@
+[FORA DO ROTEIRO] diagnostico com -a (write all headers) para saber se os cabecalhos thin sao localizados
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:57:11 2026
+Invocation: foremost-ng -v -a -t macho -i img_c3.dd -o /home/revisor/aval/out/C3_diag_a 
+Output directory: /home/revisor/aval/out/C3_diag_a
+Configuration file: /usr/local/etc/foremost.conf
+[1m[34m[INFO] Processing: img_c3.dd
+[0m------------------------------------------------------------------
+File: img_c3.dd
+Start: Sat Oct 24 15:57:11 2026
+Length: 16 MB (16777216 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000100.macho            20 KB        51200                            N/A            
+   1: 00003000.macho            80 KB      1536000                            N/A            
+   2: 00001000.macho            10 MB       512000   (Header dump)            N/A            
+   3: 00000108.macho            10 MB        55296   (Header dump)            N/A            
+   4: 00000132.macho            10 MB        67584   (Header dump)            N/A            
+   5: 00002000.macho            10 MB      1024000   (Header dump)            N/A            
+   6: 00003008.macho            10 MB      1540096   (Header dump)            N/A            
+   7: 00003064.macho            10 MB      1568768   (Header dump)            N/A            
+   8: 00004000.macho            10 MB      2048000   (Header dump)            N/A            
+[1m[34m
+[INFO] Processing finished.
+[0mFinish: Sat Oct 24 15:57:11 2026
+
+9 FILES EXTRACTED
+	
+macho=2
+macho=1
+macho=6
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:57:11 2026
+rc=0
+total 71788
+-rw-r--r-- 1 revisor revisor    21208 Oct 24 15:57 00000100.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00000108.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00000132.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00001000.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00002000.macho
+-rw-r--r-- 1 revisor revisor    82752 Oct 24 15:57 00003000.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00003008.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00003064.macho
+-rw-r--r-- 1 revisor revisor 10485760 Oct 24 15:57 00004000.macho

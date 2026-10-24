@@ -1,0 +1,6 @@
+# 2026-10-24T16:00:12+00:00 cwd=/home/revisor/aval
+# cmd: bash -c tar czf ~/evidencias/saidas_20261024.tgz saidas imagens/*.manifest.csv bin && sha256sum ~/evidencias/saidas_*.tgz && stat -c "%s bytes" ~/evidencias/saidas_*.tgz
+588bfe57130e913d94f44815a7f4089d26ebb81cf3c31856f56e48d6f20180bf  /home/revisor/evidencias/saidas_20261024.tgz
+13557650 bytes
+# exit=0
+# [ajuste] tgz removido da pasta de evidências: 13,5 MB e continha o eicar_com.zip extraído (arquivo de teste antivírus) que seria gravado no host Windows; as saídas ficam em ~/aval/saidas no contêiner

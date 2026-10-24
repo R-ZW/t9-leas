@@ -1,0 +1,40 @@
+gcc64 rc=0
+gcc32 rc=0
+-rwxr-xr-x 1 revisor revisor  14936 Oct 24 15:57 e32
+-rwxr-xr-x 1 revisor revisor  15960 Oct 24 15:57 e64
+-rwxr-xr-x 1 revisor revisor 142312 Oct 24 15:57 ls64
+ba8ca39ff2393ebdfc683c54bcfb77e3f956e47fae8fe4af39f7063962302fe0  e64
+27c628241311d20dba04d2802788aa4d88c063c310bbb42861e3bfdec2232034  e32
+1bea8094b78a3910345d80af3d182390fda07ae5788352651eb7773505dc39af  ls64
+e64:  ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=be566e44039d30148f2a314a304a072c9613a1d6, for GNU/Linux 3.2.0, not stripped
+e32:  ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1]=3f7072cfd6a0d5ed0dd95debb15233fc68973665, for GNU/Linux 3.2.0, not stripped
+ls64: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=3eca7e3905b37d48cf0a88b576faa7b95cc3097b, for GNU/Linux 3.2.0, stripped
+--- e64
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          13976 (bytes into file)
+  Number of section headers:         31
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+  LOAD           0x0000000000001000 0x0000000000001000 0x0000000000001000
+  LOAD           0x0000000000002000 0x0000000000002000 0x0000000000002000
+  LOAD           0x0000000000002db8 0x0000000000003db8 0x0000000000003db8
+--- e32
+  Class:                             ELF32
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          13776 (bytes into file)
+  Number of section headers:         29
+  LOAD           0x000000 0x00000000 0x00000000 0x003d4 0x003d4 R   0x1000
+  LOAD           0x001000 0x00001000 0x00001000 0x001e4 0x001e4 R E 0x1000
+  LOAD           0x002000 0x00002000 0x00002000 0x00114 0x00114 R   0x1000
+  LOAD           0x002ed8 0x00003ed8 0x00003ed8 0x00130 0x00134 RW  0x1000
+--- ls64
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Start of section headers:          140328 (bytes into file)
+  Number of section headers:         31
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+  LOAD           0x0000000000004000 0x0000000000004000 0x0000000000004000
+  LOAD           0x0000000000019000 0x0000000000019000 0x0000000000019000
+  LOAD           0x0000000000020f30 0x0000000000021f30 0x0000000000021f30
+ola foremost-ng
+ola foremost-ng

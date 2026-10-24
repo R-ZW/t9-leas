@@ -1,0 +1,3 @@
+### 2026-10-24T15:50:14+00:00 | bash -c truncate -s 16M img_f.img && dd if=../dados/hello64 of=img_f.img bs=512 seek=2048 conv=notrunc status=none && dd if=../dados/teste.sh of=img_f.img bs=512 seek=6144 conv=notrunc status=none && sha256sum img_f.img
+35fb96e26453460aa9fdcda76f914e64da669dcd7fea5a52846d766b8c53285b  img_f.img
+exit=0

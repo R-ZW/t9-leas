@@ -1,0 +1,14 @@
+### 2026-10-24T15:58:49+00:00 | bash -c unzip -l artefato.zip | grep -i -E "evidence|\.dd$|\.img$|\.raw$" || echo NENHUMA_IMAGEM_NO_ARTEFATO; grep -rn -i evidence2 src-art || echo SEM_REFERENCIA; ls -la /home/revisor
+NENHUMA_IMAGEM_NO_ARTEFATO
+SEM_REFERENCIA
+total 7116
+drwxr-x--- 1 revisor revisor    4096 Oct 24 15:53 .
+drwxr-xr-x 1 root    root       4096 Oct 24 15:32 ..
+-rw-r--r-- 1 revisor revisor     220 Mar 31  2024 .bash_logout
+-rw-r--r-- 1 revisor revisor    3771 Mar 31  2024 .bashrc
+drwxr-xr-x 4 revisor revisor    4096 Oct 24 15:55 .cache
+-rw-r--r-- 1 revisor revisor     807 Mar 31  2024 .profile
+-rwxr-xr-x 1 revisor revisor 7252858 Oct 24 15:28 artefato.zip
+drwxr-xr-x 7 revisor revisor    4096 Oct 24 15:53 aval
+drwxrwxrwx 1 root    root       4096 Oct 24 15:47 evidencias
+exit=0

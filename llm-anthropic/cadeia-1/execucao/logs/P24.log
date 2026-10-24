@@ -1,0 +1,34 @@
+### 2026-10-24T15:54:35+00:00 | clang -target x86_64-apple-macos11 -c macho.c -o m_x86_64.o
+exit=0
+### 2026-10-24T15:54:35+00:00 | clang -target arm64-apple-macos11 -c macho.c -o m_arm64.o
+exit=0
+### 2026-10-24T15:54:35+00:00 | clang -target i386-apple-macos10.12 -c macho.c -o m_i386.o
+exit=0
+### 2026-10-24T15:54:35+00:00 | /usr/lib/llvm-18/bin/llvm-lipo -create m_x86_64.o m_arm64.o -output m_fat.o
+exit=0
+### 2026-10-24T15:54:35+00:00 | bash -c file m_*.o; for f in m_*.o; do echo $f; od -A x -t x1 -N 4 $f; done; stat -c "%n %s" m_*.o; sha256sum m_*.o
+m_arm64.o:  Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+m_fat.o:    Mach-O universal binary with 2 architectures: [x86_64:\012- Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>] [\012- arm64:\012- Mach-O 64-bit arm64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>]
+m_i386.o:   Mach-O i386 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+m_x86_64.o: Mach-O 64-bit x86_64 object, flags:<|SUBSECTIONS_VIA_SYMBOLS>
+m_arm64.o
+000000 cf fa ed fe
+000004
+m_fat.o
+000000 ca fe ba be
+000004
+m_i386.o
+000000 ce fa ed fe
+000004
+m_x86_64.o
+000000 cf fa ed fe
+000004
+m_arm64.o 648
+m_fat.o 17032
+m_i386.o 664
+m_x86_64.o 784
+a9e0034151d73c94ed80118ceda88de20beba7176a7370c00fad7d73bbc07fdf  m_arm64.o
+f4aa7e2636bb4588308884b2e423a5b739b4e99efd1566bbd694783316e93dd8  m_fat.o
+9018621306fef30c95246572627613cb32b395a63b1f60cf36bf63b9d87015b8  m_i386.o
+556ae4ff57e3c78becba1c615d380a642c081e0f85315a47d8f3d1214523b3bb  m_x86_64.o
+exit=0

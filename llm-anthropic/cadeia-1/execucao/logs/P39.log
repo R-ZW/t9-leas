@@ -1,0 +1,15 @@
+### 2026-10-24T15:56:28+00:00 | bash -c sha256sum out/P38/zip/* out/P38/elf/* dados/eicar_com.zip; cmp out/P38/zip/00002048.zip dados/eicar_com.zip && echo ZIP_IDENTICO; grep -E "^ +[0-9]+:" out/P38/audit.txt
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  out/P38/zip/00002048.zip
+16ab4938b5961dc1a851a38972e0a0657641a1b76e249b81d0950b9893461114  out/P38/elf/00006144.elf
+2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad  dados/eicar_com.zip
+ZIP_IDENTICO
+   0: 00002048.zip              184 B      1048576                            Malicious (62) 
+   1: 00006144.elf              12 KB      3145728                            Clean (0)      
+exit=0
+### 2026-10-24T15:57:33+00:00 | bash -c curl -s -H "x-apikey: $VT_API_KEY" -H 'Accept: application/json' https://www.virustotal.com/api/v3/files/2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad | ~/aval/venv/bin/python ~/aval/dados/vt_stats.py
+sha256: 2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad
+last_analysis_stats: {"confirmed-timeout": 0, "failure": 1, "harmless": 0, "malicious": 62, "suspicious": 0, "timeout": 0, "type-unsupported": 7, "undetected": 5}
+exit=0
+### 2026-10-24T15:57:34+00:00 | bash -c curl -s -H "x-apikey: $VT_API_KEY" -H 'Accept: application/json' https://www.virustotal.com/api/v3/files/16ab4938b5961dc1a851a38972e0a0657641a1b76e249b81d0950b9893461114 | ~/aval/venv/bin/python ~/aval/dados/vt_stats.py
+erro_api: NotFoundError
+exit=0

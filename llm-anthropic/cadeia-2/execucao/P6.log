@@ -1,0 +1,90 @@
+# 2026-10-24T15:50:33+00:00 cwd=/home/revisor
+# cmd: bash -c which foremost-ng; foremost-ng -h; echo rc_h=$?; foremost-ng -V; echo rc_V=$?; MANPAGER=cat man foremost-ng | head -60; echo rc_man=${PIPESTATUS[0]}
+/usr/local/bin/foremost-ng
+[1m[36mforemost-ng version 1.5.7 by Cristian Souza.
+[0m[33m$ foremost-ng [-v|-V|-h|-T|-Q|-q|-a|-w|-d|-x] [-t <type>] [-s <blocks>] [-k <size>]
+	[-b <size>] [-c <file>] [-o <dir>] [-i <file>] <input files...>
+
+[0m[32mOptions:
+[0m  [36m-V[0m  Display copyright info and exit.
+  [36m-t[0m  Specify file type (e.g., jpeg,pdf).
+  [36m-d[0m  Enable indirect block detection.
+  [36m-i[0m  Specify a single input file.
+  [36m-a[0m  Write all headers, skip error detection.
+  [36m-w[0m  Only write audit file.
+  [36m-o[0m  Set output directory (default: output).
+  [36m-c[0m  Set config file (default: foremost.conf).
+  [36m-q[0m  Enable quick mode (512-byte steps).
+  [36m-Q[0m  Enable quiet mode.
+  [36m-x[0m  Enable VirusTotal scan (needs API key).
+  [36m-v[0m  Enable verbose mode.
+rc_h=0
+1.5.7
+Original authors: Jesse Kornblum, Kris Kendall, and Nick Mikus
+This program is a work of the US Government. In accordance with 17 USC 105,
+copyright protection is not available for any work of the US Government.
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+rc_V=0
+FOREMOST-NG(8)              System Manager's Manual             FOREMOST-NG(8)
+
+NAME
+       foremost-ng - recover files by header, footer, and data structures.
+
+SYNOPSIS
+       foremost-ng  [  -h ] [ -V ] [ -d ] [ -v ] [ -q ] [ -Q ] [ -w ] [ -a ] [
+       -T ] [ -x ] [ -b blocksize ] [ -k chunksize ] [ -o  directory  ]  [  -c
+       config_file ] [ -s number ] [ -t types ] [ -i input_file ]
+
+BUILT-IN FORMATS
+       Recover  files  from  a disk or image based on file types specified via
+       the -t switch.
+
+       jpg    Support for JFIF and Exif formats used by  modern  digital  cam‐
+              eras.
+
+       gif    Support for GIF images.
+
+       png    Support for PNG images.
+
+       bmp    Support for Windows BMP format.
+
+       avi    Support for AVI files (uses the RIFF container format).
+
+       exe    Support  for  Windows  PE  binaries;  extracts DLL and EXE files
+              along with their compile timestamps.
+
+       mpg    Support for MPEG files (must begin with 0x000001BA).
+
+       mp4    Support for MP4 files.
+
+       wav    Support for WAV files.
+
+       riff   Support for RIFF files; extracts both AVI and  RIFF  since  they
+              share the same format (faster than running each separately).
+
+       wmv    Support for WMV files; may also extract WMA files due to similar
+              format.
+
+       mov    Support for MOV files.
+
+       pdf    Support for PDF files.
+
+       ole    Extract any file using the OLE file structure (e.g., PowerPoint,
+              Word, Excel, Access, StarWriter).
+
+       doc    Support  for  Microsoft Word documents; more efficient to run -t
+              ole if you wish to extract all OLE-based files.
+
+       zip    Support for ZIP archives (including JAR  files).  Also  extracts
+              OpenOffice  documents (SXW, SXC, SXI, etc.) and Office 2007 XML-
+              based files (PPTX, DOCX, XLSX).
+
+       rar    Support for RAR archives.
+
+       htm    Support for HTML files.
+
+       cpp    Primitive C source code  detection  (may  generate  false  posi‐
+              tives).
+rc_man=0
+# exit=0

@@ -1,0 +1,23 @@
+### 2026-10-24T15:47:06+00:00 | bash -c cat /etc/os-release; uname -m; nproc; free -h; df -h $HOME; id
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.2 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+x86_64
+16
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       888Mi       6.4Gi        26Mi       515Mi       6.7Gi
+Swap:          2.0Gi          0B       2.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+overlay        1007G  4.7G  951G   1% /
+uid=1001(revisor) gid=1001(revisor) groups=1001(revisor)
+exit=0

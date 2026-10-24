@@ -1,0 +1,34 @@
+### 2026-10-24T15:53:40+00:00 | python3 -m venv /home/revisor/aval/venv
+exit=0
+### 2026-10-24T15:53:42+00:00 | /home/revisor/aval/venv/bin/pip install python-evtx
+Collecting python-evtx
+  Downloading python_evtx-0.8.1-py3-none-any.whl.metadata (6.0 kB)
+Collecting hexdump>=3.3 (from python-evtx)
+  Downloading hexdump-3.3.zip (12 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Downloading python_evtx-0.8.1-py3-none-any.whl (26 kB)
+Building wheels for collected packages: hexdump
+  Building wheel for hexdump (pyproject.toml): started
+  Building wheel for hexdump (pyproject.toml): finished with status 'done'
+  Created wheel for hexdump: filename=hexdump-3.3-py3-none-any.whl size=8933 sha256=06e7e24e18da5352200e92848268472fb4fab4179ad0956514bce6c4f69e59e1
+  Stored in directory: /home/revisor/.cache/pip/wheels/5e/b9/b5/227a20e7e8bbdb2b17e46a087c0f0119059ee65fe8374cac18
+Successfully built hexdump
+Installing collected packages: hexdump, python-evtx
+Successfully installed hexdump-3.3 python-evtx-0.8.1
+exit=0
+### 2026-10-24T15:53:44+00:00 | bash -c ~/aval/venv/bin/pip show python-evtx | head -3
+Name: python-evtx
+Version: 0.8.1
+Summary: Pure Python parser for Windows event log files (.evtx).
+ERROR: Pipe to stdout was broken
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+exit=0
+### 2026-10-24T15:53:45+00:00 | /home/revisor/aval/venv/bin/python conta_evtx.py amostra.evtx
+registros 394
+exit=0

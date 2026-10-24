@@ -1,0 +1,20 @@
+### 2026-10-24T15:54:22+00:00 | bash -c cd out/P22/script && ls -l; cmp 00002048.script ~/aval/dados/s_bash.sh && echo OK_BASH; cmp 00004096.script ~/aval/dados/s_py.py && echo OK_PY; cmp 00006144.script ~/aval/dados/s_ps.ps1 && echo OK_PS; ls 00008192* 00010240* 2>&1; head -1 00002048.script 00004096.script 00006144.script
+total 16
+-rw-r--r-- 1 revisor revisor 106 Oct 24 15:54 00002048.script
+-rw-r--r-- 1 revisor revisor  75 Oct 24 15:54 00004096.script
+-rw-r--r-- 1 revisor revisor  84 Oct 24 15:54 00006144.script
+-rw-r--r-- 1 revisor revisor  66 Oct 24 15:54 00008192.script
+OK_BASH
+OK_PY
+OK_PS
+ls: cannot access '00010240*': No such file or directory
+00008192.script
+==> 00002048.script <==
+#!/bin/bash
+
+==> 00004096.script <==
+#!/usr/bin/env python3
+
+==> 00006144.script <==
+#!/usr/bin/env pwsh
+exit=0

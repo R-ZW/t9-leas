@@ -1,0 +1,15 @@
+# 2026-10-24T15:56:00+00:00 cwd=/home/revisor
+# cmd: bash -c cd ~/aval/saidas/P15/script && for f in *; do echo "== $f $(stat -c %s $f)"; head -1 $f; done; sha256sum *
+== 00002048.script 100
+#!/bin/bash
+== 00002304.script 94
+#!/usr/bin/env python3
+== 00002560.script 94
+#!/usr/bin/env pwsh
+== 00003072.script 78
+#!/bin/bash
+ea56ffad1476bb74678a84245c753ae586b16a38d1f97c9c4bdaf0bbb770ecb5  00002048.script
+efd873392db236eae8519b0d33adbb8884ce7c77ff2941819b42c59b31922326  00002304.script
+128bf90a1b8a5bbb93b6797a892ec5c54f37e880530eb74d0c42c2543812c19f  00002560.script
+ac91dc9c4c10a7482240bb938e6cd1018d7190b59b5d6da4a5bbb51cc6998c9c  00003072.script
+# exit=0

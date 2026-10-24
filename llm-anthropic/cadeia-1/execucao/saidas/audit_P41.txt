@@ -1,0 +1,24 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:58:40 2026
+Invocation: foremost-ng -v -x -t zip,elf -i /home/revisor/aval/img/img_c5.img -o /home/revisor/aval/out/P41 
+Output directory: /home/revisor/aval/out/P41
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/img/img_c5.img
+Start: Sat Oct 24 15:58:40 2026
+Length: 16 MB (16777216 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.zip              184 B      1048576                            Clean (0)      
+   1: 00006144.elf              12 KB      3145728                            Clean (0)      
+Finish: Sat Oct 24 15:58:40 2026
+
+2 FILES EXTRACTED
+	
+zip=1
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:58:40 2026

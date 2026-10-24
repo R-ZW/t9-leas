@@ -1,0 +1,24 @@
+# 2026-10-24T15:55:54+00:00 cwd=/home/revisor/aval/amostras
+# cmd: bash -c wc -c s1.sh s2.py s3.ps1 neg_curto.sh neg_coment.sh; sha256sum s1.sh s2.py s3.ps1 neg_curto.sh neg_coment.sh; cat s1.sh s2.py s3.ps1
+100 s1.sh
+ 94 s2.py
+ 94 s3.ps1
+ 18 neg_curto.sh
+ 78 neg_coment.sh
+384 total
+ea56ffad1476bb74678a84245c753ae586b16a38d1f97c9c4bdaf0bbb770ecb5  s1.sh
+efd873392db236eae8519b0d33adbb8884ce7c77ff2941819b42c59b31922326  s2.py
+128bf90a1b8a5bbb93b6797a892ec5c54f37e880530eb74d0c42c2543812c19f  s3.ps1
+397a2a1f305a0cde04b3f92dabbfa8187d2e229e91ad0afee4ca894744170dc3  neg_curto.sh
+ac91dc9c4c10a7482240bb938e6cd1018d7190b59b5d6da4a5bbb51cc6998c9c  neg_coment.sh
+#!/bin/bash
+# backup
+for d in /etc /var/log; do tar czf /tmp/$(basename $d).tgz "$d"; done
+echo fim
+#!/usr/bin/env python3
+import os
+for k, v in sorted(os.environ.items()):
+    print(k, "=", v)
+#!/usr/bin/env pwsh
+Get-ChildItem -Path $HOME -Recurse | Measure-Object -Property Length -Sum
+# exit=0

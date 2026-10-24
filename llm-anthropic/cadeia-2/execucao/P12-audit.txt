@@ -1,0 +1,23 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:55:07 2026
+Invocation: foremost-ng -t evtx -i /home/revisor/aval/imagens/c1.dd -o /home/revisor/aval/saidas/P12 
+Output directory: /home/revisor/aval/saidas/P12
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/imagens/c1.dd
+Start: Sat Oct 24 15:55:07 2026
+Length: 5 MB (5636096 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.evtx              1 MB      1048576                            N/A            
+   1: 00004480.evtx              3 MB      2293760                            N/A            
+Finish: Sat Oct 24 15:55:07 2026
+
+2 FILES EXTRACTED
+	
+evtx=2
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:55:07 2026

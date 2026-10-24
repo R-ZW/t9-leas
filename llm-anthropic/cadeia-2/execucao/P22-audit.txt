@@ -1,0 +1,24 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:56:46 2026
+Invocation: foremost-ng -t evtx,elf,exe -i /home/revisor/aval/imagens/c4.dd -o /home/revisor/aval/saidas/P22 
+Output directory: /home/revisor/aval/saidas/P22
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/imagens/c4.dd
+Start: Sat Oct 24 15:56:46 2026
+Length: 2 MB (2621440 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.elf              12 KB      1048576                            N/A            
+   1: 00002304.elf              12 KB      1179648                            N/A            
+   2: 00002560.elf             136 KB      1310720                            N/A            
+Finish: Sat Oct 24 15:56:46 2026
+
+3 FILES EXTRACTED
+	
+elf=3
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:56:46 2026

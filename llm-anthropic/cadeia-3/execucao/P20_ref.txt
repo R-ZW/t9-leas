@@ -1,0 +1,123 @@
+== tentativa executavel i386
+ld64.lld-18: error: missing or unsupported -arch i386
+rc=1
+== referencia (llvm-objdump --macho --private-headers)
+--- fat.o
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+      cmd LC_SEGMENT_64
+  cmdsize 392
+   vmsize 0x0000000000001090
+  fileoff 552
+ filesize 4240
+      size 0x0000000000000023
+    offset 552
+      size 0x0000000000001000
+    offset 600
+      size 0x0000000000000020
+    offset 4696
+      size 0x0000000000000040
+    offset 4728
+   cmdsize 24
+ cmdsize 24
+ strsize 16
+        cmdsize 80
+--- t32.o
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+      cmd LC_SEGMENT
+  cmdsize 328
+   vmsize 0x00001070
+  fileoff 476
+ filesize 4208
+      size 0x00000028
+    offset 476
+      size 0x00001000
+    offset 516
+      size 0x00000014
+    offset 4612
+      size 0x00000034
+    offset 4632
+  cmdsize 16
+ cmdsize 24
+ strsize 16
+        cmdsize 80
+--- t64.o
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+      cmd LC_SEGMENT_64
+  cmdsize 392
+   vmsize 0x0000000000001090
+  fileoff 552
+ filesize 4240
+      size 0x0000000000000023
+    offset 552
+      size 0x0000000000001000
+    offset 600
+      size 0x0000000000000020
+    offset 4696
+      size 0x0000000000000040
+    offset 4728
+   cmdsize 24
+ cmdsize 24
+ strsize 16
+        cmdsize 80
+--- fat.exe
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+      cmd LC_SEGMENT_64
+  cmdsize 72
+   vmsize 0x0000000100000000
+  fileoff 0
+ filesize 0
+      cmd LC_SEGMENT_64
+  cmdsize 552
+   vmsize 0x0000000000003000
+  fileoff 0
+ filesize 12288
+      size 0x0000000000000023
+    offset 1440
+      size 0x0000000000000006
+    offset 1476
+ reserved2 6 (size of stubs)
+      size 0x000000000000001a
+    offset 1484
+      size 0x0000000000001000
+    offset 1520
+      size 0x0000000000001038
+    offset 5616
+      size 0x0000000000000018
+    offset 9768
+      cmd LC_SEGMENT_64
+  cmdsize 152
+   vmsize 0x0000000000001000
+  fileoff 12288
+ filesize 4096
+      size 0x0000000000000008
+--- t64.exe
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+      cmd LC_SEGMENT_64
+  cmdsize 72
+   vmsize 0x0000000100000000
+  fileoff 0
+ filesize 0
+      cmd LC_SEGMENT_64
+  cmdsize 552
+   vmsize 0x0000000000003000
+  fileoff 0
+ filesize 12288
+      size 0x0000000000000023
+    offset 1440
+      size 0x0000000000000006
+    offset 1476
+ reserved2 6 (size of stubs)
+      size 0x000000000000001a
+    offset 1484
+      size 0x0000000000001000
+    offset 1520
+      size 0x0000000000001038
+    offset 5616
+      size 0x0000000000000018
+    offset 9768
+      cmd LC_SEGMENT_64
+  cmdsize 152
+   vmsize 0x0000000000001000
+  fileoff 12288
+ filesize 4096
+      size 0x0000000000000008

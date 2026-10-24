@@ -1,0 +1,3 @@
+### 2026-10-24T15:56:06+00:00 | bash -c test -n "${VT_API_KEY:-}" && echo "VT_API_KEY_definida (comprimento ${#VT_API_KEY})" || echo VT_API_KEY_ausente
+VT_API_KEY_definida (comprimento 64)
+exit=0

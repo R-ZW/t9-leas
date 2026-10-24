@@ -1,0 +1,21 @@
+# 2026-10-24T15:55:14+00:00 cwd=/home/revisor/aval
+# cmd: bash -c cmp -n 1118208 amostras/a.evtx saidas/P12/evtx/00002048.evtx && echo prefixo_a_identico; cmp -n 2166784 amostras/b.evtx saidas/P12/evtx/00004480.evtx && echo prefixo_b_identico; for f in amostras/a.evtx saidas/P12/evtx/00002048.evtx amostras/b.evtx saidas/P12/evtx/00004480.evtx; do n=$(venv/bin/evtx_dump $f 2>/tmp/err | grep -c "<Event "); echo "== $f eventos=$n rc_dump=${PIPESTATUS[0]} stderr_linhas=$(wc -l </tmp/err)"; head -2 /tmp/err; done; venv/bin/evtx_info saidas/P12/evtx/00002048.evtx | head -20
+prefixo_a_identico
+prefixo_b_identico
+== amostras/a.evtx eventos=0 rc_dump=1 stderr_linhas=4
+Traceback (most recent call last):
+  File "/home/revisor/aval/venv/bin/evtx_dump", line 5, in <module>
+== saidas/P12/evtx/00002048.evtx eventos=0 rc_dump=1 stderr_linhas=4
+Traceback (most recent call last):
+  File "/home/revisor/aval/venv/bin/evtx_dump", line 5, in <module>
+== amostras/b.evtx eventos=0 rc_dump=1 stderr_linhas=4
+Traceback (most recent call last):
+  File "/home/revisor/aval/venv/bin/evtx_dump", line 5, in <module>
+== saidas/P12/evtx/00004480.evtx eventos=0 rc_dump=1 stderr_linhas=4
+Traceback (most recent call last):
+  File "/home/revisor/aval/venv/bin/evtx_dump", line 5, in <module>
+Traceback (most recent call last):
+  File "/home/revisor/aval/venv/bin/evtx_info", line 5, in <module>
+    from scripts.evtx_info import main
+ModuleNotFoundError: No module named 'scripts'
+# exit=0

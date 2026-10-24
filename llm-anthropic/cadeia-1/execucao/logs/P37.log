@@ -1,0 +1,3 @@
+### 2026-10-24T15:56:08+00:00 | bash -c truncate -s 16M img_c5.img; dd if=../dados/eicar_com.zip of=img_c5.img bs=512 seek=2048 conv=notrunc status=none; dd if=../dados/hello64 of=img_c5.img bs=512 seek=6144 conv=notrunc status=none; sha256sum img_c5.img
+48043d6db4ce44b497bb131abefd0a8a2728108c162e86948fc39f899409dce3  img_c5.img
+exit=0

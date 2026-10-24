@@ -1,0 +1,9 @@
+s1.sh -> /home/revisor/aval/out/C2/script/00000100.script IGUAL ao original
+primeira linha: #!/bin/bash
+s2.py -> /home/revisor/aval/out/C2/script/00000200.script IGUAL ao original
+primeira linha: #!/usr/bin/env python3
+s3.ps1 -> /home/revisor/aval/out/C2/script/00000300.script IGUAL ao original
+primeira linha: #!/usr/bin/env pwsh
+n1.sh -> /home/revisor/aval/out/C2/script/00000400.script IGUAL ao original
+primeira linha: #!/bin/sh
+n2.sh -> /home/revisor/aval/out/C2/script/00000500.script NAO EXISTE

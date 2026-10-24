@@ -1,0 +1,4 @@
+# 2026-10-24T15:57:18+00:00 cwd=/home/revisor
+# cmd: bash -c [ -n "${VT_API_KEY:-}" ] && echo "VT_API_KEY definida (comprimento ${#VT_API_KEY})" || echo "VT_API_KEY ausente"
+VT_API_KEY definida (comprimento 64)
+# exit=0

@@ -1,0 +1,26 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 16:00:09 2026
+Invocation: foremost-ng -x -t script,elf -c c5.conf -i img_c5.dd -o /home/revisor/aval/out/C5_sem 
+Output directory: /home/revisor/aval/out/C5_sem
+Configuration file: /home/revisor/aval/testes/c5/c5.conf
+------------------------------------------------------------------
+File: img_c5.dd
+Start: Sat Oct 24 16:00:09 2026
+Length: 8 MB (8388608 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000100.script            1 KB        51200                            Clean (0)      
+   1: 00001000.elf              12 KB       512000                            Clean (0)      
+   2: 00002000.com               68 B      1024000                            Clean (0)      
+Finish: Sat Oct 24 16:00:09 2026
+
+3 FILES EXTRACTED
+	
+script=1
+elf=1
+com=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 16:00:09 2026

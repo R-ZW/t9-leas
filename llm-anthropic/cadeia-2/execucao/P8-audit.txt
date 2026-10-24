@@ -1,0 +1,42 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 15:53:55 2026
+Invocation: foremost-ng -i /home/revisor/aval/amostras/11-carve-fat/11-carve-fat.dd -o /home/revisor/aval/saidas/P8 
+Output directory: /home/revisor/aval/saidas/P8
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/aval/amostras/11-carve-fat/11-carve-fat.dd
+Start: Sat Oct 24 15:53:55 2026
+Length: 61 MB (64979456 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00019717.jpg              29 KB     10095104                            N/A            
+   1: 00019777.jpg             433 KB     10125824                            N/A            
+   2: 00020645.jpg              96 KB     10570240                            N/A            
+   3: 00020841.gif               5 KB     10670592  (88 x 31)                 N/A            
+   4: 00000321.wmv               7 MB       164352                            N/A            
+   5: 00021929.wmv            1012 KB     11227648                            N/A            
+   6: 00020853.mov             537 KB     10676736                            N/A            
+   7: 00016021.wav             311 KB      8202752                            N/A            
+   8: 00000281.ole              20 KB       143872                            N/A            
+   9: 00016693.ole              24 KB      8546816                            N/A            
+  10: 00023957.ole               6 MB     12265984                            N/A            
+  11: 00023981.zip              77 KB     12278272                            N/A            
+  12: 00016741.pdf               1 MB      8571392  (PDF is Linearized)       N/A            
+  13: 00019477.pdf             119 KB      9972224                            N/A            
+Finish: Sat Oct 24 15:53:56 2026
+
+14 FILES EXTRACTED
+	
+jpg=3
+gif=1
+wmv=2
+mov=1
+rif=1
+ole=3
+zip=1
+pdf=2
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 15:53:56 2026

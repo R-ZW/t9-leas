@@ -1,0 +1,18 @@
+# 2026-10-24T15:50:59+00:00 cwd=/home/revisor/aval/amostras
+# cmd: bash -c curl -sSL --retry 3 -o dftt11.zip "http://prdownloads.sourceforge.net/dftt/11-carve-fat.zip?download"; file dftt11.zip 2>/dev/null; stat -c "%s bytes" dftt11.zip; sha256sum dftt11.zip; head -c 4 dftt11.zip | od -c | head -1
+11596213 bytes
+0c5e850a29f5811a4861a8d75404f7c45ab1b4526981414c7f86d223d5a71b67  dftt11.zip
+0000000   P   K 003 004
+# exit=0
+# 2026-10-24T15:53:49+00:00 cwd=/home/revisor/aval/amostras
+# cmd: bash -c unzip -o dftt11.zip && find . -name "*.dd" -o -name "*.raw" | head; for f in $(find . -name "*.dd"); do md5sum $f; sha256sum $f; stat -c "%s bytes" $f; done
+Archive:  dftt11.zip
+  inflating: 11-carve-fat/11-carve-fat.dd  
+  inflating: 11-carve-fat/11-carve-fat.html  
+  inflating: 11-carve-fat/COPYING-GNU.txt  
+  inflating: 11-carve-fat/README.txt  
+./11-carve-fat/11-carve-fat.dd
+0069813c892a462f88dc6d376624f7d9  ./11-carve-fat/11-carve-fat.dd
+83585232e908529286f1ff04c43b4d858604875c733183a9e3b44a07ff818d26  ./11-carve-fat/11-carve-fat.dd
+64979456 bytes
+# exit=0
