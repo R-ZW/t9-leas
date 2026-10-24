@@ -24,7 +24,16 @@ Tarefa 9 de LEAS 2026/2 (Unipampa): avaliação dos selos F e R do **Foremost-NG
 | [`ambiente/Dockerfile`](ambiente/Dockerfile) | contêiner de execução: Ubuntu 24.04 limpo, sem as dependências do artefato |
 | [`ferramentas/`](ferramentas/) | `medir_cadeia.py` (transcrição, tokens, tempo e auditoria) e `resumir.py` (tabela de decisões e medições) |
 | `llm-<provedor>/cadeia-N/` | transcrição, respostas, medições e evidências de cada cadeia |
-| [`analise/`](analise/) | resumos por provedor |
+| [`analise/`](analise/) | resumos por provedor e [comparação das três LLMs](analise/comparacao.md) |
+
+## Comparação das três LLMs
+
+Em [`analise/comparacao.md`](analise/comparacao.md): decisões das 9 cadeias, causas, custo normalizado e 11 inconsistências registradas.
+
+- **R:** Não atribuir em 9/9 cadeias, nas duas etapas. Motivos: falta `evidence2.dd` (C6); Claude e GPT também se apoiam em defeitos observados (Mach-O thin, filtro de comentários).
+- **F em B2:** Gemini 3/3 Atribuir, Claude 1/3 e GPT 0/3. Todas as execuções funcionaram; a divergência é a leitura da exigência de versões e exemplo mínimo no README.
+- **Coincidência com o oficial (F e R atribuídos):** 0/18 decisões em A e 4/18 em B2.
+- **Custo médio por cadeia:** 23–29 min e 13–14 milhões de tokens processados; a execução concentra cerca de 80% dos tokens.
 
 ## Resultado do Claude (3 cadeias)
 
