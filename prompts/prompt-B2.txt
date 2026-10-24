@@ -1,0 +1,8 @@
+Leia o registro factual da sua execução ({EXEC_HOST}/registro-factual.md). Nesta etapa não execute mais nada: apenas leia o registro, as evidências em {EXEC_HOST} e o material anterior.
+
+Com base no registro e no material anterior:
+1. Para cada passo relevante, diga se o resultado confirma, contradiz ou não altera sua avaliação analítica.
+2. Decida novamente F e R (Atribuir, Não atribuir ou Indeterminado) com a mesma regra de antes. Use Indeterminado somente se faltar evidência que o registro não fornece; diga exatamente qual.
+3. Trate passos marcados D2 e D3 como evidência complementar, não como reprodução das reivindicações dos autores.
+4. Informe confiança de 0 a 100 e explique a mudança em relação à decisão analítica, se houver.
+Repita o bloco JSON da etapa A com as novas decisões e acrescente "mudou": true/false para cada selo.

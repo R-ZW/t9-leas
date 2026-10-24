@@ -1,0 +1,18 @@
+Agora execute você mesmo o roteiro que escreveu.
+
+AMBIENTE
+- O contêiner Docker `{CONTEINER}` já está em execução (Ubuntu 24.04, usuário revisor com sudo sem senha, acesso à internet). Rode todo comando dentro dele com `docker exec {CONTEINER} bash -lc '<comando>'`. Não instale nada nem rode o artefato fora do contêiner.
+- O artefato, na mesma versão representada em artefato.txt, está em /home/revisor/artefato.zip, dentro do contêiner.
+- A chave da API do VirusTotal já está na variável de ambiente VT_API_KEY do contêiner. Não imprima nem grave o valor da chave.
+- A pasta /home/revisor/evidencias do contêiner é a pasta {EXEC_HOST} deste computador. Salve ali as evidências (saídas dos comandos, hashes e arquivos pequenos).
+- Continue restrito: não leia arquivos do computador fora de {PACOTE} e {EXEC_HOST}, e não use busca na web. A internet do contêiner serve para instalar dependências e para a consulta ao VirusTotal feita pelo próprio artefato.
+
+REGRAS
+1. Siga o seu roteiro na ordem. Se um passo falhar, registre a falha e decida, como faria um revisor, se ajusta o ambiente e repete (registre as duas tentativas) ou interrompe, conforme os critérios de interrupção do roteiro.
+2. Se precisar de um passo que não está no roteiro, marque-o como [FORA DO ROTEIRO] e justifique.
+3. Classifique cada passo: D0 (procedimento dos autores, sem alteração), D1 (ajuste de ambiente), D2 (passo ou entrada proposta pelo revisor), D3 (teste externo, com dados de terceiros).
+4. Não decida os selos nesta etapa.
+
+ENTREGA
+Escreva {EXEC_HOST}/registro-factual.md com: ambiente (versões observadas); uma tabela com passo, comando exato, resultado esperado, resultado observado (trecho curto da saída e código de saída), arquivo de evidência, status (sucesso / falha / inconclusivo / bloqueado / não executado) e desvio (D0–D3); e uma seção por reivindicação (C1 a C6) só com fatos observados, sem juízo sobre os selos.
+Sua resposta final é um resumo curto do que foi executado.

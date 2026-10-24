@@ -1,0 +1,6 @@
+# Arquivos entregues às LLMs e registros congelados: bytes exatos, sem conversão de fim de linha.
+pacote/** -text
+prompts/** -text
+preregistro.md -text
+CONGELAMENTO.sha256 -text
+llm-*/** -text

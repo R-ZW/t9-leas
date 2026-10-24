@@ -1,0 +1,8 @@
+Com base no mesmo material, produza o roteiro que você mesmo vai executar na próxima etapa para verificar F e R. O ambiente será um contêiner Docker com Ubuntu 24.04 limpo, com acesso à internet, usuário comum com sudo e apenas sudo, unzip e man instalados (sem compilador). Ainda não execute nada e não afirme que executou.
+
+Siga somente os procedimentos fornecidos pelos autores. Quando um passo não estiver documentado pelos autores, marque-o como [NÃO DOCUMENTADO] e justifique por que ele é necessário.
+
+Para cada passo: identificador (P1, P2...), selo e reivindicação relacionados, diretório, comando exato, resultado esperado segundo os autores, evidência a salvar, critério de sucesso, critério de falha e critério de interrupção.
+
+Inclua: requisitos de hardware e software do ambiente; teste mínimo (F); um bloco por reivindicação de reivindicacoes.md (R); tempo estimado.
+Ao final, uma tabela com todos os passos.

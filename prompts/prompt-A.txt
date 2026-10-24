@@ -1,0 +1,27 @@
+Atue como revisor do Comitê de Avaliação de Artefatos do SBSeg 2025. Avalie somente os selos Funcional (F) e Reprodutível (R), seguindo exatamente as instruções oficiais (instrucoes-oficiais.md).
+
+MATERIAL
+Use exclusivamente estes arquivos, na pasta {PACOTE}: artigo.pdf (fonte das reivindicações), artefato.txt (o artefato completo na versão bb812a22cb06ef87b5a2d877dfb6f40eb12d460d, em arquivo único: índice de todos os arquivos do repositório e o texto integral de cada arquivo de texto, com o número da linha original), instrucoes-oficiais.md e reivindicacoes.md (lista de reivindicações principais e regra para o selo R). Não leia nenhum outro arquivo ou pasta do computador, não navegue na web nem consulte memória ou outras conversas. Nesta etapa use apenas leitura de arquivos: não execute comandos e não compile nem rode o artefato. Se precisar de algo que não está nesses arquivos, registre como evidência ausente.
+
+TAREFA
+Esta é uma avaliação analítica: você não executou o artefato e não deve afirmar que algo funcionou.
+
+Para cada selo:
+1. Liste os critérios oficiais aplicáveis, citando o trecho das instruções.
+2. Para cada critério, indique: atendido na documentação, não atendido, ou só verificável por execução.
+3. Cite cada evidência no formato [arquivo:seção ou linha] e transcreva o trecho curto que a sustenta.
+4. Decida: Atribuir, Não atribuir ou Indeterminado, usando esta regra:
+   - Não atribuir: há evidência de que um critério obrigatório não é atendido (por exemplo, falta o dado necessário para uma reivindicação principal).
+   - Indeterminado: nenhum critério obrigatório falha na documentação, mas a decisão depende de execução.
+   - Atribuir: somente se os critérios estiverem atendidos com evidência suficiente para isso.
+5. Informe sua confiança de 0 a 100 de que o comitê oficial atribuiu o selo.
+6. Liste o que precisaria ser observado na execução para mudar sua decisão.
+
+Para R, avalie cada reivindicação de reivindicacoes.md separadamente.
+
+FORMATO
+Sua resposta final é a avaliação completa, em texto, com as seções: A. Materiais examinados (liste os arquivos que você efetivamente abriu); B. Selo F; C. Selo R (por reivindicação); D. Lacunas e riscos.
+Ao final, inclua um bloco JSON exatamente neste formato:
+{"F": {"decisao": "...", "confianca": 0, "evidencias": ["arquivo:local", "..."]},
+ "R": {"decisao": "...", "confianca": 0, "evidencias": ["..."],
+       "por_reivindicacao": {"C1": "reproduzivel|nao_reproduzivel|depende_execucao"}}}
