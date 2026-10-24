@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 16:59:14 2026
+Invocation: foremost-ng -i test_minimo.img -o output_f 
+Output directory: /home/revisor/testes/output_f
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: test_minimo.img
+Start: Sat Oct 24 16:59:14 2026
+Length: 1 MB (1572931 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00002048.png               67 B      1048576  (1 x 1)                   N/A            
+Finish: Sat Oct 24 16:59:14 2026
+
+1 FILES EXTRACTED
+	
+png=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 16:59:14 2026

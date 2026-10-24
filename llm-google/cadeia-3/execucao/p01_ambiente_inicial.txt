@@ -1,0 +1,4 @@
+Linux f32578b1d5b5 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1001(revisor) gid=1001(revisor) groups=1001(revisor)
+bash: line 1: gcc: command not found
+bash: line 1: make: command not found

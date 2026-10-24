@@ -1,0 +1,17 @@
+[1m[36mforemost-ng version 1.5.7 by Cristian Souza.
+[0m[33m$ foremost-ng [-v|-V|-h|-T|-Q|-q|-a|-w|-d|-x] [-t <type>] [-s <blocks>] [-k <size>]
+	[-b <size>] [-c <file>] [-o <dir>] [-i <file>] <input files...>
+
+[0m[32mOptions:
+[0m  [36m-V[0m  Display copyright info and exit.
+  [36m-t[0m  Specify file type (e.g., jpeg,pdf).
+  [36m-d[0m  Enable indirect block detection.
+  [36m-i[0m  Specify a single input file.
+  [36m-a[0m  Write all headers, skip error detection.
+  [36m-w[0m  Only write audit file.
+  [36m-o[0m  Set output directory (default: output).
+  [36m-c[0m  Set config file (default: foremost.conf).
+  [36m-q[0m  Enable quick mode (512-byte steps).
+  [36m-Q[0m  Enable quiet mode.
+  [36m-x[0m  Enable VirusTotal scan (needs API key).
+  [36m-v[0m  Enable verbose mode.

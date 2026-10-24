@@ -1,0 +1,61 @@
+[1m[34m[INFO] Processing: script_sample.raw
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0moutput_script:
+total 16
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 17:00 .
+drwxr-xr-x 5 revisor revisor 4096 Oct 24 17:00 ..
+-rw-r--r-- 1 revisor revisor  986 Oct 24 17:00 audit.txt
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 17:00 script
+
+output_script/script:
+total 20
+drwxr-xr-- 2 revisor revisor 4096 Oct 24 17:00 .
+drwxr-xr-- 3 revisor revisor 4096 Oct 24 17:00 ..
+-rw-r--r-- 1 revisor revisor   83 Oct 24 17:00 00000002.script
+-rw-r--r-- 1 revisor revisor   49 Oct 24 17:00 00000004.script
+-rw-r--r-- 1 revisor revisor   90 Oct 24 17:00 00000006.script
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:00:36 2026
+Invocation: foremost-ng -t script -i script_sample.raw -o output_script 
+Output directory: /home/revisor/testes/output_script
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: script_sample.raw
+Start: Sat Oct 24 17:00:36 2026
+Length: 4 KB (4321 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000002.script            83 B         1024                            N/A            
+   1: 00000004.script            49 B         2132                            N/A            
+   2: 00000006.script            90 B         3206                            N/A            
+Finish: Sat Oct 24 17:00:36 2026
+
+3 FILES EXTRACTED
+	
+script=3
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:00:36 2026
+=== Conteudo de output_script/script/00000002.script ===
+#!/bin/bash
+# Script de teste forense
+echo "Executando rotina forense Bash"
+exit 0
+
+output_script/script/00000002.script: Bourne-Again shell script, ASCII text executable
+=== Conteudo de output_script/script/00000004.script ===
+#!/bin/sh
+# Apenas comentario
+# Outro comentario
+
+output_script/script/00000004.script: POSIX shell script, ASCII text executable
+=== Conteudo de output_script/script/00000006.script ===
+#!/usr/bin/env python3
+# Test script
+import sys
+print("Executando rotina forense Python")
+
+output_script/script/00000006.script: Python script, ASCII text executable

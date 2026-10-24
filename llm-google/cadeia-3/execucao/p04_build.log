@@ -1,0 +1,19 @@
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c main.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c state.c
+state.c: In function ‘set_config_file’:
+state.c:95:5: warning: ignoring return value of ‘realpath’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |     realpath(fn, temp);
+      |     ^~~~~~~~~~~~~~~~~~
+state.c: In function ‘set_output_directory’:
+state.c:121:5: warning: ignoring return value of ‘realpath’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  121 |     realpath(fn, temp);
+      |     ^~~~~~~~~~~~~~~~~~
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c helpers.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c config.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c cli.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c engine.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c dir.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c extract.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c api.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c vt_query.c
+gcc -Wall -O2 -DVERSION="\"1.5.7\"" -D__UNIX -D__LINUX -DLARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 main.o state.o helpers.o config.o cli.o engine.o dir.o extract.o api.o vt_query.o -o foremost-ng -lssl -lcrypto -lcurl

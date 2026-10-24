@@ -1,0 +1,2 @@
+-rw-r--r-- 1 revisor revisor 1.6M Oct 24 16:58 test_minimo.img
+589251def4b934dcb8ee94b14f90072c614645c78e6d743b0385a95dc88484e6  test_minimo.img

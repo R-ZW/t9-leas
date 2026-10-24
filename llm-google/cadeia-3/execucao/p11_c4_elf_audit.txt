@@ -1,0 +1,49 @@
+[1m[34m[INFO] Processing: /home/revisor/work/c4_elf.img
+[0m[33m[=     ][0m[1m[34m
+[INFO] Processing finished.
+[0mforemost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:02:58 2026
+Invocation: foremost-ng -t elf -i /home/revisor/work/c4_elf.img -o /home/revisor/work/out_c4 
+Output directory: /home/revisor/work/out_c4
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: /home/revisor/work/c4_elf.img
+Start: Sat Oct 24 17:02:58 2026
+Length: 42 KB (43400 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000008.elf              32 KB         4096                            N/A            
+Finish: Sat Oct 24 17:02:58 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:02:58 2026
+total 44
+drwxr-xr-- 2 revisor revisor  4096 Oct 24 17:02 .
+drwxr-xr-- 3 revisor revisor  4096 Oct 24 17:02 ..
+-rw-r--r-- 1 revisor revisor 32788 Oct 24 17:02 00000008.elf
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x3010
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          33224 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         13
+  Size of section headers:           64 (bytes)
+  Number of section headers:         31
+  Section header string table index: 30

@@ -1,0 +1,3 @@
+[31m[!] File not found or is a directory: evidence2.dd
+[0m[31m[!] No valid input files to process.
+[0m

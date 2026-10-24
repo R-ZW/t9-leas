@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Hello SBSeg 2025
+exit 0

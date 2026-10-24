@@ -1,0 +1,5 @@
+=== Tentativa de execucao do comando da Figura 2 ===
+Comando: ./foremost-ng -v -x evidence2.dd
+[31m[!] File not found or is a directory: evidence2.dd
+[0m[31m[!] No valid input files to process.
+[0mFALHA Factual: O arquivo evidence2.dd nao existe no diretorio ou artefato, inviabilizando a reproducao da Figura 2.

@@ -1,0 +1,22 @@
+foremost-ng version 1.5.7 by Cristian Souza
+Audit File
+
+foremost-ng started at Sat Oct 24 17:04:12 2026
+Invocation: foremost-ng -x -t elf -i c4_elf.img -o out_c5_vt 
+Output directory: /home/revisor/work/out_c5_vt
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: c4_elf.img
+Start: Sat Oct 24 17:04:12 2026
+Length: 42 KB (43400 bytes)
+ 
+  ID  Name (bs=512)              Size       Offset  Comment                   VT             
+   0: 00000008.elf              32 KB         4096                            Clean (0)      
+Finish: Sat Oct 24 17:04:12 2026
+
+1 FILES EXTRACTED
+	
+elf=1
+------------------------------------------------------------------
+
+foremost-ng finished at Sat Oct 24 17:04:12 2026

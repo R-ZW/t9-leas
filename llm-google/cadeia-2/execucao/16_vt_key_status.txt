@@ -1,0 +1,1 @@
+VT_API_KEY esta definida e nao-vazia (mascarada: <VT_API_KEY>)

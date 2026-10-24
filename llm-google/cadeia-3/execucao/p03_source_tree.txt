@@ -1,0 +1,11 @@
+lrwxrwxrwx 1 revisor revisor 20 Oct 24 16:56 /home/revisor/foremost-ng -> foremost-ng-bb812a22
+total 36
+drwxr-xr-x 5 revisor revisor 4096 Jul  8  2025 .
+drwxr-x--- 1 revisor revisor 4096 Oct 24 16:56 ..
+-rw-r--r-- 1 revisor revisor  520 Jul  8  2025 .gitignore
+-rw-r--r-- 1 revisor revisor  338 Jul  8  2025 Dockerfile
+-rw-r--r-- 1 revisor revisor 1092 Jul  8  2025 LICENSE
+-rw-r--r-- 1 revisor revisor 2795 Jul  8  2025 README.md
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 screenshots
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 src
+drwxr-xr-x 2 revisor revisor 4096 Jul  8  2025 windows_dlls

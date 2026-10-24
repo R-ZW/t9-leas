@@ -1,0 +1,100 @@
+{
+  "transcricao": "transcript_full.jsonl",
+  "etapas": {
+    "A": {
+      "inicio_utc": "2026-10-24T16:44:44+00:00",
+      "fim_utc": "2026-10-24T16:50:11+00:00",
+      "duracao_s": 327.0,
+      "respostas_api": 19,
+      "tokens": {
+        "entrada": 134032,
+        "saida": 35401,
+        "cache_criado": 0,
+        "cache_lido": 781844,
+        "total": 951277
+      },
+      "chamadas_ferramenta": {
+        "view_file": 17,
+        "send_message": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "Gemini (Antigravity)"
+      ]
+    },
+    "B1": {
+      "inicio_utc": "2026-10-24T16:51:02+00:00",
+      "fim_utc": "2026-10-24T16:52:58+00:00",
+      "duracao_s": 116.0,
+      "respostas_api": 2,
+      "tokens": {
+        "entrada": 20133,
+        "saida": 24286,
+        "cache_criado": 0,
+        "cache_lido": 217374,
+        "total": 261793
+      },
+      "chamadas_ferramenta": {
+        "send_message": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "Gemini (Antigravity)"
+      ]
+    },
+    "E": {
+      "inicio_utc": "2026-10-24T16:53:49+00:00",
+      "fim_utc": "2026-10-24T17:07:42+00:00",
+      "duracao_s": 833.0,
+      "respostas_api": 55,
+      "tokens": {
+        "entrada": 289202,
+        "saida": 42216,
+        "cache_criado": 0,
+        "cache_lido": 9173261,
+        "total": 9504679
+      },
+      "chamadas_ferramenta": {
+        "run_command": 47,
+        "view_file": 4,
+        "write_file": 1,
+        "send_message": 1
+      },
+      "comandos_docker_exec": 47,
+      "modelos": [
+        "Gemini (Antigravity)"
+      ]
+    },
+    "B2": {
+      "inicio_utc": "2026-10-24T17:08:09+00:00",
+      "fim_utc": "2026-10-24T17:09:29+00:00",
+      "duracao_s": 80.0,
+      "respostas_api": 3,
+      "tokens": {
+        "entrada": 17672,
+        "saida": 12792,
+        "cache_criado": 0,
+        "cache_lido": 643144,
+        "total": 673608
+      },
+      "chamadas_ferramenta": {
+        "view_file": 1,
+        "send_message": 1
+      },
+      "comandos_docker_exec": 0,
+      "modelos": [
+        "Gemini (Antigravity)"
+      ]
+    }
+  },
+  "total": {
+    "tokens": {
+      "entrada": 461039,
+      "saida": 114695,
+      "cache_criado": 0,
+      "cache_lido": 10815623,
+      "total": 11391357
+    },
+    "duracao_s": 1356.0
+  }
+}

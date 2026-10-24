@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+# Test script
+import sys
+print("Executando rotina forense Python")
